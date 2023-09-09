@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Divider, Row } from "antd";
 import TypeCard from "../component/TypeCard";
 import "../CSS/Home.css";
+import { url } from "inspector";
 
 const Home: React.FC = () => (
   <div className="App">
@@ -16,6 +17,7 @@ const Home: React.FC = () => (
                   type="Scheme"
                   description="Some information about scheme"
                   id="1"
+                  url="https://img.freepik.com/premium-vector/books-money-loans-scholarships_603843-825.jpg"
                 />
               </Col>
               <Col flex={1}>
@@ -23,6 +25,7 @@ const Home: React.FC = () => (
                   type="Scholarship"
                   description="Some information about scholarship"
                   id="2"
+                  url="/scholarship.jpg"
                 />
               </Col>
             </Row>
@@ -33,6 +36,7 @@ const Home: React.FC = () => (
                   type="Compensation"
                   description="Some information about Compensation"
                   id="3"
+                  url="/compensation.jpg"
                 />
               </Col>
               <Col flex={1}>
@@ -40,6 +44,7 @@ const Home: React.FC = () => (
                   type="Resources"
                   description="Some information about resources"
                   id="0"
+                  url="/books.jpg"
                 />
               </Col>
             </Row>

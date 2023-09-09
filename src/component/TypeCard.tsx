@@ -5,6 +5,7 @@ const { Meta } = Card;
 interface TypeCardProps {
   type: string;
   description: string;
+  url: string;
   id: string;
 }
 const TypeCard: React.FC<TypeCardProps> = (props): JSX.Element => {
@@ -13,6 +14,9 @@ const TypeCard: React.FC<TypeCardProps> = (props): JSX.Element => {
   function handleClick() {
     navigate("/form/" + props.id);
   }
+
+  console.log(window.location.origin + props.url);
+
   return (
     <center>
       <Tooltip title={props.description}>
@@ -21,12 +25,7 @@ const TypeCard: React.FC<TypeCardProps> = (props): JSX.Element => {
           hoverable
           onClick={handleClick}
           style={{ width: "14vw", height: "14vh" }}
-          cover={
-            <img
-              alt="example"
-              src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-            />
-          }
+          cover={<img alt="example" src={window.location.origin + props.url} />}
         >
           <Meta title={props.type} />
         </Card>
