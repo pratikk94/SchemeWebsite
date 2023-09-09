@@ -4,6 +4,7 @@ import "../CSS/FormPage.css";
 import FormPageScheme from "../component/FormForScheme";
 import FormPageScholarship from "../component/FormForScholarship";
 import FormPageCompensation from "../component/FormForCompenstaion";
+import { Space } from "antd";
 interface FormPageProps {
   type: string;
 }
@@ -21,8 +22,8 @@ const FormPage: React.FC<FormPageProps> = (props): JSX.Element => {
   return (
     <div className="FormPage">
       <div className="container-type" style={{ height: "80vh" }}>
+        <div className="Spacer" style={{ height: "16vh" }} />
         <center>{formType}</center>
-        <h1>Form</h1>
       </div>
     </div>
   );
