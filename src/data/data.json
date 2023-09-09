@@ -1,0 +1,18 @@
+{
+  "$schemes": [
+    {
+      "id": "scholarship_1",
+      "name": "Pre Matric Scholarship for OBC Students",
+      "award_entitlement": "Scholarship award will be sanctioned to OBC students studying in class IX and X on a full-time basis in Government schools.They would be entitled to Rs. 4000/- annually. ",
+      "gender": "N/A",
+      "max_income": 250000,
+      "residence": "GNTC of Delhi",
+      "disability": "N/A",
+      "reservation": "OBC",
+      "eligibility": "<ol><li>Students studying (Class IX & X) in Government Schools.</li><li>Regular attendance record should not be less than 75% in the previous year should be pre- requisite for availing scholarship</li><li>Only 2 boys of the same parents/guardian will be entitled to receive scholarships. This restriction will, however, not apply to girls. Accordingly, scholarships availed by girls of same parents/guardian will not adversely affect admissibility of availing schclarship upto two boys of same parents/guardian.</li><li>The Applicant should not be availing benefits under any other central/state sponsored scholarship scheme.</li></ol>",
+      "document_required": "<ol><li>Caste certificate, if applicable, issued in the name of the student or the father by the SDM/Deputy Commissioner (Revenue), GNCTD. In case caste certificate has not been issued by competent authority of Govt of NCT, then Domicile Certificate of students issued by competent authority of Delhi may be submitted.</li><li>Annual family income certificate issued by the Revenue Department, GNCT of Delhi.</li><li>Bank Account should be in the name of the student (Joint Bank Account with parent/Guardian is also permissible), active and seeded with Aadhaar no of student.</li><li>Residence Proof</li></ol>   ",
+      "application_link": "<a href ='https://edistrict.delhigovt.nic.in/in/en/Home/Index.html'>https://edistrict.delhigovt.nic.in/in/en/Home/Index.html</a>",
+      "grievance_redressal": "Call: 011-23379512 <br/>Visti: Department for Welfare of SC/ST/OBC/Minorities, <br/>B Block, 2nd Floor, Vikas Bhawan, <br/>Government of NCT of Delhi, <br/>IP Estate New Delhi- 110002"
+    }
+  ]
+}
