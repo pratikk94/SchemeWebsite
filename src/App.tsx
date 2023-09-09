@@ -1,12 +1,17 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
+import Resources from "./Pages/Resources";
+import FormPage from "./Pages/Form";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Home />
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/form" element={<FormPage />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
