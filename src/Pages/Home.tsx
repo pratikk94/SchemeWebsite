@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Divider, Row } from "antd";
 import TypeCard from "../component/TypeCard";
 import "../CSS/Home.css";
+
 const Home: React.FC = () => (
   <div className="App">
     <header className="App-header">
@@ -14,12 +15,14 @@ const Home: React.FC = () => (
                 <TypeCard
                   type="Scheme"
                   description="Some information about scheme"
+                  id="1"
                 />
               </Col>
               <Col flex={1}>
                 <TypeCard
                   type="Scholarship"
                   description="Some information about scholarship"
+                  id="2"
                 />
               </Col>
             </Row>
@@ -29,12 +32,14 @@ const Home: React.FC = () => (
                 <TypeCard
                   type="Compensation"
                   description="Some information about Compensation"
+                  id="3"
                 />
               </Col>
               <Col flex={1}>
                 <TypeCard
                   type="Resources"
                   description="Some information about resources"
+                  id="0"
                 />
               </Col>
             </Row>
