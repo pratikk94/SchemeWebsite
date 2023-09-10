@@ -3,9 +3,11 @@ import "./App.css";
 import Home from "./Pages/Home";
 import Resources from "./Pages/Resources";
 import FormPage from "./Pages/Form";
+import NavBar from "./component/NavBar";
 function App() {
   return (
     <Router>
+      <NavBar />
       <Routes>
         <Route path="/form/0" element={<Resources />} />
         <Route path="/form/1" element={<FormPage type="1" />} />
