@@ -78,7 +78,7 @@ const Home: React.FC = () => {
                   type="Scheme"
                   description="Some information about scheme"
                   id="1"
-                  dimHeight="20vh"
+                  dimHeight="28vh"
                   dimWidth="28vw"
                   url="https://img.freepik.com/premium-vector/books-money-loans-scholarships_603843-825.jpg"
                 />
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
                   type="Scholarship"
                   description="Some information about scholarship"
                   id="2"
-                  dimHeight="20vh"
+                  dimHeight="28vh"
                   dimWidth="28vw"
                   url="/scholarship.jpg"
                 />
@@ -94,7 +94,7 @@ const Home: React.FC = () => {
                   type="Compensation"
                   description="Some information about Compensation"
                   id="3"
-                  dimHeight="20vh"
+                  dimHeight="28vh"
                   dimWidth="28vw"
                   url="/compensation.jpg"
                 />
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
                   type="Resources"
                   description="Some information about resources"
                   id="0"
-                  dimHeight="20vh"
+                  dimHeight="28vh"
                   dimWidth="28vw"
                   url="/books.jpg"
                 />
