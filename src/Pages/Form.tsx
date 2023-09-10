@@ -5,6 +5,7 @@ import FormPageScheme from "../component/FormForScheme";
 import FormPageScholarship from "../component/FormForScholarship";
 import FormPageCompensation from "../component/FormForCompenstaion";
 import { Space } from "antd";
+import Resources from "./Resources";
 interface FormPageProps {
   type: string;
 }
@@ -13,7 +14,7 @@ function returnFromType(props: string): JSX.Element {
   if (props === "1") return <FormPageScheme />;
   else if (props === "2") return <FormPageScholarship />;
   else if (props === "3") return <FormPageCompensation />;
-  else return <h1>Invalid Form Operation</h1>;
+  else return <Resources />;
 }
 
 const FormPage: React.FC<FormPageProps> = (props): JSX.Element => {

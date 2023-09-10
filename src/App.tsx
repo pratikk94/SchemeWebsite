@@ -9,7 +9,7 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/form/0" element={<Resources />} />
+        <Route path="/form" element={<FormPage type="0" />} />
         <Route path="/form/1" element={<FormPage type="1" />} />
         <Route path="/form/2" element={<FormPage type="2" />} />
         <Route path="/form/3" element={<FormPage type="3" />} />
