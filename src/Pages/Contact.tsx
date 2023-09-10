@@ -1,9 +1,9 @@
 import React from "react";
-import "../CSS/Home.css";
+import "../CSS/ContactUs.css";
 
 const ContactUs: React.FC = () => (
   <div className="App">
-    <header className="App-header"></header>
+    <header className="Contact-header"></header>
     <div className="home">
       <div className="container-type" style={{ height: "80vh" }}>
         <center>
