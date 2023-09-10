@@ -7,6 +7,8 @@ interface TypeCardProps {
   description: string;
   url: string;
   id: string;
+  dimWidth: string;
+  dimHeight: string;
 }
 const TypeCard: React.FC<TypeCardProps> = (props): JSX.Element => {
   const navigate = useNavigate();
@@ -24,7 +26,7 @@ const TypeCard: React.FC<TypeCardProps> = (props): JSX.Element => {
         <Card
           hoverable
           onClick={handleClick}
-          style={{ width: "14vw", height: "14vh" }}
+          style={{ width: props.dimWidth, height: props.dimHeight }}
           cover={<img alt="example" src={window.location.origin + props.url} />}
         >
           <Meta title={props.type} />
