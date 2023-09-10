@@ -4,6 +4,8 @@ import Home from "./Pages/Home";
 import Resources from "./Pages/Resources";
 import FormPage from "./Pages/Form";
 import NavBar from "./component/NavBar";
+import AboutUs from "./Pages/About";
+import ContactUs from "./Pages/Contact";
 function App() {
   return (
     <Router>
@@ -14,6 +16,9 @@ function App() {
         <Route path="/form/2" element={<FormPage type="2" />} />
         <Route path="/form/3" element={<FormPage type="3" />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
