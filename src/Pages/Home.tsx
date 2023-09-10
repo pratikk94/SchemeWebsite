@@ -62,6 +62,7 @@ const Home: React.FC = () => {
                 </Row>
               </div>
             )}
+            {isTabletOrMobile && <h1>Tablet or mobile</h1>}
           </center>
         </div>
       </div>
