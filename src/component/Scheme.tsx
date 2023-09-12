@@ -6,7 +6,7 @@ interface SchemeProps {
 }
 
 const schemes = schemesData["$scholarship"];
-console.log(schemes);
+
 const Scheme: React.FC<SchemeProps> = (props): JSX.Element => (
   <Card title="Card title" bordered={false} style={{ width: 300 }}>
     <p>Card content</p>

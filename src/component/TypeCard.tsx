@@ -17,8 +17,6 @@ const TypeCard: React.FC<TypeCardProps> = (props): JSX.Element => {
     navigate("/form/" + props.id);
   }
 
-  console.log(window.location.origin + props.url);
-
   return (
     <center>
       <Tooltip title={props.description}>

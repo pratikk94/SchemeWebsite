@@ -19,7 +19,7 @@ let fabricateData: (props: string[]) => string[] = function (
       }
     }
   }
-  console.log(data);
+
   return data;
 };
 
