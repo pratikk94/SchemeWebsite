@@ -4,7 +4,7 @@ import "../CSS/FormPage.css";
 import FormPageScheme from "../component/FormForScheme";
 import FormPageScholarship from "../component/FormForScholarship";
 import FormPageCompensation from "../component/FormForCompenstaion";
-import { Space } from "antd";
+
 import Resources from "./Resources";
 interface FormPageProps {
   type: string;

@@ -6,7 +6,7 @@ const Resources: React.FC = () => (
   <div className="home">
     <div className="container-type" style={{ height: "80vh" }}>
       <center>
-        <Scholarship id="scholarship_1" />
+        <Scholarship id={["scholarship_1"]} />
       </center>
     </div>
   </div>

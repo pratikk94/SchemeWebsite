@@ -1,10 +1,10 @@
 {
-  "$schemes": [
+  "$scholarship": [
     {
       "id": "scholarship_1",
       "name": "Pre Matric Scholarship for OBC Students",
       "award_entitlement": "Scholarship award will be sanctioned to OBC students studying in class IX and X on a full-time basis in Government schools.They would be entitled to Rs. 4000/- annually. ",
-      "gender": "N/A",
+      "gender": "Female",
       "max_income": 250000,
       "residence": "GNTC of Delhi",
       "disability": "N/A",

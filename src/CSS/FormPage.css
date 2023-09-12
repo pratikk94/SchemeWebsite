@@ -5,6 +5,7 @@
   font-size: calc(10px + 2vmin);
   /* color: white; */
   background-image: url("../images/working_2.gif");
+  background-size: 32vw 32vh;
   background-repeat: no-repeat;
   background-position: bottom left;
 }
