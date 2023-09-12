@@ -20,11 +20,11 @@ const onFinishFailed = (errorInfo: any) => {
 };
 
 const FormPageScholarship: React.FC = () => {
-  const [gender, setGender] = useState("Female");
+  const [gender, setGender] = useState("Male");
   const [maxIncome, setMaxIncome] = useState(0);
-  const [residence, setResidence] = useState("All");
-  const [disability, setDisability] = useState("NA");
-  const [reservation, setReservation] = useState("All");
+  const [residence, setResidence] = useState("In Delhi");
+  const [disability, setDisability] = useState("No");
+  const [reservation, setReservation] = useState("SC");
   const [submitPressed, setOnSubmitPressed] = useState(false);
   const [ids, setIds] = useState([""]);
 
@@ -67,11 +67,7 @@ const FormPageScholarship: React.FC = () => {
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
             onSubmitCapture={() => {
-              console.log(gender);
-              console.log(maxIncome);
-              console.log(residence);
-              console.log(reservation);
-              console.log(disability);
+              setIds([]);
               let returnIds = getResources(
                 1,
                 gender,
@@ -106,7 +102,6 @@ const FormPageScholarship: React.FC = () => {
               <InputNumber
                 min={0}
                 max={1000000000}
-                defaultValue={0}
                 onChange={onChangeMaxIncome}
                 value={maxIncome}
               />

@@ -7,7 +7,6 @@ interface SchemeProps {
 }
 
 const scholarship = scholarshipData["$scholarship"];
-console.log(scholarship);
 
 let fabricateData: (props: string[]) => string[] = function (
   props: string[]
@@ -25,7 +24,6 @@ let fabricateData: (props: string[]) => string[] = function (
 };
 
 const Scholarship: React.FC<SchemeProps> = (props): JSX.Element => {
-  console.log(props.id);
   let interimDataArray = fabricateData(props.id);
   return interimDataArray.length === 0 ? (
     <h1>No scheme Found</h1>

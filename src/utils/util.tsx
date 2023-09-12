@@ -6,13 +6,21 @@ function pushIfNotExists<T>(array: T[], item: T): void {
   }
 }
 
+function removeElementsFromArray(array1: any[], array2: any[]): any[] {
+  return array2.filter((item) => !array1.includes(item));
+}
+
+function getCommonElements(array1: any[], array2: any[]): any[] {
+  return array1.filter((item) => array2.includes(item));
+}
+
 export function getResources(
   type: number,
   gender?: string,
   maxFamilyIncome?: number,
   residence?: string,
-  disability?: string,
-  reservation?: string
+  reservation?: string,
+  disability?: string
 ): string[] {
   let ids: string[] = [];
   let dataSet = scholarshipData["$scholarship"];
@@ -22,10 +30,30 @@ export function getResources(
   //     // change this.
   //     dataSet = scholarshipData[];
   //   }
-  console.log(type);
+
+  let reservationArray: string[] = [];
+  let genderArray: string[] = [];
+
   for (let i = 0; i < dataSet.length; i++) {
-    if (dataSet[i]["gender"] === "N/A") ids.push(dataSet[i]["id"]);
-    if (dataSet[i]["gender"] === gender) pushIfNotExists(ids, dataSet[i]["id"]);
+    if (dataSet[i]["reservation"] != "N/A") {
+      if (dataSet[i]["reservation"] === reservation)
+        reservationArray.push(dataSet[i]["id"]);
+    } else {
+      reservationArray.push(dataSet[i]["id"]);
+    }
   }
-  return ids;
+  for (let i = 0; i < dataSet.length; i++) {
+    if (dataSet[i]["gender"] != "N/A") {
+      if (dataSet[i]["gender"] === gender) genderArray.push(dataSet[i]["id"]);
+    } else {
+      genderArray.push(dataSet[i]["id"]);
+    }
+  }
+
+  let commonElementArray: string[] = getCommonElements(
+    genderArray,
+    reservationArray
+  );
+
+  return commonElementArray;
 }
