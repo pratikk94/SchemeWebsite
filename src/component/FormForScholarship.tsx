@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Card, Form, InputNumber, Radio } from "antd";
+import { Button, Card, Form, InputNumber, Radio, Row } from "antd";
 import "../CSS/FormPageScholarship.css";
 import Scholarship from "./Scholarship";
 import { getResources } from "../utils/util";
@@ -54,75 +54,80 @@ const FormPageScholarship: React.FC = () => {
   };
 
   return (
-    <div className="FormPageSchlarship">
-      <div className="container-type" style={{ height: "80vh" }}>
-        <Card className="FormPageSchlarshipCard">
-          <Form
-            name="basic"
-            labelCol={{ span: 6 }}
-            wrapperCol={{ span: 20 }}
-            style={{
-              maxWidth: "32vw",
-            }}
-            onFinish={onFinish}
-            onFinishFailed={onFinishFailed}
-            onSubmitCapture={() => {
-              setIds([]);
-              let returnIds = getResources(
-                2,
-                reservation,
-                gender,
-                maxIncome,
-                residence,
-                disability
-              );
-              if (returnIds.length !== 0) setIds(returnIds);
-              setOnSubmitPressed(true);
-            }}
-            autoComplete="off"
-          >
-            <Form.Item label="Gender">
+    <>
+      <Card>
+        <Form
+          name="scholarship-form"
+          onFinish={onFinish}
+          onFinishFailed={onFinishFailed}
+          labelCol={{ span: 6 }} wrapperCol={{ span: 18, offset: 0 }}
+          layout="horizontal"
+          style={{ maxWidth: 600 }}
+          onSubmitCapture={() => {
+            setIds([]);
+            let returnIds = getResources(
+              2,
+              reservation,
+              gender,
+              maxIncome,
+              residence,
+              disability
+            );
+            if (returnIds.length !== 0) setIds(returnIds);
+            setOnSubmitPressed(true);
+          }}
+          autoComplete="off"
+        >
+          <Form.Item label="Gender" >
+            <Row justify={"start"}>
               <Radio.Group onChange={onChangeGender} value={gender}>
                 <Radio value="Male"> Male </Radio>
                 <Radio value="Female"> Female </Radio>
                 <Radio value="Other"> Other </Radio>
               </Radio.Group>
-            </Form.Item>
-
-            <Form.Item<FieldType>
-              label="Max family income"
-              name="maxFamilyIncome"
-              rules={[
-                {
-                  required: true,
-                  message: "Please input your family income!",
-                },
-              ]}
-            >
+            </Row>
+          </Form.Item>
+          <Form.Item
+            label="Max family income"
+            name="maxFamilyIncome"
+            rules={[
+              {
+                required: true,
+                message: "Please input your family income!",
+              },
+            ]}
+          >
+            <Row justify={"start"}>
               <InputNumber
                 min={0}
                 max={1000000000}
                 onChange={onChangeMaxIncome}
                 value={maxIncome}
               />
-            </Form.Item>
+            </Row>
+          </Form.Item>
 
-            <Form.Item label="Residence">
+          <Form.Item label="Residence">
+            <Row justify={"start"}>
               <Radio.Group onChange={onChangeResidence} value={residence}>
                 <Radio value="In delhi"> In Delhi </Radio>
                 <Radio value="In state/UT"> In State/UT </Radio>
                 <Radio value="Other"> Other </Radio>
               </Radio.Group>
-            </Form.Item>
+            </Row>
+          </Form.Item>
 
-            <Form.Item label="Disability">
+          <Form.Item label="Disability">
+            <Row justify={"start"}>
               <Radio.Group onChange={onChangeDisability} value={disability}>
                 <Radio value="Yes"> Yes </Radio>
                 <Radio value="No"> No </Radio>
               </Radio.Group>
-            </Form.Item>
+            </Row>
+          </Form.Item>
 
-            <Form.Item label="Reservation">
+          <Form.Item label="Reservation">
+            <Row justify={"start"}>
               <Radio.Group onChange={onChangeReservation} value={reservation}>
                 <Radio value="SC"> SC </Radio>
                 <Radio value="ST"> ST </Radio>
@@ -130,18 +135,18 @@ const FormPageScholarship: React.FC = () => {
                 <Radio value="Other"> Other </Radio>
                 <Radio value="Minority"> Minorities </Radio>
               </Radio.Group>
-            </Form.Item>
+            </Row>
+          </Form.Item>
 
-            <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-              <Button type="primary" htmlType="submit">
-                Submit
-              </Button>
-            </Form.Item>
-          </Form>
-        </Card>
-        {submitPressed && <Scholarship id={ids} />}
-      </div>
-    </div>
+          <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Button type="primary" htmlType="submit">
+              Submit
+            </Button>
+          </Form.Item>
+        </Form>
+      </Card>
+      {submitPressed && <Scholarship id={ids} />}
+    </>
   );
 };
 export default FormPageScholarship;
