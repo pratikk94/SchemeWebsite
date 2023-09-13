@@ -6,7 +6,7 @@ interface SchemeProps {
   id: string[];
 }
 
-const scholarship = scholarshipData["$scholarship"];
+const scholarship = scholarshipData["scholarship"];
 
 let fabricateData: (props: string[]) => string[] = function (
   props: string[]

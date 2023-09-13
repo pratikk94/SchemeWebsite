@@ -69,11 +69,11 @@ const FormPageScholarship: React.FC = () => {
             onSubmitCapture={() => {
               setIds([]);
               let returnIds = getResources(
-                1,
+                2,
+                reservation,
                 gender,
                 maxIncome,
                 residence,
-                reservation,
                 disability
               );
               if (returnIds.length !== 0) setIds(returnIds);
@@ -128,6 +128,7 @@ const FormPageScholarship: React.FC = () => {
                 <Radio value="ST"> ST </Radio>
                 <Radio value="OBC"> OBC </Radio>
                 <Radio value="Other"> Other </Radio>
+                <Radio value="Minority"> Minorities </Radio>
               </Radio.Group>
             </Form.Item>
 
