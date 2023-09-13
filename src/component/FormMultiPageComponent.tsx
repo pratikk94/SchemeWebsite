@@ -29,14 +29,14 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     setGender(e);
   };
 
-  const onChangeMaxIncome = (e: any) => {
+  const onChangeMaxIncome = (e: number) => {
     console.log("Max income :", e);
     setMaxIncome(e);
   };
 
-  const onChangeResidence = (e: any) => {
-    console.log("radio checked", e.target.value);
-    setResidence(e.target.value);
+  const onChangeResidence = (e: string) => {
+    console.log("radio checked", e);
+    setResidence(e);
   };
 
   const onChangeDisability = (e: any) => {

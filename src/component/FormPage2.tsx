@@ -18,8 +18,8 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
   };
 
   const onChangeMaxFamilyIncome = (e: any) => {
-    setMaxIncome(e.target.value);
-    props.onChangeMaxFamilyIncome(e.target.value);
+    setMaxIncome(e);
+    props.onChangeMaxFamilyIncome(e);
   };
 
   const options = [
@@ -29,8 +29,8 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
       imageUrl: "/male.png",
     },
     {
-      value: "Out of delhi",
-      label: "Out of delhi",
+      value: "Out of Delhi",
+      label: "Out of Delhi",
       imageUrl: "/female.png",
     },
   ];
