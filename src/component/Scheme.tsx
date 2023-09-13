@@ -5,26 +5,31 @@ import parse from "html-react-parser";
 import Collapsible from "./Collapsible";
 interface SchemeProps {
   id: string[];
+  type: number;
 }
 
-const scheme = schemeData["scheme"];
-
-let fabricateData: (props: string[]) => string[] = function (
-  props: string[]
-): string[] {
-  let data: string[] = [];
-  for (let j: number = 0; j < props.length; j++) {
-    for (let i: number = 0; i < scheme.length; i++) {
-      if (scheme[i]["id"] === props[j]) {
-        data.push(JSON.stringify(scheme[i]));
+const Scheme: React.FC<SchemeProps> = (props): JSX.Element => {
+  let schemeDB: any;
+  if (props.type === 1) {
+    schemeDB = schemeData["scheme"];
+  } else {
+    schemeDB = schemeData["scholarship"];
+  }
+  let fabricateData: (props: string[]) => string[] = function (
+    props: string[]
+  ): string[] {
+    let data: string[] = [];
+    for (let j: number = 0; j < props.length; j++) {
+      for (let i: number = 0; i < schemeDB.length; i++) {
+        if (schemeDB[i]["id"] === props[j]) {
+          data.push(JSON.stringify(schemeDB[i]));
+        }
       }
     }
-  }
-  console.log(data);
-  return data;
-};
+    console.log(data);
+    return data;
+  };
 
-const Scheme: React.FC<SchemeProps> = (props): JSX.Element => {
   let interimDataArray = fabricateData(props.id);
   return interimDataArray.length === 0 ? (
     <h1>No scheme Found</h1>

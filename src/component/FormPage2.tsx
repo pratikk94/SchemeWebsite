@@ -10,7 +10,7 @@ interface FormPage2Props {
 
 const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
   // Form fields for Step 1
-  const [selectedOption, setSelectedOption] = useState<string>("option1");
+  const [selectedOption, setSelectedOption] = useState<string>("Delhi");
   const [maxIncome, setMaxIncome] = useState(0);
   const handleOptionChange = (value: string) => {
     setSelectedOption(value);

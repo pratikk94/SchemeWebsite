@@ -39,14 +39,14 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     setResidence(e);
   };
 
-  const onChangeDisability = (e: any) => {
-    console.log("radio checked", e.target.value);
-    setDisability(e.target.value);
+  const onChangeDisability = (e: string) => {
+    console.log("radio checked", e);
+    setDisability(e);
   };
 
-  const onChangeReservation = (e: any) => {
-    console.log("radio checked", e.target.value);
-    setReservation(e.target.value);
+  const onChangeReservation = (e: string) => {
+    console.log("radio checked", e);
+    setReservation(e);
   };
 
   const onChangeDate = (date: number) => {
@@ -75,7 +75,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     console.log("submit pressed");
     console.log(props.type);
     console.log(gender);
-    setIds([""]);
+    setIds((prevIds) => []);
     let returnIds = getResources(
       props.type,
       reservation,
@@ -114,6 +114,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
           <FormPage3
             onChangeDisability={onChangeDisability}
             onChangeReservation={onChangeReservation}
+            reservation={reservation}
           />
         );
       default:
@@ -174,7 +175,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
           )}
         </div>
       </Card>
-      {currentPage === 4 && <Scheme id={ids} />}
+      {currentPage === 4 && <Scheme type={props.type} id={ids} />}
     </div>
   );
 };

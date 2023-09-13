@@ -6,6 +6,7 @@ import RadioButtonWithImages from "./RadioButtonWithImages";
 interface FormPage3Props {
   onChangeReservation: (data: string) => void;
   onChangeDisability: (data: string) => void;
+  reservation: string;
 }
 
 const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
@@ -13,7 +14,7 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
   const [selectedOptionDisability, setSelectedOptionDisability] =
     useState<string>("No");
   const [selectedOptionReservation, setSelectedOptionReservation] =
-    useState<string>("SC");
+    useState<string>(props.reservation);
 
   const handleOptionChangeDisability = (value: string) => {
     setSelectedOptionDisability(value);
