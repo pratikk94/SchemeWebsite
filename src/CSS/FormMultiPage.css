@@ -1,0 +1,21 @@
+/* Style the hidden radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the labels to look like radio buttons */
+label {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* Makes it a circle */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Style the labels when the radio button is checked */
+input[type="radio"]:checked + label {
+  background-color: #007bff; /* Change the background color for checked radio buttons */
+  color: #fff; /* Change text color for better contrast */
+  border-color: #007bff; /* Change border color for checked radio buttons */
+}

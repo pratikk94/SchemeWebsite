@@ -31,6 +31,7 @@
   background-image: url("../images/landing.gif");
   background-repeat: no-repeat;
   background-position: bottom right;
+  background-size: 20vw 32vh;
 }
 
 .App-link {

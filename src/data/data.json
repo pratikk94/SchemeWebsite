@@ -3,6 +3,7 @@
     {
       "id": "scheme_0001",
       "name": "Ladli Scheme",
+      "type": ["Delhi"],
       "award_entitlement": "Under the scheme financial assistance is provided in the form of term deposits - Rs. 11,000/- if GIRL CHILD is born in hospital or Rs. 10,000/- if GIRL CHILD is born at home at the time of registration and Rs.5,000/- each in further five milestones i.e., Class I, VI, IX, XI & XII.<br/>Maturity amount at the end of lock-in-period will vary depending on the stage at which each girl child enters the scheme and registers under it. The girls registered under the scheme shall file a maturity claim after:<ol><li>Turning 18 years old and passing 10th standard or </li><li>Completing 12th standard </li></ol>The maturity amount will depend on the stage at which the child enrolled in the scheme.<br/>Applicable for 2 GIRL CHILD per parents only",
       "min_age": 0,
       "max_age": 18,
@@ -15,12 +16,30 @@
       "document_required": "<ol><li>Duly filled Application Form</li><li>3 years residence proof in Delhi prior to registration</li><li>Income Certificate/Affidavit showing annual income of the family</li><li>Birth certificate of the girl child issued by MCD</li><li>Group photo of parents with the girl child.</li><li>Caste certificate in case of SC/ST/OBC.</li><li>Copy of Aadhar Card of the parents and the child, if available.</li><li>ank account details</li></ol>",
       "application_link": "Apply at <a href='http://www.wcddel.in/streesakti_3Ladli.html'>http://www.wcddel.in/streesakti_3Ladli.html</a><br/>Enrolment in scheme is also done by schools and DWCD District Offices",
       "grievance_redressal": "Helpline: 011-23832588, 1800229090 <br/>Complaints to be sent to: District Office of the DWCD, Delhi Government. You can find the list here. <br/>Call Delhi Ladli Scheme Toll free number: 011-23832588<br/>OR visit any 2 of the district offices:<br/><ol><li>District North,<br/>20-21, Gulabi Bagh Shopping Complex (Near Super Bazar) <br/>Gulabi Bagh, <br/>Delhi - 110007, <br/>Ph No:- 011- 23645370</li><li>District South,<br/>Kasturba Niketan (Near Jal Vihar Terminal) <br/>Lajpat Nagar-II, <br/>Delhi - 110024, <br/>Ph No:- 011 - 29829812*</li><li>District East, <br/>Silai Kadhai Kendra, Block-10 (Near Shamshan Ghat) <br/>Geeta Colony, <br/>Delhi - 110031, <br/>Ph No:- 011- 22073012*</li><li>District West, <br/>Nirmal Chhaya Complex (Near Hari Nagar Bus Depot) <br/>Jail Road Hari Nagar, <br/>Delhi - 110064, <br/>Ph No:- 28520952 </li><li>District North East, <br/<Sanskar Ashram Complex (Near GTB Hospital Gate no. 7), <br/>GTB Enclave, Dilshad Garden, <br/>Delhi - 110093, <br/>Ph No:-011- 22127741*</li><li> District North West - I, <br/>Silai Kendra, <br/>F Block Mangol Puri, <br/>Delhi - 110083, <br/>Ph No:-011- 27915811* </li><li>District North West - II, <br/>District Office Room No.4, Sewa Kutir Complex, <br/>Kingsway Camp, <br/>Delhi - 110009, <br/>Ph No:-011- 27655502 </li><li>District South West, 23-24, <br/>Udhyog Sadan (Behind Qutub Hotel) <br/>Qutub Instituional Area, <br/>Delhi - 110067, <br/>Ph No:-011- 26534151 </li><li>District Central, <br/>GLNS Complex (Behind Firozeshah Kotla Stadium), <br/> Delhi Gate, <br/>Delhi - 110002, <br/>Ph No:-011- 23392480</li><li>District New Delhi, <br/>Flat No.11 First Floor, Block No. 02, <br/>Shankar Market, <br/>Connaught Place, <br/>New Delhi - 110001, <br/>Ph No:-011- 23411094*.</li><ol/>"
+    },
+    {
+      "id": "scheme_0002",
+      "name": "Delhi Pension Scheme for Women in Distress (Widow Pension)",
+      "type": ["Delhi"],
+      "award_entitlement": "This is a welfare scheme to provide social security by way of financial assistance to widows, divorced, separated, abandoned, deserted or destitute women. Under the scheme, financial assistance of Rs 2500/- per month is provided",
+      "min_age": 0,
+      "max_age": 60,
+      "gender": ["Female"],
+      "max_income": 100000,
+      "residence": ["GNTC of Delhi"],
+      "disability": "N/A",
+      "reservation": ["SC", "ST", "OBC", "Other", "Minority"],
+      "eligibility": "<ol><li>Applicant should have the Aadhar number linked with any bank in NCT of Delhi</li><li>Must not be receiving any pension/ financial assistance from Central Govt./ State Govt./MCD or NDMC and other Governmental/local bodies or any other source for this purpose.</li></ol>",
+      "document_required": "<ol><li>Aadhar Card.</li><li>Age proof.<ul><li>Birth Certificate issued by MCD/Registrar-Births & Deaths</li><li>School leaving certificate of class last attended</li><li>Matriculation/10th Certificate</li><li>Hospital discharge slip at the time of birth of the child</li><li>Voter ID card</li><li>PAN card</li><li>Driving License</li><li>Aadhar Card</li><li>Passport</li><li>Age assessment medical certificate</li><li>Any document issued by the Government/Govt. recognized body stating date and place of birth</li></ul></li><li>Proof of Death of Husband/ Divorce decree/ Separation paper/ Divorce proceedings/ any other document which establishes abandoned/separation.</li><li>Residence proof of last 5 year residence in Delhi.*<ul><li>Voter ID card</li><li>Pan card</li><li>Ration Card</li><li>Driving License</li><li>Aadhar Card</li><li>Passport</li><li>Insurance Policy Documents</li><li>Electricity Bill/ Water Bill/ Telephone Bill/ Gas Connection receipt</li><li>Bank passbook of the Bank Account having same address of the applicant.</li><li>Property Documents.</li><li>Rent agreements covering last 5 year.</li><li>Any other document which clearly shows at least 5 year of residence in Delhi </li></ul></li><li>Bank account number (Single –operated) in Delhi only which is linked with Aadhar.<li>Bank passbook / statement for the last one year.</li><li>In case of SC/ST applicant, certificate in the name of the applicant issued by competent authority. In case of minority applicants self-declaration of the religion of the applicant duly verified from the religious institution has to be submitted.</li><li>One passport size photo of applicant.</li><li>Income self-declaration (Format given on the portal can be used) </li></ol><br/>*In case ‘No Documentary Evidence’ is available with the applicant with regard to proof of residence, the following shall be admissible:<ol><li>Applicant may produce any of the two witnesses from the following list, in front of the District, WCD Officer/any official deputed by the DWCDO for the saidpurpose.<ol><li>President or General Secretary of RWA of the locality</li><li>Registered shopkeepers/Registered doctors working in the locality (with their registration numbers)</li><li>Two neighbors of the applicant with their contact details.</li><li>Registered women SHGs’/ Mahila Mandals’ President or General Secretary/authorized signatory</li><li>ICDS Supervisors/ ASHA workers of the area</li><li>Gazetted Officer of the Delhi Govt /Central.</li><li>In case the applicants are employed in households/shops etc a letter from the employer about the years the applicant has been working with them.</li></ol></li><li>Along with the witness’s statement, the relevant document for the photo identity proof, residence and length of stay shall also have to be appended with the application clearly showing that the witnesses themselves have been around in the same area for the number of years they claim to have known the applicant. Also, the witness will need to furnish their contact details as well. In doubtful cases, DWCDO can get a home visit done of these witnesses as well as the applicant to verify their claim. </li></ol>",
+      "application_link": "Apply at <a href='https://edistrict.delhigovt.nic.in/eDownload/FaqForm/Faq_2605.pdf'>https://edistrict.delhigovt.nic.in/eDownload/FaqForm/Faq_2605.pdf</a>",
+      "grievance_redressal": "Call Toll free number: 011-20832588 <br/> OR visit your nearest DCPU"
     }
   ],
   "scholarship": [
     {
       "id": "scholarship_0001",
       "name": "Pre Matric Scholarship for OBC Students",
+      "type": ["Delhi", "Central"],
       "award_entitlement": "Scholarship award will be sanctioned to OBC students studying in class IX and X on a full-time basis in Government schools.They would be entitled to Rs. 4000/- annually. ",
       "min_age": 0,
       "max_age": 200,
@@ -37,6 +56,7 @@
     {
       "id": "scholarship_0002",
       "name": "Pre Matric Scholarship for SC Students",
+      "type": ["Delhi", "Central"],
       "award_entitlement": "This is Centrally sponsored Scheme under the Ministry of Social Justice and Empowerment.Government of India Per annum scholarship of Rs. 3500/- for day scholars and Rs. 7000/- for hostellers.",
       "min_age": 0,
       "max_age": 200,
@@ -53,6 +73,7 @@
     {
       "id": "scholarship_0010",
       "name": "Begum Hazarat Mahal National Scholarship",
+      "type": ["Delhi", "Central"],
       "award_entitlement": "<ol><li>Minority community girls student for Class 9th to 12th student belonging to National minority communities.</li><li>Rupees 5000 for class 9th and 10th Rupees 6000 for class 11th and 12th</li></ol> ",
       "min_age": 0,
       "max_age": 200,

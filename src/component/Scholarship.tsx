@@ -51,7 +51,7 @@ const Scholarship: React.FC<SchemeProps> = (props): JSX.Element => {
           <p>{JSON.parse(interimdata)["residence"]}</p>
           <h3>Disability:</h3>
           <p>{JSON.parse(interimdata)["disability"]}</p>
-          <h3>Disability:</h3>
+          <h3>Reservation:</h3>
           <p>{JSON.parse(interimdata)["reservation"]}</p>
           <h3>eligibility:</h3>
           <p>{parse(JSON.parse(interimdata)["eligibility"])}</p>

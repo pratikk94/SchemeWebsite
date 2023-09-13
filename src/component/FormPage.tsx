@@ -10,7 +10,6 @@ import {
   Row,
 } from "antd";
 import "../CSS/FormPageScholarship.css";
-import Scheme from "./Scheme";
 import type { DatePickerProps } from "antd/es/date-picker";
 import { getResources } from "../utils/util";
 
@@ -30,13 +29,22 @@ const onFinishFailed = (errorInfo: any) => {
   console.log("Failed:", errorInfo);
 };
 
-const FormPageScholarship: React.FC = () => {
-  const [gender, setGender] = useState("Male");
-  const [maxIncome, setMaxIncome] = useState(0);
-  const [residence, setResidence] = useState("In Delhi");
-  const [disability, setDisability] = useState("No");
-  const [reservation, setReservation] = useState("SC");
-  const [submitPressed, setOnSubmitPressed] = useState(false);
+interface FormPageProps {
+  type: number;
+  gender: string;
+  maxFamilyIncome: number;
+  residence: string;
+  disability: string;
+  reservation: string;
+}
+
+const FormPage: React.FC<FormPageProps> = (props): JSX.Element => {
+  const [gender, setGender] = useState(props.gender);
+  const [maxIncome, setMaxIncome] = useState(props.maxFamilyIncome);
+  const [residence, setResidence] = useState(props.residence);
+  const [disability, setDisability] = useState(props.disability);
+  const [reservation, setReservation] = useState(props.reservation);
+
   const [ids, setIds] = useState([""]);
   const [age, setAge] = useState(0);
   const onChangeGender = (e: any) => {
@@ -88,8 +96,7 @@ const FormPageScholarship: React.FC = () => {
             onSubmitCapture={() => {
               setIds([]);
               let returnIds = getResources(
-                1,
-
+                props.type,
                 reservation,
                 gender,
                 maxIncome,
@@ -97,8 +104,8 @@ const FormPageScholarship: React.FC = () => {
                 disability,
                 age
               );
+
               if (returnIds.length !== 0) setIds(returnIds);
-              setOnSubmitPressed(true);
             }}
             autoComplete="off"
           >
@@ -180,9 +187,8 @@ const FormPageScholarship: React.FC = () => {
             </Form.Item>
           </Form>
         </Card>
-        {submitPressed && <Scheme id={ids} />}
       </div>
     </div>
   );
 };
-export default FormPageScholarship;
+export default FormPage;

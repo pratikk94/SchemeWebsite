@@ -1,0 +1,21 @@
+/* RadioButton.css */
+.radio-button-label {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.radio-button-label:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.radio-button-label.selected {
+  background-color: #ffd8b2; /* Change background color when selected */
+  color: #000; /* Change text color for better contrast */
+}
+
+/* Hide the actual radio input */
+input[type="radio"] {
+  display: none;
+}
