@@ -20,7 +20,6 @@ const TypeCard: React.FC<TypeCardProps> = (props): JSX.Element => {
   return (
     <center>
       <Tooltip title={props.description}>
-        <span>{props.description}</span>
         <Card
           hoverable
           onClick={handleClick}

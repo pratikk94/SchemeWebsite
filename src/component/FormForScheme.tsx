@@ -7,6 +7,7 @@ import {
   Radio,
   DatePicker,
   Space,
+  Row,
 } from "antd";
 import "../CSS/FormPageScholarship.css";
 import Scheme from "./Scheme";
@@ -102,11 +103,13 @@ const FormPageScholarship: React.FC = () => {
             autoComplete="off"
           >
             <Form.Item label="Gender">
-              <Radio.Group onChange={onChangeGender} value={gender}>
-                <Radio value="Male"> Male </Radio>
-                <Radio value="Female"> Female </Radio>
-                <Radio value="Other"> Other </Radio>
-              </Radio.Group>
+              <Row justify={"start"}>
+                <Radio.Group onChange={onChangeGender} value={gender}>
+                  <Radio value="Male"> Male </Radio>
+                  <Radio value="Female"> Female </Radio>
+                  <Radio value="Other"> Other </Radio>
+                </Radio.Group>
+              </Row>
             </Form.Item>
 
             <Form.Item<FieldType>
@@ -119,49 +122,61 @@ const FormPageScholarship: React.FC = () => {
                 },
               ]}
             >
-              <InputNumber
-                min={0}
-                max={1000000000}
-                onChange={onChangeMaxIncome}
-                value={maxIncome}
-              />
+              <Row justify={"start"}>
+                <InputNumber
+                  min={0}
+                  max={1000000000}
+                  onChange={onChangeMaxIncome}
+                  value={maxIncome}
+                />
+              </Row>
             </Form.Item>
 
             <Form.Item label="Residence">
-              <Radio.Group onChange={onChangeResidence} value={residence}>
-                <Radio value="In delhi"> In Delhi </Radio>
-                <Radio value="In state/UT"> In State/UT </Radio>
-                <Radio value="Other"> Other </Radio>
-              </Radio.Group>
+              <Row justify={"start"}>
+                <Radio.Group onChange={onChangeResidence} value={residence}>
+                  <Radio value="In delhi"> In Delhi </Radio>
+                  <Radio value="In state/UT"> In State/UT </Radio>
+                  <Radio value="Other"> Other </Radio>
+                </Radio.Group>
+              </Row>
             </Form.Item>
 
             <Form.Item label="Disability">
-              <Radio.Group onChange={onChangeDisability} value={disability}>
-                <Radio value="Yes"> Yes </Radio>
-                <Radio value="No"> No </Radio>
-              </Radio.Group>
+              <Row justify={"start"}>
+                <Radio.Group onChange={onChangeDisability} value={disability}>
+                  <Radio value="Yes"> Yes </Radio>
+                  <Radio value="No"> No </Radio>
+                </Radio.Group>
+              </Row>
             </Form.Item>
 
             <Form.Item label="DateOfBirth">
-              <Space direction="vertical" size={12}>
-                <DatePicker onChange={onChangeDate} />
-              </Space>
+              <Row justify={"start"}>
+                <Space direction="vertical" size={12}>
+                  <DatePicker onChange={onChangeDate} />
+                </Space>
+              </Row>
             </Form.Item>
 
             <Form.Item label="Reservation">
-              <Radio.Group onChange={onChangeReservation} value={reservation}>
-                <Radio value="SC"> SC </Radio>
-                <Radio value="ST"> ST </Radio>
-                <Radio value="OBC"> OBC </Radio>
-                <Radio value="Other"> Other </Radio>
-                <Radio value="Minority"> Minorities </Radio>
-              </Radio.Group>
+              <Row justify={"start"}>
+                <Radio.Group onChange={onChangeReservation} value={reservation}>
+                  <Radio value="SC"> SC </Radio>
+                  <Radio value="ST"> ST </Radio>
+                  <Radio value="OBC"> OBC </Radio>
+                  <Radio value="Other"> Other </Radio>
+                  <Radio value="Minority"> Minorities </Radio>
+                </Radio.Group>
+              </Row>
             </Form.Item>
 
             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-              <Button type="primary" htmlType="submit">
-                Submit
-              </Button>
+              <Row justify={"start"}>
+                <Button type="primary" htmlType="submit">
+                  Submit
+                </Button>
+              </Row>
             </Form.Item>
           </Form>
         </Card>
