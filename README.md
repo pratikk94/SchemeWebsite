@@ -5,8 +5,8 @@ Add tour from antd
    Gender (Functionality Done, UI pending)
    Date (Functionality Done, UI pending)
    Form 2:
-   Residence (Functionality pending, UI pending)
-   Max family income (Functionality pending, UI pending)
+   Residence (Functionality Done, UI pending)
+   Max family income (Functionality Done, UI pending)
    Form 3:
    Reservation (Functionality pending, UI pending)
    Disability (Functionality pending, UI pending)

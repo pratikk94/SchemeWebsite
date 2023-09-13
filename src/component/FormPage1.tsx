@@ -92,6 +92,7 @@ const FormPage1: React.FC<FormPage1Props> = (props): JSX.Element => {
           options={options}
           selectedOption={selectedOption}
           onChange={handleOptionChange}
+          size={8}
         />
         <Row>
           <h2

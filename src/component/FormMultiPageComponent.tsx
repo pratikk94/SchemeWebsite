@@ -110,7 +110,12 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
           />
         );
       case 3:
-        return <FormPage3 />;
+        return (
+          <FormPage3
+            onChangeDisability={onChangeDisability}
+            onChangeReservation={onChangeReservation}
+          />
+        );
       default:
         return null;
     }

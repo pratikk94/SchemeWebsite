@@ -53,6 +53,7 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
 
         <RadioButtonWithImages
           options={options}
+          size={8}
           selectedOption={selectedOption}
           onChange={handleOptionChange}
         />

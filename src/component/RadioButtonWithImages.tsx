@@ -11,12 +11,14 @@ interface RadioButtonProps {
   options: RadioButtonOption[];
   selectedOption: string;
   onChange: (value: string) => void;
+  size: number;
 }
 
 const RadioButtonWithImages: React.FC<RadioButtonProps> = ({
   options,
   selectedOption,
   onChange,
+  size,
 }) => {
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedValue = event.target.value;
@@ -30,7 +32,7 @@ const RadioButtonWithImages: React.FC<RadioButtonProps> = ({
   return (
     <Row>
       {options.map((option) => (
-        <Col span={8}>
+        <Col span={size}>
           <label
             key={option.value}
             className={`radio-button-label ${

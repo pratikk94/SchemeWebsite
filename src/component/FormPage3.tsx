@@ -1,12 +1,112 @@
 // Step1.tsx
-import React from "react";
+import { DatePicker, DatePickerProps, InputNumber, Row } from "antd";
+import React, { useState } from "react";
+import RadioButtonWithImages from "./RadioButtonWithImages";
 
-const FormPage3: React.FC = () => {
+interface FormPage3Props {
+  onChangeReservation: (data: string) => void;
+  onChangeDisability: (data: string) => void;
+}
+
+const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
   // Form fields for Step 1
+  const [selectedOptionDisability, setSelectedOptionDisability] =
+    useState<string>("No");
+  const [selectedOptionReservation, setSelectedOptionReservation] =
+    useState<string>("SC");
+
+  const handleOptionChangeDisability = (value: string) => {
+    setSelectedOptionDisability(value);
+    props.onChangeDisability(value);
+  };
+
+  const handleOptionChangeReservation = (value: string) => {
+    setSelectedOptionReservation(value);
+    props.onChangeReservation(value);
+  };
+
+  const optionsDisability = [
+    {
+      value: "Yes",
+      label: "Yes",
+      imageUrl: "/male.png",
+    },
+    {
+      value: "No",
+      label: "No",
+      imageUrl: "/female.png",
+    },
+  ];
+
+  const optionsReservation = [
+    {
+      value: "SC",
+      label: "SC",
+      imageUrl: "/male.png",
+    },
+    {
+      value: "ST",
+      label: "ST",
+      imageUrl: "/female.png",
+    },
+
+    {
+      value: "OBC",
+      label: "OBC",
+      imageUrl: "/female.png",
+    },
+    {
+      value: "Minortiy",
+      label: "Minority",
+      imageUrl: "/male.png",
+    },
+  ];
 
   return (
     <div>
-      <p>Third page</p>
+      <h3
+        style={{ textAlign: "center", color: "#964B00", marginBottom: "8vh" }}
+      >
+        Enter basic information
+      </h3>
+
+      <div>
+        <Row>
+          <h2
+            style={{ textAlign: "left", color: "#964B00", marginBottom: "2vh" }}
+          >
+            Are you specially abled?
+          </h2>
+        </Row>
+
+        <RadioButtonWithImages
+          size={12}
+          options={optionsDisability}
+          selectedOption={selectedOptionDisability}
+          onChange={handleOptionChangeDisability}
+        />
+        <Row>
+          <h2
+            style={{ textAlign: "left", color: "#964B00", marginBottom: "2vh" }}
+          >
+            Are you amongst the following?
+          </h2>
+        </Row>
+        <Row justify="start">
+          <RadioButtonWithImages
+            size={6}
+            options={optionsReservation}
+            selectedOption={selectedOptionReservation}
+            onChange={handleOptionChangeReservation}
+          />
+        </Row>
+        <br />
+        <p>
+          *Above two fields are optional and can be skipped for next options.
+          <br />
+          Although we recommend to fill in all the fields for accurate results
+        </p>
+      </div>
     </div>
   );
 };
