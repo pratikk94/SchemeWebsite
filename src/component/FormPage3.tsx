@@ -1,5 +1,5 @@
 // Step1.tsx
-import { DatePicker, DatePickerProps, InputNumber, Row } from "antd";
+import { Row } from "antd";
 import React, { useState } from "react";
 import RadioButtonWithImages from "./RadioButtonWithImages";
 import { useMediaQuery } from "react-responsive";
@@ -17,7 +17,7 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
   const [selectedOptionReservation, setSelectedOptionReservation] =
     useState<string>(props.reservation);
 
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  //const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });

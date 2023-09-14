@@ -28,13 +28,13 @@ const FormPage1: React.FC<FormPage1Props> = (props): JSX.Element => {
     return value;
   };
 
-  // Date formatter function
-  const dateFormatter = (value: dayjs.Dayjs | null): string => {
-    return value ? value.format(dateFormat) : "";
-  };
+  //  Date formatter function
+  //  const dateFormatter = (value: dayjs.Dayjs | null): string => {
+  //     return value ? value.format(dateFormat) : "";
+  //   };
 
   let date;
-  if (props.date != "") date = dayjs(props.date, "YYYY/MM/DD");
+  if (props.date !== "") date = dayjs(props.date, "YYYY/MM/DD");
   else date = dayjs(new Date().toLocaleDateString(), "DD/MM?/YYYY");
   console.log(date);
   const [selectedDate, setSelectedDate] = useState<dayjs.Dayjs | null>(date);

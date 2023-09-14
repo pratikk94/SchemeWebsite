@@ -31,7 +31,7 @@ const RadioButtonWithImages: React.FC<RadioButtonProps> = ({
     useState(selectedOption);
   console.log(selectedRadioButtonValue);
 
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  //const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });

@@ -1,5 +1,5 @@
 // Step1.tsx
-import { DatePicker, DatePickerProps, InputNumber, Row } from "antd";
+import { InputNumber, Row } from "antd";
 import React, { useState } from "react";
 import RadioButtonWithImages from "./RadioButtonWithImages";
 

@@ -18,7 +18,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  //const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   const [currentPage, setCurrentPage] = useState(1);
   const [gender, setGender] = useState("Female");
@@ -63,7 +63,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     setDate(dateString);
   };
 
-  const [formData, setFormData] = useState({});
+  //const [formData, setFormData] = useState({});
 
   const handleNext = () => {
     setCurrentPage((prevPage) => prevPage + 1);
@@ -165,7 +165,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
             >
               Next
             </button>
-          ) : currentPage != 4 ? (
+          ) : currentPage !== 4 ? (
             <button
               type="submit"
               onClick={handleSubmit}
