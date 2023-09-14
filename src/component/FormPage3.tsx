@@ -57,7 +57,7 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
       imageUrl: "/female.png",
     },
     {
-      value: "Minortiy",
+      value: "Minority",
       label: "Minority",
       imageUrl: "/male.png",
     },

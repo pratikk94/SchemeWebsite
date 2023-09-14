@@ -49,7 +49,7 @@ const Scheme: React.FC<SchemeProps> = (props): JSX.Element => {
             }}
           >
             <h3>Award/Entitlement:</h3>
-            <p>{JSON.parse(interimdata)["award_entitlement"]}</p>
+            <p>{parse(JSON.parse(interimdata)["award_entitlement"])}</p>
             <h3>Gender:</h3>
             <p>{JSON.parse(interimdata)["gender"]}</p>
             <h3>Max family income:</h3>
@@ -58,7 +58,7 @@ const Scheme: React.FC<SchemeProps> = (props): JSX.Element => {
             <p>{JSON.parse(interimdata)["residence"]}</p>
             <h3>Disability:</h3>
             <p>{JSON.parse(interimdata)["disability"]}</p>
-            <h3>eligibility:</h3>
+            <h3>Eligibility:</h3>
             <p>{parse(JSON.parse(interimdata)["eligibility"])}</p>
             <h3>Document required:</h3>
             <p>{parse(JSON.parse(interimdata)["document_required"])}</p>
