@@ -6,6 +6,7 @@ import FormPage3 from "./FormPage3";
 import { getResources } from "../utils/util";
 import { Card } from "antd";
 import Scheme from "./Scheme";
+import { useMediaQuery } from "react-responsive";
 
 interface FormMultiPageComponentProps {
   type: number;
@@ -14,6 +15,11 @@ interface FormMultiPageComponentProps {
 const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
   props
 ): JSX.Element => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
   const [currentPage, setCurrentPage] = useState(1);
   const [gender, setGender] = useState("Female");
   const [maxIncome, setMaxIncome] = useState(0);
@@ -121,8 +127,8 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
         return null;
     }
   };
-
-  let margin = currentPage === 4 ? "24vw" : "32vw";
+  let margin = "8vw";
+  if (isDesktopOrLaptop) margin = currentPage === 4 ? "24vw" : "32vw";
 
   return (
     <div>

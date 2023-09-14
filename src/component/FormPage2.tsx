@@ -47,13 +47,13 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
           <h2
             style={{ textAlign: "left", color: "#964B00", marginBottom: "2vh" }}
           >
-            How do you identify yourself?
+            Are you a resident of delhi?
           </h2>
         </Row>
         <Row justify="center">
           <RadioButtonWithImages
             options={options}
-            size={8}
+            size={12}
             selectedOption={selectedOption}
             onChange={handleOptionChange}
           />

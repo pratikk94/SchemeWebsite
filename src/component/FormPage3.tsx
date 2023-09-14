@@ -2,6 +2,7 @@
 import { DatePicker, DatePickerProps, InputNumber, Row } from "antd";
 import React, { useState } from "react";
 import RadioButtonWithImages from "./RadioButtonWithImages";
+import { useMediaQuery } from "react-responsive";
 
 interface FormPage3Props {
   onChangeReservation: (data: string) => void;
@@ -16,6 +17,11 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
   const [selectedOptionReservation, setSelectedOptionReservation] =
     useState<string>(props.reservation);
 
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+
   const handleOptionChangeDisability = (value: string) => {
     setSelectedOptionDisability(value);
     props.onChangeDisability(value);
@@ -25,6 +31,8 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
     setSelectedOptionReservation(value);
     props.onChangeReservation(value);
   };
+
+  let radioButtonSize = isDesktopOrLaptop ? 6 : 12;
 
   const optionsDisability = [
     {
@@ -97,7 +105,7 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
         </Row>
         <Row justify="center" style={{ width: "32vw" }}>
           <RadioButtonWithImages
-            size={6}
+            size={radioButtonSize}
             options={optionsReservation}
             selectedOption={selectedOptionReservation}
             onChange={handleOptionChangeReservation}

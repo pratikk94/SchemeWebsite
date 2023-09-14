@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../CSS/RadioButton.css";
 import { Col, Row } from "antd";
+import { useMediaQuery } from "react-responsive";
 interface RadioButtonOption {
   value: string;
   label: string;
@@ -29,6 +30,15 @@ const RadioButtonWithImages: React.FC<RadioButtonProps> = ({
   const [selectedRadioButtonValue, setSelectedRadioButtonValue] =
     useState(selectedOption);
   console.log(selectedRadioButtonValue);
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+
+  let sizeLabel: string = isDesktopOrLaptop ? "8vw" : "24vw";
+  let sizeImage: string = isDesktopOrLaptop ? "4vw" : "12vw";
+
   return (
     <Row>
       {options.map((option) => (
@@ -38,7 +48,7 @@ const RadioButtonWithImages: React.FC<RadioButtonProps> = ({
             className={`radio-button-label ${
               selectedRadioButtonValue === option.value ? "selected" : ""
             }`}
-            style={{ width: "6vw", height: "100px", marginRight: "2vw" }}
+            style={{ width: sizeLabel, height: "100px", marginRight: "2vw" }}
           >
             <input
               type="radio"
@@ -51,11 +61,11 @@ const RadioButtonWithImages: React.FC<RadioButtonProps> = ({
               src={option.imageUrl}
               alt={option.label}
               style={{
-                width: "4vw",
+                width: sizeImage,
                 height: "6vh",
               }}
             />
-            <p style={{ display: "inline" }}>{option.label}</p>
+            <p style={{ display: "block" }}>{option.label}</p>
           </label>
         </Col>
       ))}
