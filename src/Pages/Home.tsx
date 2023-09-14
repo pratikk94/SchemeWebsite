@@ -31,7 +31,7 @@ const Home: React.FC = () => {
                       id="1"
                       dimHeight="14vh"
                       dimWidth="14vw"
-                      url="https://img.freepik.com/premium-vector/books-money-loans-scholarships_603843-825.jpg"
+                      url="/schemes.avif"
                     />
                   </Col>
                   <Col flex={1}>
