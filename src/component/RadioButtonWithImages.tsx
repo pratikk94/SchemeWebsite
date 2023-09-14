@@ -38,7 +38,7 @@ const RadioButtonWithImages: React.FC<RadioButtonProps> = ({
             className={`radio-button-label ${
               selectedRadioButtonValue === option.value ? "selected" : ""
             }`}
-            style={{ width: "16vw", height: "100px" }}
+            style={{ width: "6vw", height: "100px", marginRight: "2vw" }}
           >
             <input
               type="radio"

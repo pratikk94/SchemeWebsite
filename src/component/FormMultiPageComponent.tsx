@@ -122,10 +122,13 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     }
   };
 
+  let margin = currentPage === 4 ? "24vw" : "32vw";
+
   return (
     <div>
-      <Card style={{ marginLeft: "24vw", marginRight: "24vw" }}>
+      <Card style={{ marginLeft: margin, marginRight: margin }}>
         {renderStep()}
+
         <div>
           {currentPage > 1 && (
             <button

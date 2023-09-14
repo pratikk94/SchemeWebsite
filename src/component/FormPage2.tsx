@@ -36,11 +36,11 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
   ];
   return (
     <div>
-      <h3
+      <h1
         style={{ textAlign: "center", color: "#964B00", marginBottom: "8vh" }}
       >
         Enter basic information
-      </h3>
+      </h1>
 
       <div>
         <Row>
@@ -50,13 +50,15 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
             How do you identify yourself?
           </h2>
         </Row>
+        <Row justify="center">
+          <RadioButtonWithImages
+            options={options}
+            size={8}
+            selectedOption={selectedOption}
+            onChange={handleOptionChange}
+          />
+        </Row>
 
-        <RadioButtonWithImages
-          options={options}
-          size={8}
-          selectedOption={selectedOption}
-          onChange={handleOptionChange}
-        />
         <Row>
           <h2
             style={{ textAlign: "left", color: "#964B00", marginBottom: "2vh" }}

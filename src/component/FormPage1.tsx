@@ -73,11 +73,11 @@ const FormPage1: React.FC<FormPage1Props> = (props): JSX.Element => {
 
   return (
     <div>
-      <h3
+      <h1
         style={{ textAlign: "center", color: "#964B00", marginBottom: "8vh" }}
       >
         Enter basic information
-      </h3>
+      </h1>
 
       <div>
         <Row>

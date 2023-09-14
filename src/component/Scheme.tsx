@@ -39,10 +39,10 @@ const Scheme: React.FC<SchemeProps> = (props): JSX.Element => {
         <Collapsible title={JSON.parse(interimdata)["name"]}>
           <Card
             key={JSON.parse(interimdata)["id"]}
-            title={<h2>{JSON.parse(interimdata)["name"]}</h2>}
+            title={<h3>{JSON.parse(interimdata)["name"]}</h3>}
             bordered={true}
             style={{
-              width: "48vw",
+              width: "42vw",
               textAlign: "start",
               backgroundColor: "#fff0ff",
               margin: "2vh",

@@ -65,11 +65,11 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
 
   return (
     <div>
-      <h3
+      <h1
         style={{ textAlign: "center", color: "#964B00", marginBottom: "8vh" }}
       >
         Enter basic information
-      </h3>
+      </h1>
 
       <div>
         <Row>
@@ -79,13 +79,15 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
             Are you specially abled?
           </h2>
         </Row>
+        <Row justify="center">
+          <RadioButtonWithImages
+            size={12}
+            options={optionsDisability}
+            selectedOption={selectedOptionDisability}
+            onChange={handleOptionChangeDisability}
+          />
+        </Row>
 
-        <RadioButtonWithImages
-          size={12}
-          options={optionsDisability}
-          selectedOption={selectedOptionDisability}
-          onChange={handleOptionChangeDisability}
-        />
         <Row>
           <h2
             style={{ textAlign: "left", color: "#964B00", marginBottom: "2vh" }}
@@ -93,7 +95,7 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
             Are you amongst the following?
           </h2>
         </Row>
-        <Row justify="start">
+        <Row justify="center" style={{ width: "32vw" }}>
           <RadioButtonWithImages
             size={6}
             options={optionsReservation}
