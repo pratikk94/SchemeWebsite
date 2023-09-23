@@ -3,7 +3,7 @@ body * {
   font-family: "EB Garamond", serif !important;
 }
 .ant-card-meta .ant-card-meta-title {
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 @media (max-width: 768px) {
   .ant-card-meta .ant-card-meta-title {

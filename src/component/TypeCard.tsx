@@ -26,13 +26,17 @@ const TypeCard: React.FC<TypeCardProps> = (props): JSX.Element => {
           style={{
             width: props.dimWidth,
             height: props.dimHeight,
-            margin: props.dimWidth == "28vw" ? "0" : "10vh",
+            // margin: props.dimWidth == "28vw" ? "0vh" : "10vh",
           }}
           cover={
             <img
               alt="example"
               src={window.location.origin + props.url}
-              style={{ width: "28vw", height: "28vh " }}
+              // style={
+              //   props.dimWidth == "72vw"
+              //     ? { width: "28vw", height: "28vh " }
+              //     : {}
+              // }
             />
           }
         >
