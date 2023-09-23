@@ -9,4 +9,8 @@ body * {
   .ant-card-meta .ant-card-meta-title {
     font-size: 2vh;
   }
+  .ant-card-cover img {
+    height: 20vh;
+    max-width: 20vw;
+  }
 }
