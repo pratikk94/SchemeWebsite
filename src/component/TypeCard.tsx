@@ -23,10 +23,20 @@ const TypeCard: React.FC<TypeCardProps> = (props): JSX.Element => {
         <Card
           hoverable
           onClick={handleClick}
-          style={{ width: props.dimWidth, height: props.dimHeight }}
-          cover={<img alt="example" src={window.location.origin + props.url} />}
+          style={{
+            width: props.dimWidth,
+            height: props.dimHeight,
+            margin: props.dimWidth == "28vw" ? "0" : "10vh",
+          }}
+          cover={
+            <img
+              alt="example"
+              src={window.location.origin + props.url}
+              style={{ width: "28vw", height: "28vh " }}
+            />
+          }
         >
-          <Meta title={props.type} />
+          <Meta title={props.type} style={{}} />
         </Card>
       </Tooltip>
     </center>

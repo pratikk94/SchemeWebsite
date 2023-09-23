@@ -31,7 +31,7 @@ const Home: React.FC = () => {
                       id="1"
                       dimHeight="14vh"
                       dimWidth="14vw"
-                      url="/schemes.avif"
+                      url="/scholarship.jpg"
                     />
                   </Col>
                   <Col flex={1}>
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
                   description="Some information about scheme"
                   id="1"
                   dimHeight="28vh"
-                  dimWidth="28vw"
+                  dimWidth="72vw"
                   url="https://img.freepik.com/premium-vector/books-money-loans-scholarships_603843-825.jpg"
                 />
                 <TypeCard
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
                   description="Some information about scholarship"
                   id="2"
                   dimHeight="28vh"
-                  dimWidth="28vw"
+                  dimWidth="72vw"
                   url="/scholarship.jpg"
                 />
                 <TypeCard
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
                   description="Some information about Compensation"
                   id="3"
                   dimHeight="28vh"
-                  dimWidth="28vw"
+                  dimWidth="72vw"
                   url="/compensation.jpg"
                 />
                 <TypeCard
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
                   description="Some information about resources"
                   id="0"
                   dimHeight="28vh"
-                  dimWidth="28vw"
+                  dimWidth="72vw"
                   url="/books.jpg"
                 />
               </div>

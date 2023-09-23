@@ -2,3 +2,11 @@
 body * {
   font-family: "EB Garamond", serif !important;
 }
+.ant-card-meta .ant-card-meta-title {
+  font-size: 3vh;
+}
+@media (max-width: 768px) {
+  .ant-card-meta .ant-card-meta-title {
+    font-size: 2vh;
+  }
+}
