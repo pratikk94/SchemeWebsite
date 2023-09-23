@@ -1,3 +1,8 @@
+/* src/styles.css */
+body {
+  font-family: "EB Garamond";
+}
+
 .App {
   text-align: center;
 }
