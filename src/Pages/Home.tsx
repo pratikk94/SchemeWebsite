@@ -1,113 +1,80 @@
 import React from "react";
-import { Col, Divider, Row } from "antd";
-import TypeCard from "../component/TypeCard";
+import { Col, Row } from "antd";
 import "../CSS/Home.css";
-import { useMediaQuery } from "react-responsive";
+import Card from "antd/es/card/Card";
+import Meta from "antd/es/card/Meta";
 
 const Home: React.FC = () => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
-  });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-  // const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
-  // const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
-
   return (
     <div className="App">
       <header className="App-header"></header>
       <div className="home">
         <div className="container-type" style={{ height: "80vh" }}>
           <center>
-            {isDesktopOrLaptop && (
-              <div>
-                <Divider orientation="center" />
-                <Row
-                  style={{ height: "32vh", width: "32vw", marginBottom: "4vh" }}
-                >
-                  <Col flex={1}>
-                    <TypeCard
-                      type="Scheme"
-                      description="Some information about scheme"
-                      id="1"
-                      dimHeight="14vh"
-                      dimWidth="14vw"
-                      url="/scholarship.jpg"
+            <Row
+              style={{
+                width: "100vw",
+                height: "100vh",
+                alignContent: "start",
+                justifyContent: "space-around",
+                marginTop: "40vh",
+              }}
+            >
+              <Col xs={24} sm={12} xl={8}>
+                <div style={{ height: "100%" }}>
+                  <Card
+                    hoverable
+                    style={{ width: "72%" }}
+                    cover={<img alt="example" src="../folders.avif" />}
+                  >
+                    <Meta
+                      title="See all resources"
+                      description="www.instagram.com"
                     />
-                  </Col>
-                  <Col flex={1}>
-                    <TypeCard
-                      type="Scholarship"
-                      description="Some information about scholarship"
-                      id="2"
-                      dimHeight="14vh"
-                      dimWidth="14vw"
-                      url="/scholarship.jpg"
+                  </Card>
+                </div>
+              </Col>
+              <Col xs={24} sm={12} xl={8}>
+                <div style={{ height: "100%" }}>
+                  <Card
+                    hoverable
+                    style={{ width: "72%" }}
+                    cover={
+                      <img
+                        alt="example"
+                        src="../folder_by_c.webp"
+                        style={{ height: "28vh" }}
+                      />
+                    }
+                  >
+                    <Meta
+                      title="Find resources by category"
+                      description="www.instagram.com"
                     />
-                  </Col>
-                </Row>
-
-                <Row style={{ height: "32vh", width: "32vw" }}>
-                  <Col flex={1}>
-                    <TypeCard
-                      type="Compensation"
-                      description="Some information about Compensation"
-                      id="3"
-                      dimHeight="14vh"
-                      dimWidth="14vw"
-                      url="/compensation.jpg"
+                  </Card>{" "}
+                </div>
+              </Col>
+              <Col xs={24} sm={12} xl={8}>
+                <div style={{ height: "100%" }}>
+                  <Card
+                    hoverable
+                    style={{ width: "72%" }}
+                    cover={
+                      <img
+                        alt="example"
+                        src="../folder_for_me.jpeg"
+                        style={{ height: "28vh" }}
+                      />
+                    }
+                  >
+                    <Meta
+                      title="Find resources for me"
+                      description="www.instagram.com"
                     />
-                  </Col>
-                  <Col flex={1}>
-                    <TypeCard
-                      type="Resources"
-                      description="Some information about resources"
-                      id="0"
-                      dimHeight="14vh"
-                      dimWidth="14vw"
-                      url="/books.jpg"
-                    />
-                  </Col>
-                </Row>
-              </div>
-            )}
-            {isTabletOrMobile && (
-              <div>
-                <Divider orientation="center" />
-
-                <TypeCard
-                  type="Scheme"
-                  description="Some information about scheme"
-                  id="1"
-                  dimHeight="28vh"
-                  dimWidth="72vw"
-                  url="https://img.freepik.com/premium-vector/books-money-loans-scholarships_603843-825.jpg"
-                />
-                <TypeCard
-                  type="Scholarship"
-                  description="Some information about scholarship"
-                  id="2"
-                  dimHeight="28vh"
-                  dimWidth="72vw"
-                  url="/scholarship.jpg"
-                />
-                <TypeCard
-                  type="Compensation"
-                  description="Some information about Compensation"
-                  id="3"
-                  dimHeight="28vh"
-                  dimWidth="72vw"
-                  url="/compensation.jpg"
-                />
-                <TypeCard
-                  type="Resources"
-                  description="Some information about resources"
-                  id="0"
-                  dimHeight="28vh"
-                  dimWidth="72vw"
-                  url="/books.jpg"
-                />
-              </div>
-            )}
+                  </Card>{" "}
+                </div>
+              </Col>
+            </Row>
           </center>
         </div>
       </div>
