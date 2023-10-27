@@ -45,7 +45,7 @@ const Home: React.FC = () => {
                 <div style={{ height: "100%" }}>
                   <Card
                     hoverable
-                    style={{ width: "72%" }}
+                    style={{ width: "64%" }}
                     cover={<img alt="example" src="../folders.avif" />}
                   >
                     <Meta
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                 <div style={{ height: "100%" }}>
                   <Card
                     hoverable
-                    style={{ width: "72%" }}
+                    style={{ width: "64%" }}
                     cover={
                       <img
                         alt="example"
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
                 <div style={{ height: "100%" }}>
                   <Card
                     hoverable
-                    style={{ width: "72%" }}
+                    style={{ width: "64%" }}
                     cover={
                       <img
                         alt="example"
