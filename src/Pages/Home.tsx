@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Row } from "antd";
 import "../CSS/Home.css";
 import Card from "antd/es/card/Card";
-import Meta from "antd/es/card/Meta";
 
 const Home: React.FC = () => {
   return (
@@ -31,7 +30,7 @@ const Home: React.FC = () => {
                 </h3>
               </div>
             </div>
-            <h1 style={{ marginTop: "72vh", marginBottom: "8vh" }}>
+            <h1 className="heroDivider" style={{ marginBottom: "8vh" }}>
               Some line about services offered
             </h1>
             <Row
@@ -45,13 +44,10 @@ const Home: React.FC = () => {
                 <div style={{ height: "100%" }}>
                   <Card
                     hoverable
-                    style={{ width: "64%" }}
+                    style={{ width: "72%" }}
                     cover={<img alt="example" src="../folders.avif" />}
                   >
-                    <Meta
-                      title="See all resources"
-                      description="www.instagram.com"
-                    />
+                    <h2>See all resources</h2>
                   </Card>
                 </div>
               </Col>
@@ -59,7 +55,7 @@ const Home: React.FC = () => {
                 <div style={{ height: "100%" }}>
                   <Card
                     hoverable
-                    style={{ width: "64%" }}
+                    style={{ width: "72%" }}
                     cover={
                       <img
                         alt="example"
@@ -68,10 +64,7 @@ const Home: React.FC = () => {
                       />
                     }
                   >
-                    <Meta
-                      title="Find resources by category"
-                      description="www.instagram.com"
-                    />
+                    <h2>Find resources by category</h2>
                   </Card>{" "}
                 </div>
               </Col>
@@ -79,7 +72,7 @@ const Home: React.FC = () => {
                 <div style={{ height: "100%" }}>
                   <Card
                     hoverable
-                    style={{ width: "64%" }}
+                    style={{ width: "72%" }}
                     cover={
                       <img
                         alt="example"
@@ -88,10 +81,7 @@ const Home: React.FC = () => {
                       />
                     }
                   >
-                    <Meta
-                      title="Find resources for me"
-                      description="www.instagram.com"
-                    />
+                    <h2>Find resources for me</h2>
                   </Card>{" "}
                 </div>
               </Col>
