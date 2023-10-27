@@ -42,12 +42,27 @@
   background-size: 100vw 100vh;
 }
 
-.heroDiv {
-  opacity: 1;
+.hero {
   margin-top: -40%;
+  border-style: dashed;
+  height: 16vh;
+  width: 40vw;
 }
-.heroLanding Col h1 {
-  color: #000;
+
+.bottom-div {
+  background-color: #f0f0f0; /* Background color for the bottom div */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-div {
+  position: absolute; /* Top div uses absolute positioning */
+  background-color: #ffffffd0; /* Background color for the top div */
+  width: 40vw;
+  height: 16vh;
+  margin-top: 8vh;
+  padding-top: 2vh;
 }
 
 .App-link {

@@ -20,13 +20,16 @@ const Home: React.FC = () => {
               }}
             />
 
-            <div className="heroDiv">
-              <h1>Headline of website</h1>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                luctus dolor at lorem dictum tempus. Vivamus nulla lacus,
-                commodo at tristique in, elementum non elit.
-              </h3>
+            <div className="hero" style={{ color: "#ffffff", opacity: 1 }}>
+              <div className="bottom-div"></div>
+              <div className="top-div">
+                <h1 style={{ color: "black" }}>Headline of website</h1>
+                <h3 style={{ color: "black" }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  luctus dolor at lorem dictum tempus. Vivamus nulla lacus,
+                  commodo at tristique in, elementum non elit.
+                </h3>
+              </div>
             </div>
             <h1 style={{ marginTop: "72vh", marginBottom: "8vh" }}>
               Some line about services offered
