@@ -2,8 +2,17 @@ import React from "react";
 import { Col, Row } from "antd";
 import "../CSS/Home.css";
 import Card from "antd/es/card/Card";
+import { useNavigate } from "react-router-dom";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+  /**
+   * Function to navigate to scheme by category page.
+   */
+  function onSubmit() {
+    navigate("/schemeByCategory");
+  }
+
   return (
     <div className="App">
       <header className="App-header"></header>
@@ -56,6 +65,7 @@ const Home: React.FC = () => {
                   <Card
                     hoverable
                     style={{ width: "72%" }}
+                    onClick={onSubmit}
                     cover={
                       <img
                         alt="example"

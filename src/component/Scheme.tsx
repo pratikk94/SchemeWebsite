@@ -1,8 +1,13 @@
 import React from "react";
 import { Card, Col, Collapse, Divider, Row, Typography } from "antd";
 import schemeData from "../data/data.json";
-import Collapsible from "./Collapsible";
-import { HomeOutlined, InfoCircleOutlined, InfoOutlined, ManOutlined, WomanOutlined } from "@ant-design/icons";
+
+import {
+  HomeOutlined,
+  InfoCircleOutlined,
+  ManOutlined,
+  WomanOutlined,
+} from "@ant-design/icons";
 interface SchemeProps {
   id: string[];
   type: number;
@@ -40,7 +45,7 @@ const Scheme: React.FC<SchemeProps> = (props): JSX.Element => {
             id: (index + 1).toString(),
             label: JSON.parse(interimdata)["name"],
             children: <SchemeCard schemeData={interimdata} />,
-          }
+          };
         })}
       />
     </div>
@@ -48,11 +53,8 @@ const Scheme: React.FC<SchemeProps> = (props): JSX.Element => {
 };
 export default Scheme;
 
-
-
 const { Title, Text } = Typography;
 const SchemeCard = ({ schemeData }: any) => {
-  
   const {
     name,
     award_entitlement,
@@ -69,21 +71,32 @@ const SchemeCard = ({ schemeData }: any) => {
   return (
     <Card
       key={name}
-      title={<Title style={{ marginTop: 24 }} level={2}>{name}</Title>}
+      title={
+        <Title style={{ marginTop: 24 }} level={2}>
+          {name}
+        </Title>
+      }
       bordered
       style={{
-        textAlign: 'start',
-        backgroundColor: '#f1faff',
-        margin: '2vh',
+        textAlign: "start",
+        backgroundColor: "#f1faff",
+        margin: "2vh",
       }}
     >
-      <Title level={4}><InfoCircleOutlined /> Award/Entitlement:</Title>
+      <Title level={4}>
+        <InfoCircleOutlined /> Award/Entitlement:
+      </Title>
       <div dangerouslySetInnerHTML={{ __html: award_entitlement }}></div>
 
-      <Row style={{ marginTop: 12, marginBottom: 12 }} justify={"space-between"}>
+      <Row
+        style={{ marginTop: 12, marginBottom: 12 }}
+        justify={"space-between"}
+      >
         <Col>
           <Title level={4}>Gender:</Title>
-          <Text>{gender == "Female" ? <WomanOutlined /> : <ManOutlined />} {gender}</Text>
+          <Text>
+            {gender == "Female" ? <WomanOutlined /> : <ManOutlined />} {gender}
+          </Text>
         </Col>
         <Col>
           <Title level={4}>Max Family Income:</Title>
@@ -94,11 +107,12 @@ const SchemeCard = ({ schemeData }: any) => {
           <Text>{disability}</Text>
         </Col>
       </Row>
-      <Title level={4}><HomeOutlined /> Residence:</Title>
+      <Title level={4}>
+        <HomeOutlined /> Residence:
+      </Title>
       <Text>{residence}</Text>
 
       <Divider />
-
 
       <Title level={4}>Eligibility:</Title>
       <div dangerouslySetInnerHTML={{ __html: eligibility }}></div>

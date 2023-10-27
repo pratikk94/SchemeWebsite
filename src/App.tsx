@@ -6,6 +6,7 @@ import FormPage from "./Pages/Form";
 import NavBar from "./component/NavBar";
 import AboutUs from "./Pages/About";
 import ContactUs from "./Pages/Contact";
+import SchemeByCategory from "./Pages/SchemeByCategory";
 function App() {
   return (
     <Router>
@@ -18,7 +19,7 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
-
+        <Route path="/schemeByCategory" element={<SchemeByCategory />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
