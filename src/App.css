@@ -24,7 +24,7 @@ body {
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-image: url("./images/landing.gif");
+  /* background-image: url("./images/landing.gif"); */
   background-repeat: no-repeat;
   background-position: bottom right;
 }

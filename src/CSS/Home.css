@@ -28,10 +28,26 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-image: url("../images/landing.gif");
+  /* background-image: url("../images/landing.gif"); */
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 20vw 32vh;
+}
+
+.heroLanding {
+  background-image: url("../images/landingPage.jpeg");
+  opacity: 0.5;
+  margin-top: -8vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.heroDiv {
+  opacity: 1;
+  margin-top: -40%;
+}
+.heroLanding Col h1 {
+  color: #000;
 }
 
 .App-link {

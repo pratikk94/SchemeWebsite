@@ -11,13 +11,31 @@ const Home: React.FC = () => {
       <div className="home">
         <div className="container-type" style={{ height: "80vh" }}>
           <center>
+            <div
+              className="heroLanding"
+              style={{
+                height: "100vh",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            />
+
+            <div className="heroDiv">
+              <h1>Headline of website</h1>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                luctus dolor at lorem dictum tempus. Vivamus nulla lacus,
+                commodo at tristique in, elementum non elit.
+              </h3>
+            </div>
+            <h1 style={{ marginTop: "72vh", marginBottom: "8vh" }}>
+              Some line about services offered
+            </h1>
             <Row
               style={{
                 width: "100vw",
-                height: "100vh",
                 alignContent: "start",
                 justifyContent: "space-around",
-                marginTop: "40vh",
               }}
             >
               <Col xs={24} sm={12} xl={8}>
@@ -78,9 +96,9 @@ const Home: React.FC = () => {
           </center>
         </div>
       </div>
-      <footer>
+      {/* <footer>
         <p>All rights reserved ©</p>
-      </footer>
+      </footer> */}
     </div>
   );
 };
