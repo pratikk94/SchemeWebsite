@@ -11,6 +11,6 @@ body * {
   }
   .ant-card-cover img {
     height: 20vh;
-    max-width: 20vw;
+    /* max-width: 20vw; */
   }
 }

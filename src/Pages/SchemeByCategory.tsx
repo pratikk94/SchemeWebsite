@@ -1,6 +1,6 @@
 import { Card, Col, Row } from "antd";
 import React from "react";
-
+import "../CSS/SchemeByCategry.css";
 const SchemeByCategory: React.FC = (): JSX.Element => {
   return (
     <div style={{ paddingTop: "8vh" }}>
@@ -22,6 +22,7 @@ const SchemeByCategory: React.FC = (): JSX.Element => {
                 style={{ width: "72%" }}
                 cover={
                   <img
+                    className="img_scheme_by_category"
                     alt="example"
                     src="../folders.avif"
                     style={{ height: "28vh" }}
