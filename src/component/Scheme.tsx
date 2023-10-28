@@ -95,7 +95,7 @@ const SchemeCard = ({ schemeData }: any) => {
         <Col>
           <Title level={4}>Gender:</Title>
           <Text>
-            {gender == "Female" ? <WomanOutlined /> : <ManOutlined />} {gender}
+            {gender === "Female" ? <WomanOutlined /> : <ManOutlined />} {gender}
           </Text>
         </Col>
         <Col>
