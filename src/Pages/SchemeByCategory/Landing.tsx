@@ -1,7 +1,9 @@
 import { Card, Col, Row } from "antd";
 import React from "react";
-import "../CSS/SchemeByCategry.css";
-const SchemeByCategory: React.FC = (): JSX.Element => {
+import { useNavigate } from "react-router-dom";
+//import "../CSS/SchemeByCategry.css";
+const Landing: React.FC = (): JSX.Element => {
+  const navigate = useNavigate();
   return (
     <div style={{ paddingTop: "8vh" }}>
       <center>
@@ -18,6 +20,9 @@ const SchemeByCategory: React.FC = (): JSX.Element => {
           <Col xs={24} sm={12} xl={8}>
             <div style={{ height: "100%", paddingLeft: "12%" }}>
               <Card
+                onClick={() => {
+                  navigate("/listOfScheme");
+                }}
                 hoverable
                 style={{ width: "72%" }}
                 cover={
@@ -132,4 +137,4 @@ const SchemeByCategory: React.FC = (): JSX.Element => {
     </div>
   );
 };
-export default SchemeByCategory;
+export default Landing;

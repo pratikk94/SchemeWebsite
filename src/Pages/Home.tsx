@@ -15,7 +15,9 @@ const Home: React.FC = () => {
 
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <video id="bgVideo" controls preload="true" autoPlay loop muted>
+        <source src="../landing.mp4" type="video/mp4" />
+      </video>
       <div className="home">
         <div className="container-type" style={{ height: "80vh" }}>
           <center>

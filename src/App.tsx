@@ -6,7 +6,9 @@ import FormPage from "./Pages/Form";
 import NavBar from "./component/NavBar";
 import AboutUs from "./Pages/About";
 import ContactUs from "./Pages/Contact";
-import SchemeByCategory from "./Pages/SchemeByCategory";
+import SchemeByCategory from "./Pages/SchemeByCategory/Landing";
+import Info from "./Pages/SchemeByCategory/Info";
+
 function App() {
   return (
     <Router>
@@ -20,6 +22,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/schemeByCategory" element={<SchemeByCategory />} />
+        <Route path="/listOfScheme" element={<Info />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
