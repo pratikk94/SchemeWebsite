@@ -1,4 +1,4 @@
-import { Checkbox, Col, Form, InputNumber, Row, Select, Spin, message } from "antd";
+import { Checkbox, Col, Form, Input, InputNumber, Row, Select, Spin, message } from "antd";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
@@ -88,9 +88,12 @@ const SearchPanel = ({ onSearch, type }: any) => {
         const filters = {
             type,
             ...values,
-            min_age: values.min_age || 0,
-            max_age: values.max_age || 100,
+            min_age: values.min_age || null,
+            max_age: values.max_age || null,
         };
+
+        console.log(filters);
+        
         onSearch(filters);
     };
 
@@ -99,31 +102,21 @@ const SearchPanel = ({ onSearch, type }: any) => {
             <Row gutter={16}>
                 <Col span={4}>
                     <Form.Item label="Min Age" name="min_age">
-                        <InputNumber min={0} placeholder="Min Age" style={{ width: '100%' }} />
+                        <Input placeholder="Min Age" style={{ width: '100%' }} />
                     </Form.Item>
                 </Col>
                 <Col span={4}>
                     <Form.Item label="Max Age" name="max_age">
-                        <InputNumber min={0} placeholder="Max Age" style={{ width: '100%' }} />
+                        <Input placeholder="Max Age" style={{ width: '100%' }} />
                     </Form.Item>
                 </Col>
                 <Col span={4}>
                     <Form.Item label="Gender" name="gender">
                         <Select placeholder="Select Gender">
-                            <Option value="male">Male</Option>
-                            <Option value="female">Female</Option>
-                            <Option value="other">Other</Option>
+                            {/* <Option value="male">Male</Option> */}
+                            <Option value="Female">Female</Option>
+                            <Option value={null}>Other</Option>
                         </Select>
-                    </Form.Item>
-                </Col>
-                <Col span={4}>
-                    <Form.Item name="disability" valuePropName="checked">
-                        <Checkbox>Disability</Checkbox>
-                    </Form.Item>
-                </Col>
-                <Col span={4}>
-                    <Form.Item name="reservation" valuePropName="checked">
-                        <Checkbox>Reservation</Checkbox>
                     </Form.Item>
                 </Col>
                 <Col span={4}>

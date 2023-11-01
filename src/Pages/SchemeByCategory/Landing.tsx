@@ -21,7 +21,7 @@ const Landing: React.FC = (): JSX.Element => {
             <div style={{ height: "100%", paddingLeft: "12%" }}>
               <Card
                 onClick={() => {
-                  navigate("/schemes-list", { state: { category: "skills" }});
+                  navigate("/schemes-list", { state: { category: "Skill" }});
                 }}
                 hoverable
                 style={{ width: "72%" }}
@@ -42,6 +42,9 @@ const Landing: React.FC = (): JSX.Element => {
             <div style={{ height: "100%", paddingLeft: "12%" }}>
               <Card
                 hoverable
+                onClick={() => {
+                  navigate("/schemes-list", { state: { category: "Livelihood" }});
+                }}
                 style={{ width: "72%" }}
                 cover={
                   <img
