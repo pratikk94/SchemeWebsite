@@ -63,6 +63,9 @@ const Landing: React.FC = (): JSX.Element => {
               <Card
                 hoverable
                 style={{ width: "72%" }}
+                onClick={() => {
+                  navigate("/schemes-list", { state: { category: "Health" }});
+                }}
                 cover={
                   <img
                     alt="example"
@@ -88,6 +91,9 @@ const Landing: React.FC = (): JSX.Element => {
             <div style={{ height: "100%", paddingLeft: "12%" }}>
               <Card
                 hoverable
+                onClick={() => {
+                  navigate("/schemes-list", { state: { category: "Education" }});
+                }}
                 style={{ width: "72%" }}
                 cover={
                   <img
@@ -105,6 +111,9 @@ const Landing: React.FC = (): JSX.Element => {
             <div style={{ height: "100%", paddingLeft: "12%" }}>
               <Card
                 hoverable
+                onClick={() => {
+                  navigate("/schemes-list", { state: { category: "Women_and_child" }});
+                }}
                 style={{ width: "72%" }}
                 cover={
                   <img
@@ -122,6 +131,9 @@ const Landing: React.FC = (): JSX.Element => {
             <div style={{ height: "100%", paddingLeft: "12%" }}>
               <Card
                 hoverable
+                onClick={() => {
+                  navigate("/schemes-list", { state: { category: "Miscellaneous" }});
+                }}
                 style={{ width: "72%" }}
                 cover={
                   <img

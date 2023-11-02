@@ -56,6 +56,9 @@ const Home: React.FC = () => {
                   <Card
                     hoverable
                     style={{ width: "72%" }}
+                    onClick={() => {
+                      navigate("/all-resources");
+                    }}
                     cover={<img alt="example" src="../folders.avif" />}
                   >
                     <h2>See all resources</h2>
