@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "../CSS/NavBar.css";
-import { FormOutlined, HomeOutlined, InfoCircleOutlined, MessageOutlined, PhoneOutlined } from "@ant-design/icons";
+import {
+  FormOutlined,
+  HomeOutlined,
+  InfoCircleOutlined,
+  MessageOutlined,
+  PhoneOutlined,
+} from "@ant-design/icons";
 import { useState } from "react";
 import { Col, Input, Modal, Row, message } from "antd";
 import axios from "axios";
@@ -20,11 +26,11 @@ export default function NavBar() {
       return;
     } else {
       setIsModalOpen(false);
-      axios.post('https://schemes-api.grevity.in/feedback', {
+      axios.post("https://schemes-api.grevity.in/feedback", {
         feedback: feedback,
         user: user,
-        phone: phone
-      })
+        phone: phone,
+      });
       message.success("Feedback submitted successfully!");
     }
   };
@@ -61,16 +67,31 @@ export default function NavBar() {
     //   </NavLink>
     // </nav>
     <nav className="navbar">
-      <Modal title="Your Feedback" open={isModalOpen} okText={"Submit Feedback"} onOk={handleOk} onCancel={handleCancel}>
+      <Modal
+        title="Your Feedback"
+        open={isModalOpen}
+        okText={"Submit Feedback"}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
         <Row style={{ marginBottom: 14 }} gutter={[16, 16]}>
           <Col span={12}>
-            <Input onChange={(e) => setUser(e.target.value)} placeholder="Enter your name..." />
+            <Input
+              onChange={(e) => setUser(e.target.value)}
+              placeholder="Enter your name..."
+            />
           </Col>
           <Col span={12}>
-            <Input onChange={(e) => setPhone(e.target.value)} placeholder="Enter your phone number..." />
+            <Input
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="Enter your phone number..."
+            />
           </Col>
         </Row>
-        <Input.TextArea onChange={(e) => setFeedback(e.target.value)} placeholder="Enter your feedback here..." />
+        <Input.TextArea
+          onChange={(e) => setFeedback(e.target.value)}
+          placeholder="Enter your feedback here..."
+        />
       </Modal>
       <div className="navbar-container container">
         <input type="checkbox" name="" id="" />
@@ -81,19 +102,33 @@ export default function NavBar() {
         </div>
         <ul className="menu-items">
           <li>
-            <NavLink to="/"><HomeOutlined /> Home</NavLink>
+            <NavLink to="/">
+              <HomeOutlined /> Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/form"><FormOutlined /> Form</NavLink>
+            <NavLink to="/form">
+              <FormOutlined />
+              Resources
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about"><InfoCircleOutlined /> About</NavLink>
+            <NavLink to="/about">
+              <InfoCircleOutlined /> About
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contact"><PhoneOutlined /> Contact us</NavLink>
+            <NavLink to="/contact">
+              <PhoneOutlined /> Contact us
+            </NavLink>
           </li>
           <li>
-            <div style={{ cursor: "pointer" }} onClick={() => setIsModalOpen(true)}><MessageOutlined /> Feedback</div>
+            <div
+              style={{ cursor: "pointer" }}
+              onClick={() => setIsModalOpen(true)}
+            >
+              <MessageOutlined /> Feedback
+            </div>
           </li>
         </ul>
         <h1 className="logo">

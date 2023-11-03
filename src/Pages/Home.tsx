@@ -13,6 +13,10 @@ const Home: React.FC = () => {
     navigate("/schemeByCategory");
   }
 
+  function onSubmitForm() {
+    navigate("/form/1");
+  }
+
   return (
     <div className="App">
       <video id="bgVideo" controls preload="true" autoPlay loop muted>
@@ -88,6 +92,7 @@ const Home: React.FC = () => {
                   <Card
                     hoverable
                     style={{ width: "72%" }}
+                    onClick={onSubmitForm}
                     cover={
                       <img
                         alt="example"
