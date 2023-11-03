@@ -19,9 +19,10 @@ const Home: React.FC = () => {
 
   return (
     <div className="App">
-      <video id="bgVideo" controls preload="true" autoPlay loop muted>
+      {/* <video id="bgVideo" controls preload="true" autoPlay loop muted>
         <source src="../landing.mp4" type="video/mp4" />
-      </video>
+      </video> */}
+      <div className="landing_bg"></div>
       <div className="home">
         <div className="container-type" style={{ height: "80vh" }}>
           <center>
@@ -37,11 +38,12 @@ const Home: React.FC = () => {
             <div className="hero" style={{ color: "#ffffff", opacity: 1 }}>
               <div className="bottom-div"></div>
               <div className="top-div">
-                <h1 style={{ color: "black" }}>Headline of website</h1>
+                <h1 style={{ color: "#eb6734" }}>
+                  Social Security Schemes Website
+                </h1>
                 <h3 style={{ color: "black" }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                  luctus dolor at lorem dictum tempus. Vivamus nulla lacus,
-                  commodo at tristique in, elementum non elit.
+                  Delhi Social Security Schemes and Resources Website for
+                  Children and their Families
                 </h3>
               </div>
             </div>
@@ -65,7 +67,7 @@ const Home: React.FC = () => {
                     }}
                     cover={<img alt="example" src="../folders.avif" />}
                   >
-                    <h2>See all resources</h2>
+                    <h2>See all schemes</h2>
                   </Card>
                 </div>
               </Col>
@@ -83,7 +85,7 @@ const Home: React.FC = () => {
                       />
                     }
                   >
-                    <h2>Find resources by category</h2>
+                    <h2>Find schemes by category</h2>
                   </Card>{" "}
                 </div>
               </Col>
@@ -101,7 +103,7 @@ const Home: React.FC = () => {
                       />
                     }
                   >
-                    <h2>Find resources for me</h2>
+                    <h2>Find schemes for me</h2>
                   </Card>{" "}
                 </div>
               </Col>

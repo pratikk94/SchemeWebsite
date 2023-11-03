@@ -106,20 +106,17 @@ export default function NavBar() {
               <HomeOutlined /> Home
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/form">
-              <FormOutlined />
-              Resources
-            </NavLink>
-          </li>
+
           <li>
             <NavLink to="/about">
               <InfoCircleOutlined /> About
             </NavLink>
           </li>
+
           <li>
-            <NavLink to="/contact">
-              <PhoneOutlined /> Contact us
+            <NavLink to="/form">
+              <FormOutlined />
+              Resources
             </NavLink>
           </li>
           <li>
@@ -129,6 +126,11 @@ export default function NavBar() {
             >
               <MessageOutlined /> Feedback
             </div>
+          </li>
+          <li>
+            <NavLink to="/contact">
+              <PhoneOutlined /> Contact us
+            </NavLink>
           </li>
         </ul>
         <h1 className="logo">

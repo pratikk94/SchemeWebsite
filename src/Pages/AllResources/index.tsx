@@ -4,6 +4,7 @@ import {
   Form,
   Input,
   InputNumber,
+  Modal,
   Row,
   Select,
   Spin,
@@ -21,7 +22,26 @@ const { Title, Paragraph } = Typography;
 const SchemeCard = ({ scheme }: any) => {
   const [benefitsExpanded, setBenefitsExpanded] = useState(false);
   const [eligibilityExpanded, setEligibilityExpanded] = useState(false);
-
+  const [isApplicationModalOpen, setIsApplicationModalOpen] = useState(false);
+  const [isGrievanceModalOpen, setIsGrievanceModalOpen] = useState(false);
+  const showModal = () => {
+    setIsApplicationModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsApplicationModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsApplicationModalOpen(false);
+  };
+  const showGrievanceModal = () => {
+    setIsGrievanceModalOpen(true);
+  };
+  const handleGrievanceOk = () => {
+    setIsGrievanceModalOpen(false);
+  };
+  const handleGrievanceCancel = () => {
+    setIsGrievanceModalOpen(false);
+  };
   // Toggle for Benefits text
   const toggleBenefitsText = () => {
     setBenefitsExpanded(!benefitsExpanded);
@@ -79,24 +99,45 @@ const SchemeCard = ({ scheme }: any) => {
         )}
         <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
           <strong>Documents Required:</strong>
-          <List
-            dataSource={scheme.documents_required?.split("\n")}
+          <br />
+          {/* <List
+            dataSource={}
             renderItem={(item: any) => (
               <List.Item style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
                 {item}
               </List.Item>
             )}
             size="small"
-          />
+          /> */}
+
+          {scheme.documents_required}
         </Paragraph>
       </Typography>
       <Space>
-        <Button type="primary" href={scheme.application_link}>
-          Apply Now
+        <Button type="primary" onClick={showModal}>
+          Application Process
         </Button>
-        <Button href={`mailto:${scheme.grievance_redressal}`}>
-          Contact Support
-        </Button>
+        <Modal
+          title="Application Process"
+          open={isApplicationModalOpen}
+          onOk={handleOk}
+          onCancel={handleCancel}
+        >
+          <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
+            {scheme.application_link}
+          </Paragraph>
+        </Modal>
+        <Button onClick={showGrievanceModal}>Grievance Redressal</Button>
+        <Modal
+          title="Grievance Redressal"
+          open={isGrievanceModalOpen}
+          onOk={handleGrievanceOk}
+          onCancel={handleGrievanceCancel}
+        >
+          <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
+            {scheme.grievance_redressal}
+          </Paragraph>
+        </Modal>
       </Space>
     </Card>
   );
