@@ -38,13 +38,10 @@ const Home: React.FC = () => {
             <div className="hero" style={{ color: "#ffffff", opacity: 1 }}>
               <div className="bottom-div"></div>
               <div className="top-div">
-                <h1 style={{ color: "#eb6734" }}>
-                  Social Security Schemes Website
+                <h1 style={{ color: "green", fontSize: "48px" }}>
+                  Delhi Social Security Schemes and Resources Website <br />
+                  for Children and their Families
                 </h1>
-                <h3 style={{ color: "black" }}>
-                  Delhi Social Security Schemes and Resources Website for
-                  Children and their Families
-                </h3>
               </div>
             </div>
             <h1 className="heroDivider" style={{ marginBottom: "8vh" }}>

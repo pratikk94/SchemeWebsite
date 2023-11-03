@@ -1,6 +1,7 @@
 .home {
   margin: 0;
   position: absolute;
+  width: 100vw;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -17,12 +18,12 @@
 }
 
 .landing_bg {
-  background-image: url("/public/bg_2.jpeg");
+  background-image: url("/public/bg_1.png");
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100vw 120vh;
   margin-top: 6vh;
 }
 
@@ -41,7 +42,7 @@
 
 .hero {
   margin-top: -40%;
-
+  margin-left: -60%;
   height: 16vh;
   width: 40vw;
 }
@@ -57,7 +58,7 @@
 .top-div {
   position: absolute; /* Top div uses absolute positioning */
   background-color: #ffffffd0; /* Background color for the top div */
-  width: 40vw;
+  width: 100vw;
   height: 16vh;
   padding: 4vw;
   margin-top: 8vh;
