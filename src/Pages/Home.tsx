@@ -1,12 +1,22 @@
 import React, { useState } from "react";
-import { Button, Col, Form, Input, Row, Typography, AutoComplete, Modal } from "antd";
+import {
+  Button,
+  Col,
+  Form,
+  Input,
+  Row,
+  Typography,
+  AutoComplete,
+  Modal,
+  Card,
+} from "antd";
 import "../CSS/Home.css";
 import { useNavigate } from "react-router-dom";
 import SchemeCard from "./AllResources/SchemeCard";
 import { SearchOutlined } from "@ant-design/icons";
 import axios from "axios";
 
-const { Title } = Typography
+const { Title } = Typography;
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -26,10 +36,11 @@ const Home: React.FC = () => {
   }
 
   let [ans, setAns] = useState<any[]>([]);
-  const [options, setOptions] = useState<{ value: string; label: React.ReactNode, scheme_data: any }[]>([]);
+  const [options, setOptions] = useState<
+    { value: string; label: React.ReactNode; scheme_data: any }[]
+  >([]);
   const [searchText, setSearchText] = useState("");
-  const [showModal, setShowModal] = useState(false)
-
+  const [showModal, setShowModal] = useState(false);
 
   const handleSearch = async (value: string) => {
     if (!value) {
@@ -38,23 +49,22 @@ const Home: React.FC = () => {
     }
 
     try {
-      const response = await axios.post('https://schemes-api.grevity.in/search_scheme', {
-        query: value,
-      });
+      const response = await axios.post(
+        "https://schemes-api.grevity.in/search_scheme",
+        {
+          query: value,
+        }
+      );
       const searchResults = response.data.map((item: any) => {
         return {
           value: item.title,
-          label: (
-            <div onClick={() => handleSelect(item)}>
-              {item.title}
-            </div>
-          ),
-          scheme_data: item
+          label: <div onClick={() => handleSelect(item)}>{item.title}</div>,
+          scheme_data: item,
         };
       });
       setOptions(searchResults);
     } catch (error) {
-      console.error('Error fetching search results:', error);
+      console.error("Error fetching search results:", error);
     }
   };
 
@@ -71,7 +81,7 @@ const Home: React.FC = () => {
       <div className="landing_bg"></div>
       <Modal width={900} open={showModal} onCancel={() => setShowModal(false)}>
         {options.map((option: any) => {
-          return <SchemeCard scheme={option.scheme_data} />
+          return <SchemeCard scheme={option.scheme_data} />;
         })}
       </Modal>
       <div className="home">
@@ -89,8 +99,18 @@ const Home: React.FC = () => {
             <div className="hero" style={{ color: "#ffffff", opacity: 1 }}>
               <div className="bottom-div"></div>
               <div className="top-div">
-                <Title level={2} style={{ margin: 0, color: "#8169ff", fontWeight: "bolder" }}>Delhi Social Security Schemes and Resources</Title>
-                <Title level={3} style={{ margin: 8, color: "#8169ff", fontWeight: "bold" }}>for Children and their Families</Title>
+                <Title
+                  level={2}
+                  style={{ margin: 0, color: "#8169ff", fontWeight: "bolder" }}
+                >
+                  Delhi Social Security Schemes and Resources
+                </Title>
+                <Title
+                  level={3}
+                  style={{ margin: 8, color: "#8169ff", fontWeight: "bold" }}
+                >
+                  for Children and their Families
+                </Title>
                 <AutoComplete
                   dropdownMatchSelectWidth={400}
                   style={{ width: 400, marginRight: 12 }}
@@ -106,12 +126,97 @@ const Home: React.FC = () => {
                     onChange={(e) => setSearchText(e.target.value)}
                   />
                 </AutoComplete>
-                <Button size="large" type="primary" onClick={() => setShowModal(true)}>
+                <Button
+                  size="large"
+                  type="primary"
+                  onClick={() => setShowModal(true)}
+                >
                   Search
                 </Button>
               </div>
             </div>
           </center>
+
+          <div
+            style={{
+              backgroundColor: "#02051E",
+              marginTop: "-4vh",
+              marginBottom: "4vh",
+            }}
+          >
+            <h1
+              className="heroDivider"
+              style={{ marginBottom: "-4vh", paddingTop: "20vh" }}
+            ></h1>
+
+            <div
+              style={{
+                backgroundImage: "../images/bg.png",
+                backgroundSize: "100vw 100vh",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <Row
+                style={{
+                  width: "100vw",
+                  alignContent: "start",
+                  justifyContent: "space-around",
+                  marginLeft: "4vw",
+                }}
+              >
+                <Col xs={24} sm={12} xl={8}>
+                  <div style={{ height: "100%" }}>
+                    <Card
+                      hoverable
+                      style={{ width: "72%" }}
+                      onClick={() => {
+                        navigate("/all-resources");
+                      }}
+                      cover={<img alt="example" src="../folders.avif" />}
+                    >
+                      <h2>See all schemes</h2>
+                    </Card>
+                  </div>
+                </Col>
+                <Col xs={24} sm={12} xl={8}>
+                  <div style={{ height: "100%" }}>
+                    <Card
+                      hoverable
+                      style={{ width: "72%" }}
+                      onClick={onSubmit}
+                      cover={
+                        <img
+                          alt="example"
+                          src="../folder_by_c.webp"
+                          style={{ height: "28vh" }}
+                        />
+                      }
+                    >
+                      <h2>Find schemes by category</h2>
+                    </Card>{" "}
+                  </div>
+                </Col>
+                <Col xs={24} sm={12} xl={8}>
+                  <div style={{ height: "100%" }}>
+                    <Card
+                      hoverable
+                      style={{ width: "72%" }}
+                      onClick={onSubmitForm}
+                      cover={
+                        <img
+                          alt="example"
+                          src="../folder_for_me.jpeg"
+                          style={{ height: "28vh" }}
+                        />
+                      }
+                    >
+                      <h2>Find schemes for me</h2>
+                    </Card>{" "}
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </div>
         </div>
       </div>
       {/* <footer>

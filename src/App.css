@@ -1,13 +1,10 @@
 /* src/styles.css */
 body {
-  font-family: "Roboto", serif !important;
+  font-family: "EB Garamond";
 }
 
 .App {
   text-align: center;
-  background-image: url("./images/bg_blur.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
 }
 
 .App-logo {

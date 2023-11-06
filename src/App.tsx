@@ -11,6 +11,7 @@ import Info from "./Pages/SchemeByCategory/Info";
 import SchemesListIndex from "./Pages/SchemeByCategory/schemes_list";
 import AllResourcesIndex from "./Pages/AllResources";
 import ImpLinks from "./Pages/ImpLinks";
+import "leaflet/dist/leaflet.css";
 
 function App() {
   return (
