@@ -6,10 +6,18 @@ const Landing: React.FC = (): JSX.Element => {
   const navigate = useNavigate();
   return (
     <div style={{ paddingTop: "8vh" }}>
-      <center>
-        <h1>Choose one of the following category</h1>
-      </center>
-      <div style={{ padding: "4vh" }}>
+      {/* <center>
+        <h1 style={{ color: "white" }}>Choose one of the following category</h1>
+      </center> */}
+      <div
+        style={{
+          paddingTop: "4vh",
+          paddingBottom: "4vh",
+          border: "solid 10px white",
+          borderRadius: "20px",
+          margin: "4vh",
+        }}
+      >
         <Row
           style={{
             width: "100vw",
@@ -21,20 +29,35 @@ const Landing: React.FC = (): JSX.Element => {
             <div style={{ height: "100%", paddingLeft: "12%" }}>
               <Card
                 onClick={() => {
-                  navigate("/schemes-list", { state: { category: "Skill" }});
+                  navigate("/schemes-list", { state: { category: "Skill" } });
                 }}
                 hoverable
-                style={{ width: "72%" }}
+                style={{
+                  width: "72%",
+                  paddingLeft: "3vw",
+                  paddingRight: "3vw",
+                  paddingTop: "1vw",
+                  background: "transparent",
+                  border: "solid 6px white",
+                }}
                 cover={
                   <img
                     className="img_scheme_by_category"
                     alt="example"
-                    src="../folders.avif"
+                    src="../9.png"
                     style={{ height: "28vh" }}
                   />
                 }
               >
-                <h2>Skills</h2>
+                <h2
+                  style={{
+                    backgroundColor: "white",
+                    textAlign: "center",
+                    fontSize: "24px",
+                  }}
+                >
+                  Skills
+                </h2>
               </Card>{" "}
             </div>
           </Col>
@@ -43,18 +66,35 @@ const Landing: React.FC = (): JSX.Element => {
               <Card
                 hoverable
                 onClick={() => {
-                  navigate("/schemes-list", { state: { category: "Livelihood" }});
+                  navigate("/schemes-list", {
+                    state: { category: "Livelihood" },
+                  });
                 }}
-                style={{ width: "72%" }}
+                style={{
+                  width: "72%",
+                  paddingLeft: "3vw",
+                  paddingRight: "3vw",
+                  paddingTop: "1vw",
+                  background: "transparent",
+                  border: "solid 6px white",
+                }}
                 cover={
                   <img
                     alt="example"
-                    src="../folder_by_c.webp"
+                    src="../9.png"
                     style={{ height: "28vh" }}
                   />
                 }
               >
-                <h2>Livelihood</h2>
+                <h2
+                  style={{
+                    backgroundColor: "white",
+                    textAlign: "center",
+                    fontSize: "24px",
+                  }}
+                >
+                  Livelihood
+                </h2>
               </Card>{" "}
             </div>
           </Col>
@@ -62,9 +102,16 @@ const Landing: React.FC = (): JSX.Element => {
             <div style={{ height: "100%", paddingLeft: "12%" }}>
               <Card
                 hoverable
-                style={{ width: "72%" }}
+                style={{
+                  width: "72%",
+                  paddingLeft: "3vw",
+                  paddingRight: "3vw",
+                  paddingTop: "1vw",
+                  background: "transparent",
+                  border: "solid 6px white",
+                }}
                 onClick={() => {
-                  navigate("/schemes-list", { state: { category: "Health" }});
+                  navigate("/schemes-list", { state: { category: "Health" } });
                 }}
                 cover={
                   <img
@@ -74,7 +121,15 @@ const Landing: React.FC = (): JSX.Element => {
                   />
                 }
               >
-                <h2>Health and nutriton</h2>
+                <h2
+                  style={{
+                    backgroundColor: "white",
+                    textAlign: "center",
+                    fontSize: "24px",
+                  }}
+                >
+                  Health and nutriton
+                </h2>
               </Card>{" "}
             </div>
           </Col>
@@ -92,18 +147,35 @@ const Landing: React.FC = (): JSX.Element => {
               <Card
                 hoverable
                 onClick={() => {
-                  navigate("/schemes-list", { state: { category: "Education" }});
+                  navigate("/schemes-list", {
+                    state: { category: "Education" },
+                  });
                 }}
-                style={{ width: "72%" }}
+                style={{
+                  width: "72%",
+                  paddingLeft: "3vw",
+                  paddingRight: "3vw",
+                  paddingTop: "1vw",
+                  background: "transparent",
+                  border: "solid 6px white",
+                }}
                 cover={
                   <img
                     alt="example"
-                    src="../folders.avif"
+                    src="../8.png"
                     style={{ height: "28vh" }}
                   />
                 }
               >
-                <h2>Education</h2>
+                <h2
+                  style={{
+                    backgroundColor: "white",
+                    textAlign: "center",
+                    fontSize: "24px",
+                  }}
+                >
+                  Education
+                </h2>
               </Card>{" "}
             </div>
           </Col>
@@ -112,18 +184,35 @@ const Landing: React.FC = (): JSX.Element => {
               <Card
                 hoverable
                 onClick={() => {
-                  navigate("/schemes-list", { state: { category: "Women_and_child" }});
+                  navigate("/schemes-list", {
+                    state: { category: "Women_and_child" },
+                  });
                 }}
-                style={{ width: "72%" }}
+                style={{
+                  width: "72%",
+                  paddingLeft: "3vw",
+                  paddingRight: "3vw",
+                  paddingTop: "1vw",
+                  background: "transparent",
+                  border: "solid 6px white",
+                }}
                 cover={
                   <img
                     alt="example"
-                    src="../folder_by_c.webp"
+                    src="../4.jpg"
                     style={{ height: "28vh" }}
                   />
                 }
               >
-                <h2>Woman and child</h2>
+                <h2
+                  style={{
+                    backgroundColor: "white",
+                    textAlign: "center",
+                    fontSize: "24px",
+                  }}
+                >
+                  Woman and child
+                </h2>
               </Card>{" "}
             </div>
           </Col>
@@ -132,18 +221,35 @@ const Landing: React.FC = (): JSX.Element => {
               <Card
                 hoverable
                 onClick={() => {
-                  navigate("/schemes-list", { state: { category: "Miscellaneous" }});
+                  navigate("/schemes-list", {
+                    state: { category: "Miscellaneous" },
+                  });
                 }}
-                style={{ width: "72%" }}
+                style={{
+                  width: "72%",
+                  paddingLeft: "3vw",
+                  paddingRight: "3vw",
+                  paddingTop: "1vw",
+                  background: "transparent",
+                  border: "solid 6px white",
+                }}
                 cover={
                   <img
                     alt="example"
-                    src="../folder_for_me.jpeg"
+                    src="../6.png"
                     style={{ height: "28vh" }}
                   />
                 }
               >
-                <h2>Miscelleneous</h2>
+                <h2
+                  style={{
+                    backgroundColor: "white",
+                    textAlign: "center",
+                    fontSize: "24px",
+                  }}
+                >
+                  Miscelleneous
+                </h2>
               </Card>{" "}
             </div>
           </Col>

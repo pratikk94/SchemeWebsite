@@ -172,9 +172,15 @@ const Home: React.FC = () => {
                       onClick={() => {
                         navigate("/all-resources");
                       }}
-                      cover={<img alt="example" src="../folders.avif" />}
+                      cover={
+                        <img
+                          alt="example"
+                          src="../10.png"
+                          style={{ height: "28vh" }}
+                        />
+                      }
                     >
-                      <h2>See all schemes</h2>
+                      <h2>All schemes</h2>
                     </Card>
                   </div>
                 </Col>
@@ -187,12 +193,12 @@ const Home: React.FC = () => {
                       cover={
                         <img
                           alt="example"
-                          src="../folder_by_c.webp"
+                          src="../11.png"
                           style={{ height: "28vh" }}
                         />
                       }
                     >
-                      <h2>Find schemes by category</h2>
+                      <h2>Sector wise scheme</h2>
                     </Card>{" "}
                   </div>
                 </Col>
@@ -205,12 +211,12 @@ const Home: React.FC = () => {
                       cover={
                         <img
                           alt="example"
-                          src="../folder_for_me.jpeg"
+                          src="../3.png"
                           style={{ height: "28vh" }}
                         />
                       }
                     >
-                      <h2>Find schemes for me</h2>
+                      <h2>Find schemes for you</h2>
                     </Card>{" "}
                   </div>
                 </Col>
