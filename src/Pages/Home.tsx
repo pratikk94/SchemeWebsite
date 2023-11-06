@@ -70,7 +70,7 @@ const Home: React.FC = () => {
 
   const handleSelect = (item: any) => {
     console.log("Selected item:", item);
-    navigate("/schemeByCategory"); // Example of navigation on selection
+    //navigate("/schemeByCategory"); // Example of navigation on selection
   };
 
   return (
