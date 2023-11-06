@@ -17,7 +17,7 @@ const { Content } = Layout;
 const { Option } = Select;
 const { Title, Paragraph } = Typography;
 
-const SchemeCard = ({ scheme }: any) => {
+export const SchemeCard = ({ scheme }: any) => {
   const [benefitsExpanded, setBenefitsExpanded] = useState(false);
   const [eligibilityExpanded, setEligibilityExpanded] = useState(false);
 
