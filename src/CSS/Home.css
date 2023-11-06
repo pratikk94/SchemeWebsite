@@ -58,7 +58,6 @@
   position: absolute; /* Top div uses absolute positioning */
   background-color: #ffffffd0; /* Background color for the top div */
   width: 100vw;
-  height: 16vh;
   padding: 4vw;
   margin-top: 8vh;
   padding-top: 2vh;
@@ -104,7 +103,6 @@
     position: absolute; /* Top div uses absolute positioning */
     background-color: #ffffffd0; /* Background color for the top div */
     width: 80vw;
-    height: 32vh;
     padding: 4vw;
     top: 0;
     left: 10%;
