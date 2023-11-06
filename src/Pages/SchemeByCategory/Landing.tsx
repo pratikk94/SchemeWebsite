@@ -45,7 +45,7 @@ const Landing: React.FC = (): JSX.Element => {
                     className="img_scheme_by_category"
                     alt="example"
                     src="../9.png"
-                    style={{ height: "28vh" }}
+                    style={{ height: "20vh" }}
                   />
                 }
               >
@@ -82,7 +82,7 @@ const Landing: React.FC = (): JSX.Element => {
                   <img
                     alt="example"
                     src="../9.png"
-                    style={{ height: "28vh" }}
+                    style={{ height: "20vh" }}
                   />
                 }
               >
@@ -117,7 +117,7 @@ const Landing: React.FC = (): JSX.Element => {
                   <img
                     alt="example"
                     src="../folder_for_me.jpeg"
-                    style={{ height: "28vh" }}
+                    style={{ height: "20vh" }}
                   />
                 }
               >
@@ -163,7 +163,7 @@ const Landing: React.FC = (): JSX.Element => {
                   <img
                     alt="example"
                     src="../8.png"
-                    style={{ height: "28vh" }}
+                    style={{ height: "20vh" }}
                   />
                 }
               >
@@ -200,7 +200,7 @@ const Landing: React.FC = (): JSX.Element => {
                   <img
                     alt="example"
                     src="../4.jpg"
-                    style={{ height: "28vh" }}
+                    style={{ height: "20vh" }}
                   />
                 }
               >
@@ -237,7 +237,7 @@ const Landing: React.FC = (): JSX.Element => {
                   <img
                     alt="example"
                     src="../6.png"
-                    style={{ height: "28vh" }}
+                    style={{ height: "20vh" }}
                   />
                 }
               >

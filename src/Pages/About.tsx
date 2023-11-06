@@ -12,7 +12,7 @@ const AboutUs: React.FC = () => {
       <div className="home">
         <div
           className="container-type"
-          style={{ height: "80vh", width: "100vw" }}
+          style={{ height: "100vh", width: "100vw" }}
         >
           <center>
             <p style={{ margin: "2vw", fontSize: "48px", fontWeight: 900 }}>
