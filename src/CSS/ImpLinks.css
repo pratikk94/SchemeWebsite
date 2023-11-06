@@ -1,0 +1,17 @@
+/* styles.css */
+.pre-line {
+  white-space: pre-line;
+  width: 16vw;
+  font-size: 25px;
+}
+.pre-lineS {
+  white-space: pre-line;
+  width: 8vw;
+  font-size: 25px;
+}
+
+.pre-lineR {
+  width: 50vw;
+  white-space: pre-line;
+  font-size: 25px;
+}

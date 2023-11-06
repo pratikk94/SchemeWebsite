@@ -10,6 +10,7 @@ import SchemeByCategory from "./Pages/SchemeByCategory/Landing";
 import Info from "./Pages/SchemeByCategory/Info";
 import SchemesListIndex from "./Pages/SchemeByCategory/schemes_list";
 import AllResourcesIndex from "./Pages/AllResources";
+import ImpLinks from "./Pages/ImpLinks";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/listOfScheme" element={<Info />} />
         <Route path="/schemes-list" element={<SchemesListIndex />} />
         <Route path="/all-resources" element={<AllResourcesIndex />} />
+        <Route path="/imp-links" element={<ImpLinks />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>

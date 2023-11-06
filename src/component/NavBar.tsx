@@ -16,10 +16,6 @@ export default function NavBar() {
   const [user, setUser] = useState("");
   const [phone, setPhone] = useState("");
 
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-
   const handleOk = () => {
     if (feedback === "" || user === "" || phone === "") {
       message.error("Please fill all the fields!");

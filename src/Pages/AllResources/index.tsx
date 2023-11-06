@@ -1,19 +1,7 @@
-import {
-  Checkbox,
-  Col,
-  Form,
-  Input,
-  InputNumber,
-  Modal,
-  Row,
-  Select,
-  Spin,
-  message,
-} from "antd";
+import { Col, Form, Input, Modal, Row, Select, Spin, message } from "antd";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
-import { Card, Typography, List, Tag, Button, Space, Layout } from "antd";
+import { Card, Typography, Tag, Button, Space, Layout } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 const { Content } = Layout;
 const { Option } = Select;
