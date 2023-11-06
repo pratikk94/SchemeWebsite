@@ -1,14 +1,11 @@
 import React from "react";
 import "../CSS/Home.css";
 import image from "../images/bg_blur.png";
-
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import { Card } from "antd";
-const position = [51.505, -0.09]; // Latitude and Longitude of the map center
 
 const AboutUs: React.FC = () => {
-  const position: [number, number] = [51.505, -0.09]; // Latitude, Longitude
-  const zoom: number = 13;
+  const position: [number, number] = [51.505, -0.09];
   return (
     <div className="App" style={{ backgroundImage: image }}>
       <header className="App-header"></header>
@@ -66,17 +63,18 @@ const AboutUs: React.FC = () => {
             style={{ height: "500px", width: "100%" }}
             bodyStyle={{ padding: 0 }}
           >
-            {/* <MapContainer
+            <MapContainer
               center={position}
-              zoom={zoom}
-              style={{ height: "400px", width: "100%" }}
+              zoom={13}
+              scrollWheelZoom={false}
+              style={{ height: "500px", width: "100%" }}
             >
               <Marker position={position}>
                 <Popup>
                   A pretty CSS3 popup. <br /> Easily customizable.
                 </Popup>
               </Marker>
-            </MapContainer> */}
+            </MapContainer>
           </Card>
           <p
             style={{
@@ -94,9 +92,6 @@ const AboutUs: React.FC = () => {
           </p>
         </div>
       </div>
-      <footer>
-        <p>All rights reserved ©</p>
-      </footer>
     </div>
   );
 };
