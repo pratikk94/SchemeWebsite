@@ -130,7 +130,22 @@ export default function NavBar() {
           </li>
         </ul>
         <h1 className="logo">
-          <NavLink to="/">Scheme's Website</NavLink>
+          <NavLink to="/">
+            <img
+              src="../logo.jpeg"
+              style={{ width: "80px", height: "80px", display: "inline" }}
+            />
+            <p
+              style={{
+                fontSize: "20px",
+                display: "inline",
+                alignItems: "start",
+                marginTop: "-200px",
+              }}
+            >
+              Delhi Comission For Protection of Child Rights
+            </p>
+          </NavLink>
         </h1>
       </div>
     </nav>
