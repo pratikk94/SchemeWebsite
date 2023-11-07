@@ -29,9 +29,9 @@ export default function Footer() {
         </Col>
       </Row>
       <p style={{ color: "white" }}>
-        Delhi Commision for Protection of Child Rights
+        Delhi Commission for Protection of Child Rights
         <br />
-        &copy; Produced by British Asian Trust;
+        &copy; Produced by British Asian Trust
       </p>
     </div>
   );
