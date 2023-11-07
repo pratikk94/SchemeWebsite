@@ -35,7 +35,7 @@ const AboutUs: React.FC = () => {
               marginBottom: "10px",
             }}
           >
-            Purpose of website
+            Purpose of the website
           </h1>
           <p
             style={{
@@ -43,6 +43,7 @@ const AboutUs: React.FC = () => {
               marginLeft: "16vw",
               marginRight: "16vw",
               fontSize: "24px",
+              whiteSpace: "pre-line",
             }}
           >
             The socioeconomic conditions of a family play a significant role in
@@ -54,9 +55,10 @@ const AboutUs: React.FC = () => {
             rights and entitlements as well as assisting/collaborating with
             stakeholders in connecting them to various schemes can make a
             substantial contribution to enhancing child welfare and safety in
-            Delhi. This website is a joint initiative between Delhi Commission
-            for Protection of Child Rights, Govt of NCT of Delhi and British
-            Asian Trust. The website aims to have a comprehensive list of social
+            Delhi. <br />
+            This website is a joint initiative between Delhi Commission for
+            Protection of Child Rights, Govt of NCT of Delhi and British Asian
+            Trust. The website aims to have a comprehensive list of social
             security schemes, scholarships, resources, essential documents and
             compensations available for children and households in Delhi. It
             will serve as a centralised platform with this information in a
@@ -97,6 +99,50 @@ const AboutUs: React.FC = () => {
             trafficking.
           </p>
 
+          <h1
+            style={{
+              textAlign: "left",
+              marginTop: "80px",
+              marginLeft: "16vw",
+              marginRight: "16vw",
+              marginBottom: "10px",
+            }}
+          >
+            Disclaimer
+          </h1>
+          <p
+            style={{
+              textAlign: "left",
+              marginLeft: "16vw",
+              marginRight: "16vw",
+              fontSize: "24px",
+            }}
+          >
+            This Website is maintained by Delhi Commission for Protection of
+            Child Rights, Government of National Capital Territory of Delhi and
+            the British Asian Trust.
+            <br />
+            The contents of this website are for information purposes only,
+            enabling the public at large to have a quick and an easy access to
+            information and do not have any legal sanctity. Though every effort
+            is made to provide accurate and updated information, it is likely
+            that the some details may have changed prior to their update in the
+            website. Hence, we do not assume any legal liability on the
+            completeness, accuracy or usefulness of the contents provided in
+            this website.
+            <br />
+            The links are provided to other external sites in some web
+            pages/documents. We do not take responsibility for the accuracy of
+            the contents in those sites. The hyperlink given to external sites
+            do not constitute an endorsement of information, products or
+            services offered by these sites. Users are advised to verify/check
+            any information with the relevant Government department(s) and/or
+            other source(s), and to obtain any appropriate professional advice
+            before acting on the information provided in this Website.
+            <br />
+            We welcome your suggestions to improve this website and request that
+            error (if any) may kindly be brought to our notice.
+          </p>
           <Footer />
         </div>
       </div>

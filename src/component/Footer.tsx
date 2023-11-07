@@ -31,7 +31,7 @@ export default function Footer() {
       <p style={{ color: "white" }}>
         Delhi commision for protection of child rights
         <br />
-        &copy; Produced by Britis Asian Trust;
+        &copy; Produced by British Asian Trust;
       </p>
     </div>
   );
