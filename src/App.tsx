@@ -12,6 +12,8 @@ import SchemesListIndex from "./Pages/SchemeByCategory/schemes_list";
 import AllResourcesIndex from "./Pages/AllResources";
 import ImpLinks from "./Pages/ImpLinks";
 import "leaflet/dist/leaflet.css";
+import Compensation from "./Pages/Compensation";
+import EssentialDocs from "./Pages/EssentialDocs";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="/schemes-list" element={<SchemesListIndex />} />
         <Route path="/all-resources" element={<AllResourcesIndex />} />
         <Route path="/imp-links" element={<ImpLinks />} />
+        <Route path="/compensation" element={<Compensation />} />
+        <Route path="/essentialDocs" element={<EssentialDocs />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>

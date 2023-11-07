@@ -143,7 +143,15 @@ const AboutUs: React.FC = () => {
             We welcome your suggestions to improve this website and request that
             error (if any) may kindly be brought to our notice.
           </p>
-          <Footer />
+          <div
+            style={{
+              backgroundColor: "#03051E",
+            }}
+          >
+            <center>
+              <Footer />
+            </center>
+          </div>
         </div>
       </div>
     </div>

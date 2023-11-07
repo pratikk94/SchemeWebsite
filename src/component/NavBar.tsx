@@ -146,10 +146,32 @@ export default function NavBar() {
               style={({ isActive }) => ({
                 color: isActive ? "#1890ff" : "inherit",
               })}
+              to="/compensation"
+            >
+              {/* <PhoneOutlined />  */}
+              Compensation
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#1890ff" : "inherit",
+              })}
+              to="/essentialDocs"
+            >
+              {/* <PhoneOutlined />  */}
+              Essential Docs
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#1890ff" : "inherit",
+              })}
               to="/contact"
             >
               {/* <PhoneOutlined />  */}
-              Contact us
+              Contact Us
             </NavLink>
           </li>
         </ul>
@@ -167,7 +189,7 @@ export default function NavBar() {
             />
             <p
               style={{
-                fontSize: "2vw",
+                fontSize: "1.6vw",
                 display: "inline",
                 alignItems: "start",
                 position: "absolute",
