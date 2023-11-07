@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../data/compensation.json";
 import { Card } from "antd";
+import Footer from "../component/Footer";
 const Compensation: React.FC = () => {
   return (
     <div style={{ marginTop: "20vh" }}>
@@ -8,7 +9,9 @@ const Compensation: React.FC = () => {
         <Card
           style={{ marginLeft: "4vw", marginRight: "4vw", marginTop: "4vw" }}
         >
-          <h1 key={c["S. No."]}>{c["Compensation"]}</h1>
+          <h1 key={c["S. No."]} style={{ color: "#06008B" }}>
+            {c["Compensation"]}
+          </h1>
           <h2>Eligibility : </h2>
           <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
             {c["Eligibility"]}
@@ -23,6 +26,15 @@ const Compensation: React.FC = () => {
           </p>
         </Card>
       ))}
+      <div
+        style={{
+          backgroundColor: "#03051E",
+        }}
+      >
+        <center>
+          <Footer />
+        </center>
+      </div>
     </div>
   );
 };

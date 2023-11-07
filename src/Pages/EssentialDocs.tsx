@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../data/EssentialDocs.json";
 import { Card } from "antd";
+import Footer from "../component/Footer";
 const EssentialDocs: React.FC = () => {
   return (
     <div style={{ marginTop: "20vh" }}>
@@ -8,7 +9,9 @@ const EssentialDocs: React.FC = () => {
         <Card
           style={{ marginLeft: "4vw", marginRight: "4vw", marginTop: "4vw" }}
         >
-          <h1 key={c["S. No."]}>{c["Resources"]}</h1>
+          <h1 key={c["S. No."]} style={{ color: "#06008B" }}>
+            {c["Resources"]}
+          </h1>
           <h2>Concerned Dpt.: </h2>
           <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
             {c["Concerned Dpt."]}
@@ -27,6 +30,15 @@ const EssentialDocs: React.FC = () => {
           </p>
         </Card>
       ))}
+      <div
+        style={{
+          backgroundColor: "#03051E",
+        }}
+      >
+        <center>
+          <Footer />
+        </center>
+      </div>
     </div>
   );
 };
