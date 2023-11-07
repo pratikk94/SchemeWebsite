@@ -21,9 +21,10 @@ const AboutUs: React.FC = () => {
                 fontSize: "48px",
                 fontWeight: 900,
                 marginTop: "36vh",
+                color: "#1A196F",
               }}
             >
-              About us
+              About Us
             </p>
           </center>
           <h1
@@ -33,17 +34,18 @@ const AboutUs: React.FC = () => {
               marginLeft: "16vw",
               marginRight: "16vw",
               marginBottom: "10px",
+              color: "#1A196F",
             }}
           >
-            Purpose of the website
+            Purpose of the Website
           </h1>
           <p
             style={{
-              textAlign: "left",
               marginLeft: "16vw",
               marginRight: "16vw",
               fontSize: "24px",
               whiteSpace: "pre-line",
+              textAlign: "justify",
             }}
           >
             The socioeconomic conditions of a family play a significant role in
@@ -56,6 +58,7 @@ const AboutUs: React.FC = () => {
             stakeholders in connecting them to various schemes can make a
             substantial contribution to enhancing child welfare and safety in
             Delhi. <br />
+            <br />
             This website is a joint initiative between Delhi Commission for
             Protection of Child Rights, Govt of NCT of Delhi and British Asian
             Trust. The website aims to have a comprehensive list of social
@@ -70,21 +73,24 @@ const AboutUs: React.FC = () => {
           </p>
           <h1
             style={{
-              textAlign: "left",
+              textAlign: "justify",
               marginTop: "80px",
               marginLeft: "16vw",
               marginRight: "16vw",
               marginBottom: "10px",
+              color: "#1A196F",
+              whiteSpace: "pre-line",
             }}
           >
-            Delhi commission for protection of child rights
+            Delhi Commission for Protection of Child Rights
           </h1>
           <p
             style={{
-              textAlign: "left",
+              textAlign: "justify",
               marginLeft: "16vw",
               marginRight: "16vw",
               fontSize: "24px",
+              whiteSpace: "pre-line",
             }}
           >
             The Delhi Commission for Protection of Child Rights (DCPCR), Govt of
@@ -106,13 +112,14 @@ const AboutUs: React.FC = () => {
               marginLeft: "16vw",
               marginRight: "16vw",
               marginBottom: "10px",
+              color: "#1A196F",
             }}
           >
             Disclaimer
           </h1>
           <p
             style={{
-              textAlign: "left",
+              textAlign: "justify",
               marginLeft: "16vw",
               marginRight: "16vw",
               fontSize: "24px",
@@ -121,6 +128,7 @@ const AboutUs: React.FC = () => {
             This Website is maintained by Delhi Commission for Protection of
             Child Rights, Government of National Capital Territory of Delhi and
             the British Asian Trust.
+            <br />
             <br />
             The contents of this website are for information purposes only,
             enabling the public at large to have a quick and an easy access to
@@ -131,6 +139,7 @@ const AboutUs: React.FC = () => {
             completeness, accuracy or usefulness of the contents provided in
             this website.
             <br />
+            <br />
             The links are provided to other external sites in some web
             pages/documents. We do not take responsibility for the accuracy of
             the contents in those sites. The hyperlink given to external sites
@@ -139,6 +148,7 @@ const AboutUs: React.FC = () => {
             any information with the relevant Government department(s) and/or
             other source(s), and to obtain any appropriate professional advice
             before acting on the information provided in this Website.
+            <br />
             <br />
             We welcome your suggestions to improve this website and request that
             error (if any) may kindly be brought to our notice.

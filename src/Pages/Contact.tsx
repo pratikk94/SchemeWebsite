@@ -12,11 +12,12 @@ const ContactUs: React.FC = () => (
         <center>
           <h1
             style={{
-              textAlign: "left",
+              textAlign: "center",
               marginLeft: "16vw",
               marginRight: "16vw",
               marginBottom: "10px",
               marginTop: "240px",
+              color: "#1A196F",
             }}
           >
             Contact Us

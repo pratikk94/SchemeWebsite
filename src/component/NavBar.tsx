@@ -105,7 +105,7 @@ export default function NavBar() {
               to="/"
             >
               {/* <HomeOutlined />  */}
-              Home
+              <p style={{ fontSize: "24px" }}>Home</p>
             </NavLink>
           </li>
 
@@ -117,7 +117,7 @@ export default function NavBar() {
               to="/about"
             >
               {/* <InfoCircleOutlined />  */}
-              About
+              <p style={{ fontSize: "24px" }}>About</p>
             </NavLink>
           </li>
 
@@ -129,7 +129,7 @@ export default function NavBar() {
               to="/imp-links"
             >
               {/* <FormOutlined /> */}
-              Resources
+              <p style={{ fontSize: "24px" }}>Resources</p>
             </NavLink>
           </li>
 
@@ -141,7 +141,7 @@ export default function NavBar() {
               to="/compensation"
             >
               {/* <PhoneOutlined />  */}
-              Compensation
+              <p style={{ fontSize: "24px" }}>Compensation</p>
             </NavLink>
           </li>
           <li>
@@ -152,7 +152,7 @@ export default function NavBar() {
               to="/essentialDocs"
             >
               {/* <PhoneOutlined />  */}
-              Essential Docs
+              <p style={{ fontSize: "24px" }}>Essential Docs</p>
             </NavLink>
           </li>
           <li>
@@ -161,7 +161,7 @@ export default function NavBar() {
               onClick={() => setIsModalOpen(true)}
             >
               {/* <MessageOutlined />  */}
-              <p style={{ fontWeight: 500 }}>Feedback</p>
+              <p style={{ fontWeight: 500, fontSize: "24px" }}>Feedback</p>
             </div>
           </li>
           <li>
@@ -172,7 +172,7 @@ export default function NavBar() {
               to="/contact"
             >
               {/* <PhoneOutlined />  */}
-              Contact Us
+              <p style={{ fontSize: "24px" }}>Contact Us</p>
             </NavLink>
           </li>
         </ul>
@@ -186,20 +186,23 @@ export default function NavBar() {
                 display: "inline",
                 position: "absolute",
                 left: "4vw",
+                top: "10px",
               }}
             />
             <p
               style={{
-                fontSize: "1.6vw",
+                fontSize: "1.3vw",
                 display: "inline",
                 alignItems: "start",
                 position: "absolute",
-                top: "80px",
+                top: "40px",
                 left: "12vw",
                 color: "#731816",
               }}
             >
               Delhi Commission for Protection of Child Rights
+              <br />
+              Government of National Territory of Delhi
             </p>
           </NavLink>
         </h1>

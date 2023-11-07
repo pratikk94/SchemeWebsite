@@ -22,30 +22,38 @@ export default function Footer() {
         <Col span={4} style={{ fontSize: "24px" }}>
           <a
             href="https://www.facebook.com/DCPCR/"
-            style={{ textDecoration: "none" }}
+            style={{ color: "#34CCCC", fontSize: "32px" }}
           >
             <FontAwesomeIcon icon={faFacebookF} style={{ color: "#ffffff" }} />
             Facebook
           </a>
         </Col>
         <Col span={4} style={{ fontSize: "24px" }}>
-          <a href="https://www.instagram.com/dcpcr_delhi/">
+          <a
+            href="https://www.instagram.com/dcpcr_delhi/"
+            style={{ color: "#34CCCC", fontSize: "32px" }}
+          >
             <FontAwesomeIcon icon={faInstagram} style={{ color: "#ffffff" }} />
             Instagram
           </a>
         </Col>
         <Col span={4} style={{ fontSize: "24px" }}>
-          <a href="https://twitter.com/DCPCR">
+          <a
+            href="https://twitter.com/DCPCR"
+            style={{ color: "#34CCCC", fontSize: "32px" }}
+          >
             <FontAwesomeIcon icon={faTwitter} style={{ color: "#ffffff" }} />
             Twitter
           </a>
         </Col>
       </Row>
-      <p style={{ color: "white" }}>
+      <p style={{ color: "white", fontSize: "20px" }}>
         Delhi Commission for Protection of Child Rights
         <br />
         &copy; Produced by British Asian Trust
+        <br />
       </p>
+      <div style={{ height: "40px" }}></div>
     </div>
   );
 }

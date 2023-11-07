@@ -12,10 +12,12 @@ const EssentialDocs: React.FC = () => {
           <h1 key={c["S. No."]} style={{ color: "#06008B" }}>
             {c["Resources"]}
           </h1>
-          <h2>Concerned Dpt.: </h2>
+          <br />
+          <h2>Concerned Department: </h2>
           <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
             {c["Concerned Dpt."]}
           </p>
+          <br />
           <h2>Process: </h2>
           <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
             {c["Process"]}
@@ -30,6 +32,7 @@ const EssentialDocs: React.FC = () => {
               </p>
             </div>
           )}
+          <br />
           {c["No. of days it takes to complete process"].trim().length === 0 ? (
             <p></p>
           ) : (

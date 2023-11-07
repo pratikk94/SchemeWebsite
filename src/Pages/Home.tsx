@@ -160,28 +160,38 @@ const Home: React.FC = () => {
               <Row
                 style={{
                   width: "100vw",
-                  alignContent: "start",
-                  justifyContent: "space-around",
-                  marginLeft: "4vw",
+                  marginLeft: "8vw",
                 }}
               >
                 <Col xs={24} sm={12} xl={8}>
                   <div style={{ height: "100%" }}>
                     <Card
                       hoverable
-                      style={{ width: "72%" }}
+                      style={{ width: "56%", height: "104%" }}
                       onClick={() => {
                         navigate("/all-resources");
                       }}
                       cover={
-                        <img
-                          alt="example"
-                          src="../10.png"
-                          style={{ height: "28vh" }}
-                        />
+                        <center>
+                          <img
+                            alt="example"
+                            src="../all_scheme.gif"
+                            style={{ height: "14vh", width: "36%" }}
+                          />
+                        </center>
                       }
                     >
-                      <h2>ALL SCHEMES</h2>
+                      <p
+                        style={{
+                          fontSize: "32px",
+                          fontWeight: 700,
+                          marginTop: "-20px",
+                          color: "#1A196F",
+                        }}
+                      >
+                        ALL <br />
+                        SCHEMES
+                      </p>
                     </Card>
                   </div>
                 </Col>
@@ -189,17 +199,28 @@ const Home: React.FC = () => {
                   <div style={{ height: "100%" }}>
                     <Card
                       hoverable
-                      style={{ width: "72%" }}
+                      style={{ width: "56%", height: "104%" }}
                       onClick={onSubmit}
                       cover={
-                        <img
-                          alt="example"
-                          src="../11.png"
-                          style={{ height: "28vh" }}
-                        />
+                        <center>
+                          <img
+                            alt="example"
+                            src="../sectorwise.gif"
+                            style={{ height: "14vh", width: "36%" }}
+                          />
+                        </center>
                       }
                     >
-                      <h2>SECTOR WISE SCHEME</h2>
+                      <p
+                        style={{
+                          fontSize: "32px",
+                          fontWeight: 700,
+                          marginTop: "-20px",
+                          color: "#1A196F",
+                        }}
+                      >
+                        SECTOR WISE SCHEMES
+                      </p>
                     </Card>{" "}
                   </div>
                 </Col>
@@ -207,23 +228,36 @@ const Home: React.FC = () => {
                   <div style={{ height: "100%" }}>
                     <Card
                       hoverable
-                      style={{ width: "72%" }}
+                      style={{ width: "56%", height: "104%" }}
                       onClick={onSubmitForm}
                       cover={
-                        <img
-                          alt="example"
-                          src="../3.png"
-                          style={{ height: "28vh" }}
-                        />
+                        <center>
+                          <img
+                            alt="example"
+                            src="../3.gif"
+                            style={{ height: "14vh", width: "36%" }}
+                          />
+                        </center>
                       }
                     >
-                      <h2>FIND SCHEMES FOR YOU</h2>
+                      <p
+                        style={{
+                          fontSize: "32px",
+                          fontWeight: 700,
+                          marginTop: "-20px",
+                          color: "#1A196F",
+                        }}
+                      >
+                        FIND SCHEMES FOR YOU
+                      </p>
                     </Card>{" "}
                   </div>
                 </Col>
               </Row>
             </div>
-            <Footer />
+            <div style={{ marginTop: "20px" }}>
+              <Footer />
+            </div>
           </div>
         </div>
       </div>
