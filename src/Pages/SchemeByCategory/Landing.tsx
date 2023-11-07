@@ -22,6 +22,7 @@ const Landing: React.FC = (): JSX.Element => {
           border: "solid 10px white",
           borderRadius: "20px",
           margin: "4vh",
+          marginTop: "12vh",
         }}
       >
         <Row
