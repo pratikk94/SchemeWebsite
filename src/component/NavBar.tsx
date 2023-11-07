@@ -162,7 +162,7 @@ export default function NavBar() {
                 height: "120px",
                 display: "inline",
                 position: "absolute",
-                left: "120px",
+                left: "4vw",
               }}
             />
             <p
@@ -172,7 +172,7 @@ export default function NavBar() {
                 alignItems: "start",
                 position: "absolute",
                 top: "80px",
-                left: 260,
+                left: "12vw",
                 color: "#731816",
               }}
             >
