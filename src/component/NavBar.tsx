@@ -99,19 +99,21 @@ export default function NavBar() {
         <ul className="menu-items">
           <li>
             <NavLink to="/">
-              <HomeOutlined /> Home
+              {/* <HomeOutlined />  */}
+              Home
             </NavLink>
           </li>
 
           <li>
             <NavLink to="/about">
-              <InfoCircleOutlined /> About
+              {/* <InfoCircleOutlined />  */}
+              About
             </NavLink>
           </li>
 
           <li>
             <NavLink to="/imp-links">
-              <FormOutlined />
+              {/* <FormOutlined /> */}
               Resources
             </NavLink>
           </li>
@@ -120,12 +122,14 @@ export default function NavBar() {
               style={{ cursor: "pointer" }}
               onClick={() => setIsModalOpen(true)}
             >
-              <MessageOutlined /> Feedback
+              {/* <MessageOutlined />  */}
+              Feedback
             </div>
           </li>
           <li>
             <NavLink to="/contact">
-              <PhoneOutlined /> Contact us
+              {/* <PhoneOutlined />  */}
+              Contact us
             </NavLink>
           </li>
         </ul>
@@ -137,10 +141,13 @@ export default function NavBar() {
             />
             <p
               style={{
-                fontSize: "20px",
+                fontSize: "28px",
                 display: "inline",
                 alignItems: "start",
-                marginTop: "-200px",
+                position: "absolute",
+                top: 24,
+                left: 380,
+                color: "#731816",
               }}
             >
               Delhi Comission For Protection of Child Rights
