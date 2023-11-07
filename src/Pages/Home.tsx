@@ -152,7 +152,7 @@ const Home: React.FC = () => {
 
             <div
               style={{
-                backgroundImage: "../images/bg.png",
+                backgroundImage: "../images/BG.png",
                 backgroundSize: "100vw 100vh",
                 backgroundRepeat: "no-repeat",
               }}
