@@ -181,7 +181,7 @@ const Home: React.FC = () => {
                         />
                       }
                     >
-                      <h2>All schemes</h2>
+                      <h2>ALL SCHEMES</h2>
                     </Card>
                   </div>
                 </Col>
@@ -199,7 +199,7 @@ const Home: React.FC = () => {
                         />
                       }
                     >
-                      <h2>Sector wise scheme</h2>
+                      <h2>SECTOR WISE SCHEME</h2>
                     </Card>{" "}
                   </div>
                 </Col>
@@ -217,7 +217,7 @@ const Home: React.FC = () => {
                         />
                       }
                     >
-                      <h2>Find schemes for you</h2>
+                      <h2>FIND SCHEMES FOR YOU</h2>
                     </Card>{" "}
                   </div>
                 </Col>

@@ -176,7 +176,7 @@ export default function NavBar() {
                 color: "#731816",
               }}
             >
-              Delhi Commission For Protection of Child Rights
+              Delhi Commission for Protection of Child Rights
             </p>
           </NavLink>
         </h1>
