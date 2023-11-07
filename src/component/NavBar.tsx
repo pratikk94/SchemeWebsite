@@ -98,21 +98,36 @@ export default function NavBar() {
         </div>
         <ul className="menu-items" style={{ position: "absolute", right: 32 }}>
           <li>
-            <NavLink to="/">
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#1890ff" : "inherit",
+              })}
+              to="/"
+            >
               {/* <HomeOutlined />  */}
               Home
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/about">
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#1890ff" : "inherit",
+              })}
+              to="/about"
+            >
               {/* <InfoCircleOutlined />  */}
               About
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/imp-links">
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#1890ff" : "inherit",
+              })}
+              to="/imp-links"
+            >
               {/* <FormOutlined /> */}
               Resources
             </NavLink>
@@ -127,7 +142,12 @@ export default function NavBar() {
             </div>
           </li>
           <li>
-            <NavLink to="/contact">
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#1890ff" : "inherit",
+              })}
+              to="/contact"
+            >
               {/* <PhoneOutlined />  */}
               Contact us
             </NavLink>
@@ -147,7 +167,7 @@ export default function NavBar() {
             />
             <p
               style={{
-                fontSize: "36px",
+                fontSize: "2vw",
                 display: "inline",
                 alignItems: "start",
                 position: "absolute",
