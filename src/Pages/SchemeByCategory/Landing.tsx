@@ -63,7 +63,7 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-3vh",
                     marginLeft: "-24px",
-                    width: "260px",
+                    width: "14.5vw",
                   }}
                 >
                   Skills
@@ -103,7 +103,7 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-3vh",
                     marginLeft: "-24px",
-                    width: "260px",
+                    width: "14.5vw",
                   }}
                 >
                   Livelihood
@@ -141,7 +141,7 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-3vh",
                     marginLeft: "-24px",
-                    width: "260px",
+                    width: "14.5vw",
                   }}
                 >
                   Health and Nutrition
@@ -190,7 +190,7 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-3vh",
                     marginLeft: "-24px",
-                    width: "260px",
+                    width: "14.5vw",
                   }}
                 >
                   Education
@@ -230,7 +230,7 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-3vh",
                     marginLeft: "-24px",
-                    width: "260px",
+                    width: "14.5vw",
                   }}
                 >
                   Woman and Child
@@ -270,7 +270,7 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-3vh",
                     marginLeft: "-24px",
-                    width: "260px",
+                    width: "14.5vw",
                   }}
                 >
                   Miscelleneous
