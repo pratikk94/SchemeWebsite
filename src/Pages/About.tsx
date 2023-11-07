@@ -23,6 +23,7 @@ const AboutUs: React.FC = () => {
           <h1
             style={{
               textAlign: "left",
+              marginTop: "80px",
               marginLeft: "16vw",
               marginRight: "16vw",
               marginBottom: "10px",
@@ -83,6 +84,7 @@ const AboutUs: React.FC = () => {
               marginLeft: "16vw",
               marginRight: "16vw",
               fontSize: "24px",
+              marginBottom: "20px",
             }}
           >
             Address: 4th & 5th Floor, ISBT Building ,<br />
