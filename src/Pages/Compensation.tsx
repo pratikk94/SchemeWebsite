@@ -21,9 +21,13 @@ const Compensation: React.FC = () => {
             {c["Legislation/Policy/SOP"]}
           </p>
           <h2>Documents required: </h2>
-          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
-            {c["Documents required"]}
-          </p>
+          {c["Documents required"].length === 0 ? (
+            <p></p>
+          ) : (
+            <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
+              {c["Documents required"]}
+            </p>
+          )}
         </Card>
       ))}
       <div

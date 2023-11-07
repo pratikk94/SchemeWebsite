@@ -20,14 +20,26 @@ const EssentialDocs: React.FC = () => {
           <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
             {c["Process"]}
           </p>
-          <h2>Cost involved: </h2>
-          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
-            {c["Cost involved"]}
-          </p>
-          <h2>No. of days it takes to complete process: </h2>
-          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
-            {c["No. of days it takes to complete process"]}
-          </p>
+          {c["Cost involved"].trim().length === 0 ? (
+            <p></p>
+          ) : (
+            <div>
+              <h2>Cost involved: </h2>
+              <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
+                {c["Cost involved"]}
+              </p>
+            </div>
+          )}
+          {c["No. of days it takes to complete process"].trim().length === 0 ? (
+            <p></p>
+          ) : (
+            <div>
+              <h2>No. of days it takes to complete process: </h2>
+              <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
+                {c["No. of days it takes to complete process"]}
+              </p>
+            </div>
+          )}
         </Card>
       ))}
       <div
