@@ -1,3 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { Col, Row } from "antd";
 
 export default function Footer() {
@@ -18,14 +24,21 @@ export default function Footer() {
             href="https://www.facebook.com/DCPCR/"
             style={{ textDecoration: "none" }}
           >
+            <FontAwesomeIcon icon={faFacebookF} style={{ color: "#ffffff" }} />
             Facebook
           </a>
         </Col>
         <Col span={4} style={{ fontSize: "24px" }}>
-          <a href="https://www.instagram.com/dcpcr_delhi/">Instagram</a>
+          <a href="https://www.instagram.com/dcpcr_delhi/">
+            <FontAwesomeIcon icon={faInstagram} style={{ color: "#ffffff" }} />
+            Instagram
+          </a>
         </Col>
         <Col span={4} style={{ fontSize: "24px" }}>
-          <a href="https://twitter.com/DCPCR">Twitter</a>
+          <a href="https://twitter.com/DCPCR">
+            <FontAwesomeIcon icon={faTwitter} style={{ color: "#ffffff" }} />
+            Twitter
+          </a>
         </Col>
       </Row>
       <p style={{ color: "white" }}>
