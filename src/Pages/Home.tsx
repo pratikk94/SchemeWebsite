@@ -102,8 +102,9 @@ const Home: React.FC = () => {
               <div className="top-div">
                 <p
                   style={{
-                    marginTop: "32px",
-                    color: "#8169ff",
+                    marginTop: "48px",
+                    // color: "#8169ff",
+                    color: "#191970",
                     fontWeight: "bolder",
                     fontSize: "48px",
                   }}

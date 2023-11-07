@@ -96,7 +96,7 @@ export default function NavBar() {
           <span className="line line2"></span>
           <span className="line line3"></span>
         </div>
-        <ul className="menu-items">
+        <ul className="menu-items" style={{ position: "absolute", right: 32 }}>
           <li>
             <NavLink to="/">
               {/* <HomeOutlined />  */}
@@ -137,16 +137,22 @@ export default function NavBar() {
           <NavLink to="/">
             <img
               src="../logo.jpeg"
-              style={{ width: "80px", height: "80px", display: "inline" }}
+              style={{
+                width: "120px",
+                height: "120px",
+                display: "inline",
+                position: "absolute",
+                left: "120px",
+              }}
             />
             <p
               style={{
-                fontSize: "28px",
+                fontSize: "36px",
                 display: "inline",
                 alignItems: "start",
                 position: "absolute",
-                top: 24,
-                left: 380,
+                top: "80px",
+                left: 260,
                 color: "#731816",
               }}
             >
