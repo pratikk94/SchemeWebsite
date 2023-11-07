@@ -19,7 +19,7 @@ const ContactUs: React.FC = () => (
               marginTop: "240px",
             }}
           >
-            Contact
+            Contact Us
           </h1>
           <Card
             style={{ height: "500px", width: "100%" }}

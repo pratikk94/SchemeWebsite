@@ -134,7 +134,7 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                   }}
                 >
-                  Health and nutriton
+                  Health and Nutrition
                 </h2>
               </Card>{" "}
             </div>
@@ -217,7 +217,7 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                   }}
                 >
-                  Woman and child
+                  Woman and Child
                 </h2>
               </Card>{" "}
             </div>
