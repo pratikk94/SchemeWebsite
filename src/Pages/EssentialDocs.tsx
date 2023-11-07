@@ -25,10 +25,6 @@ const EssentialDocs: React.FC = () => {
           <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
             {c["No. of days it takes to complete process"]}
           </p>
-          <h2>Sources: </h2>
-          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
-            {c["Sources"]}
-          </p>
         </Card>
       ))}
     </div>

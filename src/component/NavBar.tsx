@@ -132,15 +132,7 @@ export default function NavBar() {
               Resources
             </NavLink>
           </li>
-          <li>
-            <div
-              style={{ cursor: "pointer" }}
-              onClick={() => setIsModalOpen(true)}
-            >
-              {/* <MessageOutlined />  */}
-              <p style={{ fontWeight: 500 }}>Feedback</p>
-            </div>
-          </li>
+
           <li>
             <NavLink
               style={({ isActive }) => ({
@@ -162,6 +154,15 @@ export default function NavBar() {
               {/* <PhoneOutlined />  */}
               Essential Docs
             </NavLink>
+          </li>
+          <li>
+            <div
+              style={{ cursor: "pointer" }}
+              onClick={() => setIsModalOpen(true)}
+            >
+              {/* <MessageOutlined />  */}
+              <p style={{ fontWeight: 500 }}>Feedback</p>
+            </div>
           </li>
           <li>
             <NavLink
