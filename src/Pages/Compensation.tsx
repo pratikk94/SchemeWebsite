@@ -10,11 +10,17 @@ const Compensation: React.FC = () => {
         >
           <h1 key={c["S. No."]}>{c["Compensation"]}</h1>
           <h2>Eligibility : </h2>
-          <p style={{ fontSize: "20px" }}>{c["Eligibility"]}</p>
+          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
+            {c["Eligibility"]}
+          </p>
           <h2>Legislation/Policy/SOP: </h2>
-          <p style={{ fontSize: "20px" }}>{c["Legislation/Policy/SOP"]}</p>
+          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
+            {c["Legislation/Policy/SOP"]}
+          </p>
           <h2>Documents required: </h2>
-          <p style={{ fontSize: "20px" }}>{c["Documents required"]}</p>
+          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
+            {c["Documents required"]}
+          </p>
         </Card>
       ))}
     </div>
