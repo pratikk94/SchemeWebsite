@@ -61,7 +61,7 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
-                    marginTop: "-3vh",
+                    marginTop: "-2vh",
                     marginLeft: "-24px",
                     width: "14.5vw",
                   }}
@@ -101,7 +101,7 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
-                    marginTop: "-3vh",
+                    marginTop: "-2vh",
                     marginLeft: "-24px",
                     width: "14.5vw",
                   }}
@@ -139,7 +139,7 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
-                    marginTop: "-3vh",
+                    marginTop: "-2vh",
                     marginLeft: "-24px",
                     width: "14.5vw",
                   }}
@@ -188,7 +188,7 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
-                    marginTop: "-3vh",
+                    marginTop: "-2vh",
                     marginLeft: "-24px",
                     width: "14.5vw",
                   }}
@@ -228,7 +228,7 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
-                    marginTop: "-3vh",
+                    marginTop: "-2vh",
                     marginLeft: "-24px",
                     width: "14.5vw",
                   }}
@@ -268,7 +268,7 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
-                    marginTop: "-3vh",
+                    marginTop: "-2vh",
                     marginLeft: "-24px",
                     width: "14.5vw",
                   }}
@@ -280,8 +280,15 @@ const Landing: React.FC = (): JSX.Element => {
           </Col>
         </Row>
       </div>
-
-      <Footer />
+      <div
+        style={{
+          backgroundColor: "#03051E",
+        }}
+      >
+        <center>
+          <Footer />
+        </center>
+      </div>
     </div>
   );
 };
