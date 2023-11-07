@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 import SchemeCard from "./AllResources/SchemeCard";
 import { SearchOutlined } from "@ant-design/icons";
 import axios from "axios";
+import Footer from "../component/Footer";
 
 const { Title } = Typography;
 
@@ -221,6 +222,7 @@ const Home: React.FC = () => {
                 </Col>
               </Row>
             </div>
+            <Footer />
           </div>
         </div>
       </div>

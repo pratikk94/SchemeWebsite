@@ -3,6 +3,7 @@ import "../CSS/Home.css";
 import image from "../images/bg_blur.png";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import { Card } from "antd";
+import Footer from "../component/Footer";
 
 const AboutUs: React.FC = () => {
   const position: [number, number] = [51.505, -0.09];
@@ -91,6 +92,7 @@ const AboutUs: React.FC = () => {
             Email: dcpcr@hotmail.com /delhichildrightscommission@gmail.com
           </p>
         </div>
+        <Footer />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Card, Typography, Tag, Button, Space, Layout } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
+import Footer from "../../component/Footer";
 const { Content } = Layout;
 const { Option } = Select;
 const { Title, Paragraph } = Typography;
@@ -253,6 +254,7 @@ const AllResourcesIndex = (props: any) => {
           <h1>No schemes found</h1>
         )}
       </Content>
+      <Footer />
     </Layout>
   );
 };

@@ -2,6 +2,7 @@ import { Card, Col, Row } from "antd";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../../CSS/SchemeByCategry.css";
+import Footer from "../../component/Footer";
 const Landing: React.FC = (): JSX.Element => {
   const navigate = useNavigate();
   return (
@@ -260,6 +261,8 @@ const Landing: React.FC = (): JSX.Element => {
           </Col>
         </Row>
       </div>
+
+      <Footer />
     </div>
   );
 };

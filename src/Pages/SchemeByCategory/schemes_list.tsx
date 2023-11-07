@@ -13,6 +13,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Card, Typography, List, Tag, Button, Space, Layout } from "antd";
+import Footer from "../../component/Footer";
 const { Content } = Layout;
 const { Option } = Select;
 const { Title, Paragraph } = Typography;
@@ -205,6 +206,7 @@ const SchemesListIndex = (props: any) => {
           <h1>No schemes found</h1>
         )}
       </Content>
+      <Footer />
     </Layout>
   );
 };

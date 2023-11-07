@@ -2,6 +2,7 @@ import React from "react";
 import "../CSS/Home.css";
 import { Table } from "antd";
 import "../CSS/ImpLinks.css";
+import Footer from "../component/Footer";
 let data = [
   {
     "S. No.": 1,
@@ -321,11 +322,10 @@ const ImpLinks: React.FC = () => (
             className="table table-bordered table-hover table-condensed"
           ></Table>
         </center>
+
+        <Footer />
       </div>
     </div>
-    <footer>
-      <p>All rights reserved ©</p>
-    </footer>
   </div>
 );
 

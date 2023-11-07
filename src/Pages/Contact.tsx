@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/ContactUs.css";
+import Footer from "../component/Footer";
 
 const ContactUs: React.FC = () => (
   <div className="App">
@@ -11,9 +12,7 @@ const ContactUs: React.FC = () => (
         </center>
       </div>
     </div>
-    <footer>
-      <p>All rights reserved ©</p>
-    </footer>
+    <Footer />
   </div>
 );
 
