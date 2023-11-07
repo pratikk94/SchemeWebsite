@@ -6,7 +6,6 @@ import { Card } from "antd";
 import Footer from "../component/Footer";
 
 const AboutUs: React.FC = () => {
-  const position: [number, number] = [51.505, -0.09];
   return (
     <div className="App" style={{ backgroundImage: image }}>
       <header className="App-header"></header>
@@ -16,10 +15,57 @@ const AboutUs: React.FC = () => {
           style={{ height: "100vh", width: "100vw" }}
         >
           <center>
-            <p style={{ margin: "2vw", fontSize: "48px", fontWeight: 900 }}>
+            <p
+              style={{
+                margin: "2vw",
+                fontSize: "48px",
+                fontWeight: 900,
+                marginTop: "36vh",
+              }}
+            >
               About us
             </p>
           </center>
+          <h1
+            style={{
+              textAlign: "left",
+              marginTop: "40px",
+              marginLeft: "16vw",
+              marginRight: "16vw",
+              marginBottom: "10px",
+            }}
+          >
+            Purpose of website
+          </h1>
+          <p
+            style={{
+              textAlign: "left",
+              marginLeft: "16vw",
+              marginRight: "16vw",
+              fontSize: "24px",
+            }}
+          >
+            The socioeconomic conditions of a family play a significant role in
+            rendering children more susceptible to adversity. Increasing
+            awareness of government social security initiatives and resources as
+            well as linking these households with various schemes can mitigate
+            the vulnerability of the entire family unit. Consequently, this
+            endeavour of empowering such households with awareness of their
+            rights and entitlements as well as assisting/collaborating with
+            stakeholders in connecting them to various schemes can make a
+            substantial contribution to enhancing child welfare and safety in
+            Delhi. This website is a joint initiative between Delhi Commission
+            for Protection of Child Rights, Govt of NCT of Delhi and British
+            Asian Trust. The website aims to have a comprehensive list of social
+            security schemes, scholarships, resources, essential documents and
+            compensations available for children and households in Delhi. It
+            will serve as a centralised platform with this information in a
+            user-friendly format with all relevant links and resources available
+            in one place for children, their families and all stakeholders to
+            fill the gap in knowledge and awareness on various social security
+            schemes, resources, scholarships etc. that are available to
+            residents of Delhi.
+          </p>
           <h1
             style={{
               textAlign: "left",
@@ -50,51 +96,9 @@ const AboutUs: React.FC = () => {
             violence, child labour, early marriage, substance abuse, and
             trafficking.
           </p>
-          <h1
-            style={{
-              textAlign: "left",
-              marginLeft: "16vw",
-              marginRight: "16vw",
-              marginBottom: "10px",
-              marginTop: "24px",
-            }}
-          >
-            Contact
-          </h1>
-          <Card
-            style={{ height: "500px", width: "100%" }}
-            bodyStyle={{ padding: 0 }}
-          >
-            <MapContainer
-              center={position}
-              zoom={13}
-              scrollWheelZoom={false}
-              style={{ height: "500px", width: "100%" }}
-            >
-              <Marker position={position}>
-                <Popup>
-                  A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-              </Marker>
-            </MapContainer>
-          </Card>
-          <p
-            style={{
-              textAlign: "left",
-              marginLeft: "16vw",
-              marginRight: "16vw",
-              fontSize: "24px",
-              marginBottom: "20px",
-            }}
-          >
-            Address: 4th & 5th Floor, ISBT Building ,<br />
-            Kashmere Gate, Delhi-110006 <br />
-            Phone No.: 011-23862684/91 <br />
-            Fax No. : 011-23864312 <br />
-            Email: dcpcr@hotmail.com /delhichildrightscommission@gmail.com
-          </p>
+
+          <Footer />
         </div>
-        <Footer />
       </div>
     </div>
   );
