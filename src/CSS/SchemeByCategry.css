@@ -1,7 +1,6 @@
 .mainBg {
   background-image: url("../../public/BG.png");
   background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
 }
 @media (max-width: 400px) {
