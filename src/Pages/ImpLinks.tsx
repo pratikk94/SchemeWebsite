@@ -322,8 +322,9 @@ const ImpLinks: React.FC = () => (
             className="table table-bordered table-hover table-condensed"
           ></Table>
         </center>
-
-        <Footer />
+        <div style={{ height: "16vh", backgroundColor: "#03051E" }}>
+          <Footer />
+        </div>
       </div>
     </div>
   </div>

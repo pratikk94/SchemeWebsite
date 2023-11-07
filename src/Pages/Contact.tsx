@@ -57,7 +57,9 @@ const ContactUs: React.FC = () => (
         </center>
       </div>
     </div>
-    <Footer />
+    <div style={{ height: "16vh", backgroundColor: "#03051E" }}>
+      <Footer />
+    </div>
   </div>
 );
 
