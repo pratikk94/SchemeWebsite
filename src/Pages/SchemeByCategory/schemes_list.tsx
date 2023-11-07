@@ -78,7 +78,8 @@ const SchemeCard = ({ scheme }: any) => {
         )}
         <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
           <strong>Documents Required:</strong>
-          <List
+          <p>{scheme.documents_required}</p>
+          {/* <List
             dataSource={scheme.documents_required?.split("\n")}
             renderItem={(item: any) => (
               <List.Item style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
@@ -86,7 +87,7 @@ const SchemeCard = ({ scheme }: any) => {
               </List.Item>
             )}
             size="small"
-          />
+          /> */}
         </Paragraph>
       </Typography>
       <Space>

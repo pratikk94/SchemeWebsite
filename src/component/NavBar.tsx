@@ -110,7 +110,7 @@ export default function NavBar() {
           </li>
 
           <li>
-            <NavLink to="/form">
+            <NavLink to="/imp-links">
               <FormOutlined />
               Resources
             </NavLink>

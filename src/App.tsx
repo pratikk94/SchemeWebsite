@@ -22,7 +22,7 @@ function App() {
         <Route path="/form/1" element={<FormPage type="1" />} />
         <Route path="/form/2" element={<FormPage type="2" />} />
         <Route path="/form/3" element={<FormPage type="3" />} />
-        <Route path="/resources" element={<Resources />} />
+        <Route path="/resources" element={<ImpLinks />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/schemeByCategory" element={<SchemeByCategory />} />

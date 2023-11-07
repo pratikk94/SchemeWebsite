@@ -99,48 +99,47 @@ const Home: React.FC = () => {
             <div className="hero" style={{ color: "#ffffff", opacity: 1 }}>
               <div className="bottom-div"></div>
               <div className="top-div">
-                <Title
-                  level={2}
-                  style={{ margin: 0, color: "#8169ff", fontWeight: "bolder" }}
+                <p
+                  style={{
+                    marginTop: "32px",
+                    color: "#8169ff",
+                    fontWeight: "bolder",
+                    fontSize: "48px",
+                  }}
                 >
-                  Delhi Social Security Schemes and Resources
-                </Title>
-                <Title
-                  level={3}
-                  style={{ margin: 8, color: "#8169ff", fontWeight: "bold" }}
-                >
-                  for Children and their Families
-                </Title>
-                <AutoComplete
-                  dropdownMatchSelectWidth={400}
-                  style={{ width: 400, marginRight: 12 }}
-                  options={options}
-                  onSearch={handleSearch}
-                  // onSelect={handleSelect}
-                  placeholder="Search your scheme here..."
-                >
-                  <Input
-                    prefix={<SearchOutlined />}
-                    size="large"
-                    value={searchText}
-                    onChange={(e) => setSearchText(e.target.value)}
-                  />
-                </AutoComplete>
-                <Button
-                  size="large"
-                  type="primary"
-                  onClick={() => setShowModal(true)}
-                >
-                  Search
-                </Button>
+                  Social Security Schemes and Resources for Children and
+                  Families in Delhi
+                </p>
               </div>
             </div>
+            <AutoComplete
+              dropdownMatchSelectWidth={400}
+              style={{ width: 400, marginRight: 12, marginTop: "48vh" }}
+              options={options}
+              onSearch={handleSearch}
+              // onSelect={handleSelect}
+              placeholder="Search your scheme here..."
+            >
+              <Input
+                prefix={<SearchOutlined />}
+                size="large"
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
+              />
+            </AutoComplete>
+            <Button
+              size="large"
+              type="primary"
+              onClick={() => setShowModal(true)}
+            >
+              Search
+            </Button>
           </center>
 
           <div
             style={{
               backgroundColor: "#02051E",
-              marginTop: "-4vh",
+              marginTop: "-56vh",
               marginBottom: "4vh",
             }}
           >

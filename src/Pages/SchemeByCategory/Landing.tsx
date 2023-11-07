@@ -1,11 +1,16 @@
 import { Card, Col, Row } from "antd";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-//import "../CSS/SchemeByCategry.css";
+import "../../CSS/SchemeByCategry.css";
 const Landing: React.FC = (): JSX.Element => {
   const navigate = useNavigate();
   return (
-    <div style={{ paddingTop: "8vh" }}>
+    <div
+      className="mainBg"
+      style={{
+        paddingTop: "8vh",
+      }}
+    >
       {/* <center>
         <h1 style={{ color: "white" }}>Choose one of the following category</h1>
       </center> */}

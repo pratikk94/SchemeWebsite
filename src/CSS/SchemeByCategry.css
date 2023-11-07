@@ -1,3 +1,9 @@
+.mainBg {
+  background-image: url("../../public/bg_blur-tint.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 @media (max-width: 400px) {
   .img_scheme_by_category {
     height: 20vh;
