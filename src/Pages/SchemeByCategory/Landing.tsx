@@ -61,6 +61,9 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
+                    marginTop: "-3vh",
+                    marginLeft: "-24px",
+                    width: "260px",
                   }}
                 >
                   Skills
@@ -98,6 +101,9 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
+                    marginTop: "-3vh",
+                    marginLeft: "-24px",
+                    width: "260px",
                   }}
                 >
                   Livelihood
@@ -133,6 +139,9 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
+                    marginTop: "-3vh",
+                    marginLeft: "-24px",
+                    width: "260px",
                   }}
                 >
                   Health and Nutrition
@@ -179,6 +188,9 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
+                    marginTop: "-3vh",
+                    marginLeft: "-24px",
+                    width: "260px",
                   }}
                 >
                   Education
@@ -216,6 +228,9 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
+                    marginTop: "-3vh",
+                    marginLeft: "-24px",
+                    width: "260px",
                   }}
                 >
                   Woman and Child
@@ -253,6 +268,9 @@ const Landing: React.FC = (): JSX.Element => {
                     backgroundColor: "white",
                     textAlign: "center",
                     fontSize: "24px",
+                    marginTop: "-3vh",
+                    marginLeft: "-24px",
+                    width: "260px",
                   }}
                 >
                   Miscelleneous
