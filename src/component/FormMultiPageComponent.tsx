@@ -23,7 +23,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
   //const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [schemes, setSchemes] = useState([])
+  const [schemes, setSchemes] = useState([]);
   const [gender, setGender] = useState("Female");
   const [maxIncome, setMaxIncome] = useState(0);
   const [residence, setResidence] = useState("Delhi");
@@ -81,21 +81,22 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     // Handle form submission with formData
     setCurrentPage((prevPage) => prevPage + 1);
 
-    console.log('data here: ', residence);
+    console.log("data here: ", residence);
 
-    axios.post('https://schemes-api.grevity.in/get_schemes_by_selected_options', {
-      reservation,
-      gender,
-      maxIncome,
-      residence: residence == 'Delhi' ? 'NCT of Delhi' : 'NA',
-      disability,
-      age,
-    })
-    .then((u: any) => {
-      setCurrentPage(4)
-      setSchemes(u.data)
-    })
-    
+    axios
+      .post("https://schemes-api.grevity.in/get_schemes_by_selected_options", {
+        reservation,
+        gender,
+        maxIncome,
+        residence: residence == "Delhi" ? "NCT of Delhi" : "NA",
+        disability,
+        age,
+      })
+      .then((u: any) => {
+        setCurrentPage(4);
+        setSchemes(u.data);
+      });
+
     // setIds((prevIds) => []);
     // let returnIds = getResources(
     //   props.type,
@@ -202,7 +203,15 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
         </div>
       </Card>
       {/* {currentPage === 4 && <Scheme type={props.type} id={ids} />} */}
-      {currentPage === 4 && schemes.length > 0 ? schemes.map((scheme: any) => (<SchemeCard scheme={scheme} />)) : <p>No Schemes found in our database</p>}
+      {currentPage === 4 && schemes.length > 0 ? (
+        schemes.map((scheme: any) => (
+          <div style={{ textAlign: "left", width: "60vw" }}>
+            <SchemeCard scheme={scheme} />
+          </div>
+        ))
+      ) : (
+        <p>No Schemes found in our database</p>
+      )}
     </div>
   );
 };
