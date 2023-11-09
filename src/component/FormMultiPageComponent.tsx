@@ -7,6 +7,8 @@ import { getResources } from "../utils/util";
 import { Card } from "antd";
 import Scheme from "./Scheme";
 import { useMediaQuery } from "react-responsive";
+import axios from "axios";
+import SchemeCard from "../Pages/AllResources/SchemeCard";
 
 interface FormMultiPageComponentProps {
   type: number;
@@ -21,6 +23,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
   //const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   const [currentPage, setCurrentPage] = useState(1);
+  const [schemes, setSchemes] = useState([])
   const [gender, setGender] = useState("Female");
   const [maxIncome, setMaxIncome] = useState(0);
   const [residence, setResidence] = useState("Delhi");
@@ -78,21 +81,33 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     // Handle form submission with formData
     setCurrentPage((prevPage) => prevPage + 1);
 
-    console.log("submit pressed");
-    console.log(props.type);
-    console.log(gender);
-    setIds((prevIds) => []);
-    let returnIds = getResources(
-      props.type,
+    console.log('data here: ', residence);
+
+    axios.post('https://schemes-api.grevity.in/get_schemes_by_selected_options', {
       reservation,
       gender,
       maxIncome,
-      residence,
+      residence: residence == 'Delhi' ? 'NCT of Delhi' : 'NA',
       disability,
-      age
-    );
-    console.log(returnIds);
-    if (returnIds.length !== 0) setIds(returnIds);
+      age,
+    })
+    .then((u: any) => {
+      setCurrentPage(4)
+      setSchemes(u.data)
+    })
+    
+    // setIds((prevIds) => []);
+    // let returnIds = getResources(
+    //   props.type,
+    //   reservation,
+    //   gender,
+    //   maxIncome,
+    //   residence,
+    //   disability,
+    //   age
+    // );
+    // console.log(returnIds);
+    // if (returnIds.length !== 0) setIds(returnIds);
   };
 
   const renderStep = () => {
@@ -186,7 +201,8 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
           )}
         </div>
       </Card>
-      {currentPage === 4 && <Scheme type={props.type} id={ids} />}
+      {/* {currentPage === 4 && <Scheme type={props.type} id={ids} />} */}
+      {currentPage === 4 && schemes.length > 0 ? schemes.map((scheme: any) => (<SchemeCard scheme={scheme} />)) : <p>No Schemes found in our database</p>}
     </div>
   );
 };
