@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 interface RadioButtonOption {
   value: string;
   label: string;
-  imageUrl: string;
+  //imageUrl: string;
 }
 
 interface RadioButtonProps {
@@ -48,7 +48,7 @@ const RadioButtonWithImages: React.FC<RadioButtonProps> = ({
             className={`radio-button-label ${
               selectedRadioButtonValue === option.value ? "selected" : ""
             }`}
-            style={{ width: sizeLabel, height: "100px", marginRight: "2vw" }}
+            style={{ width: sizeLabel, height: "60px", marginRight: "2vw" }}
           >
             <input
               type="radio"
@@ -57,15 +57,17 @@ const RadioButtonWithImages: React.FC<RadioButtonProps> = ({
               onChange={handleOptionChange}
               style={{ display: "none", margin: "2vw" }}
             />
-            <img
+            {/* <img
               src={option.imageUrl}
               alt={option.label}
               style={{
                 width: sizeImage,
                 height: "6vh",
               }}
-            />
-            <p style={{ display: "block" }}>{option.label}</p>
+            /> */}
+            <p style={{ display: "block", fontSize: "20px", fontWeight: 500 }}>
+              {option.label}
+            </p>
           </label>
         </Col>
       ))}

@@ -4,8 +4,7 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   /* color: white; */
-  background-image: url("../images/working_2.gif");
-  background-size: 32vw 32vh;
+  background-image: url("../images/bg_blur.png");
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
-  background-position: bottom left;
 }
