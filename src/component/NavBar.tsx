@@ -1,12 +1,5 @@
 import { NavLink } from "react-router-dom";
 import "../CSS/NavBar.css";
-import {
-  FormOutlined,
-  HomeOutlined,
-  InfoCircleOutlined,
-  MessageOutlined,
-  PhoneOutlined,
-} from "@ant-design/icons";
 import { useState } from "react";
 import { Col, Input, Modal, Row, message } from "antd";
 import axios from "axios";
@@ -180,6 +173,7 @@ export default function NavBar() {
           <NavLink to="/">
             <img
               src="../logo.jpeg"
+              alt="LOGO"
               style={{
                 width: "120px",
                 height: "120px",

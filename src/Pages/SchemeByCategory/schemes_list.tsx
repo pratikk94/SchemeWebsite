@@ -1,18 +1,8 @@
-import {
-  Checkbox,
-  Col,
-  Form,
-  Input,
-  InputNumber,
-  Row,
-  Select,
-  Spin,
-  message,
-} from "antd";
+import { Col, Form, Input, Row, Select, Spin, message } from "antd";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Card, Typography, List, Tag, Button, Space, Layout } from "antd";
+import { Card, Typography, Tag, Button, Space, Layout } from "antd";
 import Footer from "../../component/Footer";
 const { Content } = Layout;
 const { Option } = Select;

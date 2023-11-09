@@ -14,14 +14,17 @@ const EssentialDocs: React.FC = () => {
           </h1>
           <br />
           <h2>Concerned Department: </h2>
-          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
-            {c["Concerned Dpt."]}
-          </p>
+          <p
+            style={{ fontSize: "20px", whiteSpace: "pre-line" }}
+            dangerouslySetInnerHTML={{ __html: c["Concerned Dpt."] }}
+          />
           <br />
           <h2>Process: </h2>
-          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
-            {c["Process"]}
-          </p>
+          <p
+            style={{ fontSize: "20px", whiteSpace: "pre-line" }}
+            dangerouslySetInnerHTML={{ __html: c["Process"] }}
+          />
+
           {c["Cost involved"].trim().length === 0 ? (
             <p></p>
           ) : (

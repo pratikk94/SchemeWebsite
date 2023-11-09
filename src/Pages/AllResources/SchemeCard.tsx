@@ -72,7 +72,7 @@ const SchemeCard = ({ scheme }: any) => {
         </Paragraph>
         {scheme.benefits && (
           <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
-            <strong>Benefits:</strong>
+            <strong>Benefits </strong>
             {renderBenefitsText(scheme.benefits)}
           </Paragraph>
         )}

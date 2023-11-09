@@ -1,15 +1,5 @@
 import React, { useState } from "react";
-import {
-  Button,
-  Col,
-  Form,
-  Input,
-  Row,
-  Typography,
-  AutoComplete,
-  Modal,
-  Card,
-} from "antd";
+import { Button, Col, Input, Row, AutoComplete, Modal, Card } from "antd";
 import "../CSS/Home.css";
 import { useNavigate } from "react-router-dom";
 import SchemeCard from "./AllResources/SchemeCard";
@@ -17,14 +7,9 @@ import { SearchOutlined } from "@ant-design/icons";
 import axios from "axios";
 import Footer from "../component/Footer";
 
-const { Title } = Typography;
-
 const Home: React.FC = () => {
   const navigate = useNavigate();
-  const [form] = Form.useForm();
-  interface FormValues {
-    searchText: string;
-  }
+
   /**
    * Function to navigate to scheme by category page.
    */
@@ -35,8 +20,6 @@ const Home: React.FC = () => {
   function onSubmitForm() {
     navigate("/form/1");
   }
-
-  let [ans, setAns] = useState<any[]>([]);
   const [options, setOptions] = useState<
     { value: string; label: React.ReactNode; scheme_data: any }[]
   >([]);
