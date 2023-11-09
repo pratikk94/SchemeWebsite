@@ -74,18 +74,18 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
   return (
     <div>
       <h1
-        style={{ textAlign: "center", color: "#964B00", marginBottom: "8vh" }}
+        style={{ textAlign: "center", color: "#1A1970", marginBottom: "4vh" }}
       >
-        Enter basic information
+        Enter Your Information
       </h1>
 
       <div>
         <Row>
-          <h2
-            style={{ textAlign: "left", color: "#964B00", marginBottom: "2vh" }}
+          <h1
+            style={{ textAlign: "left", color: "#1A1970", marginBottom: "2vh" }}
           >
             Are you specially abled?
-          </h2>
+          </h1>
         </Row>
         <Row justify="center">
           <RadioButtonWithImages
@@ -97,11 +97,11 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
         </Row>
 
         <Row>
-          <h2
-            style={{ textAlign: "left", color: "#964B00", marginBottom: "2vh" }}
+          <h1
+            style={{ textAlign: "left", color: "#1A1970", marginBottom: "2vh" }}
           >
             Are you amongst the following?
-          </h2>
+          </h1>
         </Row>
         <Row justify="center" style={{ width: "32vw" }}>
           <RadioButtonWithImages
@@ -112,7 +112,7 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
           />
         </Row>
         <br />
-        <p>
+        <p style={{ fontSize: "20px" }}>
           *Above two fields are optional and can be skipped for next options.
           <br />
           Although we recommend to fill in all the fields for accurate results

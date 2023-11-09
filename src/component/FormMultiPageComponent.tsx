@@ -131,7 +131,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
   if (isDesktopOrLaptop) margin = currentPage === 4 ? "24vw" : "32vw";
 
   return (
-    <div style={{ background: "../public/bg_blur-tint.png" }}>
+    <div style={{ background: "../public/BG.png" }}>
       <Card
         style={{ marginLeft: margin, marginRight: margin, marginTop: "120px" }}
       >
@@ -143,7 +143,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
               type="button"
               onClick={handlePrevious}
               style={{
-                backgroundColor: "#964B00",
+                backgroundColor: "#1A1970",
                 fontSize: "3vh",
                 color: "#fff",
                 padding: "0.5vh",
@@ -158,7 +158,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
               type="button"
               onClick={handleNext}
               style={{
-                backgroundColor: "#964B00",
+                backgroundColor: "#1A1970",
                 fontSize: "3vh",
                 color: "#fff",
                 padding: "0.5vh",
@@ -172,7 +172,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
               type="submit"
               onClick={handleSubmit}
               style={{
-                backgroundColor: "#964B00",
+                backgroundColor: "#1A1970",
                 fontSize: "3vh",
                 color: "#fff",
                 padding: "0.5vh",

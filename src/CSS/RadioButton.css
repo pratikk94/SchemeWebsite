@@ -11,7 +11,7 @@
 }
 
 .radio-button-label.selected {
-  background-color: #ffd8b2; /* Change background color when selected */
+  background-color: #6966f6; /* Change background color when selected */
   color: #000; /* Change text color for better contrast */
 }
 

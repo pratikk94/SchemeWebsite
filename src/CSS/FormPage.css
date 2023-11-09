@@ -4,7 +4,7 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   /* color: white; */
-  background-image: url("../images/bg_blur.png");
+  background-image: url("../images/BG.png");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
 }
