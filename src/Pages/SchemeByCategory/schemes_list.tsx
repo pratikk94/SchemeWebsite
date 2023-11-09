@@ -66,11 +66,13 @@ const SchemeCard = ({ scheme }: any) => {
         {scheme.eligibility && (
           <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
             <strong>Eligibility:</strong>
+            <br />
             {renderEligibilityText(scheme.eligibility)}
           </Paragraph>
         )}
         <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
           <strong>Documents Required:</strong>
+          <br />
           <p>{scheme.documents_required}</p>
           {/* <List
             dataSource={scheme.documents_required?.split("\n")}

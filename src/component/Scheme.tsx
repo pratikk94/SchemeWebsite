@@ -115,15 +115,19 @@ const SchemeCard = ({ schemeData }: any) => {
       <Divider />
 
       <Title level={4}>Eligibility:</Title>
+      <br />
       <div dangerouslySetInnerHTML={{ __html: eligibility }}></div>
 
       <Title level={4}>Document Required:</Title>
+      <br />
       <div dangerouslySetInnerHTML={{ __html: document_required }}></div>
 
       <Title level={4}>Application Link:</Title>
+      <br />
       <div dangerouslySetInnerHTML={{ __html: application_link }}></div>
 
       <Title level={4}>Grievance Redressal:</Title>
+      <br />
       <div dangerouslySetInnerHTML={{ __html: grievance_redressal }}></div>
     </Card>
   );
