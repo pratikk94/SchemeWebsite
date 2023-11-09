@@ -25,7 +25,7 @@ export default function Footer() {
             style={{ color: "#34CCCC", fontSize: "32px" }}
           >
             <FontAwesomeIcon icon={faFacebookF} style={{ color: "#ffffff" }} />
-            Facebook
+            &#160; &#160;Facebook
           </a>
         </Col>
         <Col span={4} style={{ fontSize: "24px" }}>
@@ -34,7 +34,7 @@ export default function Footer() {
             style={{ color: "#34CCCC", fontSize: "32px" }}
           >
             <FontAwesomeIcon icon={faInstagram} style={{ color: "#ffffff" }} />
-            Instagram
+            &#160; &#160;Instagram
           </a>
         </Col>
         <Col span={4} style={{ fontSize: "24px" }}>
@@ -43,7 +43,7 @@ export default function Footer() {
             style={{ color: "#34CCCC", fontSize: "32px" }}
           >
             <FontAwesomeIcon icon={faTwitter} style={{ color: "#ffffff" }} />
-            Twitter
+            &#160; &#160; Twitter
           </a>
         </Col>
       </Row>

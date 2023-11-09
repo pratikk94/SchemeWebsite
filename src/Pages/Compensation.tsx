@@ -20,9 +20,11 @@ const Compensation: React.FC = () => {
           <br />
           <h2>Legislation/Policy/SOP: </h2>
           <br />
-          <p style={{ fontSize: "20px", whiteSpace: "pre-line" }}>
-            {c["Legislation/Policy/SOP"]}
-          </p>
+          <p
+            style={{ fontSize: "20px", whiteSpace: "pre-line" }}
+            dangerouslySetInnerHTML={{ __html: c["Legislation/Policy/SOP"] }}
+          />
+
           <br />
           <h2>Documents required: </h2>
           <br />
