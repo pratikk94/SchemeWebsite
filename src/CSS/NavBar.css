@@ -77,7 +77,7 @@
 .logoOfWebsite {
   font-size: 1.5rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .navbar {
     opacity: 0.95;
     height: 18vh;
