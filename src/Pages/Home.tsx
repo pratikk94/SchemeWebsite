@@ -89,29 +89,30 @@ const Home: React.FC = () => {
                 </p>
               </div>
             </div>
-            <AutoComplete
-              className="searchSchemeBox"
-              dropdownMatchSelectWidth={400}
-              style={{ width: 400, marginRight: 12 }}
-              options={options}
-              onSearch={handleSearch}
-              // onSelect={handleSelect}
-              placeholder="Search your scheme here..."
-            >
-              <Input
-                prefix={<SearchOutlined />}
+            <div className="searchSchemeBox">
+              <AutoComplete
+                dropdownMatchSelectWidth={400}
+                style={{ width: 400, marginRight: 12 }}
+                options={options}
+                onSearch={handleSearch}
+                // onSelect={handleSelect}
+                placeholder="Search your scheme here..."
+              >
+                <Input
+                  prefix={<SearchOutlined />}
+                  size="large"
+                  value={searchText}
+                  onChange={(e) => setSearchText(e.target.value)}
+                />
+              </AutoComplete>
+              <Button
                 size="large"
-                value={searchText}
-                onChange={(e) => setSearchText(e.target.value)}
-              />
-            </AutoComplete>
-            <Button
-              size="large"
-              type="primary"
-              onClick={() => setShowModal(true)}
-            >
-              Search
-            </Button>
+                type="primary"
+                onClick={() => setShowModal(true)}
+              >
+                Search
+              </Button>
+            </div>
           </center>
 
           <div
@@ -121,10 +122,7 @@ const Home: React.FC = () => {
               marginBottom: "4vh",
             }}
           >
-            <h1
-              className="heroDivider"
-              style={{ marginBottom: "-4vh", paddingTop: "20vh" }}
-            ></h1>
+            <h1 className="heroDivider" style={{ paddingTop: "20vh" }}></h1>
 
             <div
               style={{
@@ -136,12 +134,14 @@ const Home: React.FC = () => {
               <Row
                 style={{
                   width: "100vw",
-                  marginLeft: "8vw",
+                  justifyContent: "center",
                 }}
+                className="rowOptions"
               >
-                <Col xs={24} sm={12} xl={8}>
+                <Col xs={24} sm={12} xl={8} className="cardHolder">
                   <div style={{ height: "100%" }}>
                     <Card
+                      className="cardHolder"
                       hoverable
                       style={{ width: "56%", height: "104%" }}
                       onClick={() => {
@@ -171,7 +171,7 @@ const Home: React.FC = () => {
                     </Card>
                   </div>
                 </Col>
-                <Col xs={24} sm={12} xl={8}>
+                <Col xs={24} sm={12} xl={8} className="cardHolder">
                   <div style={{ height: "100%" }}>
                     <Card
                       hoverable
@@ -200,7 +200,7 @@ const Home: React.FC = () => {
                     </Card>{" "}
                   </div>
                 </Col>
-                <Col xs={24} sm={12} xl={8}>
+                <Col xs={24} sm={12} xl={8} className="cardHolder">
                   <div style={{ height: "100%" }}>
                     <Card
                       hoverable

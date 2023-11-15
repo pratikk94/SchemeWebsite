@@ -74,7 +74,7 @@
 }
 
 .heroDivider {
-  margin-top: 56vh;
+  margin-top: 54vh;
   background: "#0B0C28";
   /* background-image: url("../images/bg_blur.png");
   background-size: 100vw 100vh;
@@ -93,6 +93,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.rowOptions {
+  margin-left: 8vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -121,7 +125,7 @@
   }
 
   .heroDivider {
-    margin-top: 100vh;
+    margin-top: 54vh;
   }
   .heroLandingText {
     margin-top: 48px;
@@ -131,5 +135,13 @@
   }
   .searchSchemeBox {
     margin-top: -4vh;
+  }
+
+  .cardHolder {
+    margin-bottom: 10vw;
+  }
+
+  .rowOptions {
+    margin-left: 24vw;
   }
 }
