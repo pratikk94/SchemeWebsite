@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Card, Typography, Tag, Button, Space, Layout } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import Footer from "../../component/Footer";
+import "../../CSS/AllResources.css";
 const { Content } = Layout;
 const { Option } = Select;
 const { Title, Paragraph } = Typography;
@@ -152,7 +153,7 @@ const SearchPanel = ({ onSearch }: any) => {
   return (
     <Form form={form} layout="vertical" onFinish={handleSubmit}>
       <Row gutter={24} align={"bottom"}>
-        <Col span={4}>
+        <Col xs={24} sm={12} xl={6}>
           <Form.Item
             label={<p style={{ fontSize: "20px" }}>Resource</p>}
             name="type"
@@ -168,7 +169,7 @@ const SearchPanel = ({ onSearch }: any) => {
             </Select>
           </Form.Item>
         </Col>
-        <Col span={4}>
+        <Col xs={24} sm={12} xl={6}>
           <Form.Item
             label={<p style={{ fontSize: "20px" }}>Min Age</p>}
             name="min_age"
@@ -176,7 +177,7 @@ const SearchPanel = ({ onSearch }: any) => {
             <Input placeholder="Min Age" />
           </Form.Item>
         </Col>
-        <Col span={4}>
+        <Col xs={24} sm={12} xl={6}>
           <Form.Item
             label={<p style={{ fontSize: "20px" }}>Max age</p>}
             name="max_age"
@@ -184,7 +185,7 @@ const SearchPanel = ({ onSearch }: any) => {
             <Input placeholder="Max Age" style={{ width: "100%" }} />
           </Form.Item>
         </Col>
-        <Col span={4}>
+        <Col xs={24} sm={12} xl={6}>
           <Form.Item
             label={<p style={{ fontSize: "20px" }}>Gender</p>}
             name="gender"
@@ -235,7 +236,7 @@ const AllResourcesIndex = (props: any) => {
 
   return (
     <Layout>
-      <Content style={{ padding: "100px 150px" }}>
+      <Content className="content">
         <h1>All Resources</h1>
         <SearchPanel onSearch={fetchSchemes} />
         {schemes == null ? (
