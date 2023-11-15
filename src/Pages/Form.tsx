@@ -5,13 +5,10 @@ import FormPageCompensation from "../component/FormForCompenstaion";
 
 import Resources from "./Resources";
 import FormMultiPageComponent from "../component/FormMultiPageComponent";
-interface FormPageProps {
-  type: string;
-}
 
 function returnFromType(props: string): JSX.Element {
   if (props === "1") return <FormMultiPageComponent type={1} />;
-  else if (props === "2") return <FormMultiPageComponent type={2}  />;
+  else if (props === "2") return <FormMultiPageComponent type={2} />;
   else if (props === "3") return <FormPageCompensation />;
   else return <Resources />;
 }

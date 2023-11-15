@@ -66,9 +66,21 @@
   color: #117964;
 }
 
-@media (max-width: 768px) {
+.logoIcon {
+  position: absolute;
+  left: 60px;
+  top: 0px;
+  height: 120px;
+  width: 120px;
+}
+
+.logoOfWebsite {
+  font-size: 1.5rem;
+}
+@media (max-width: 1440px) {
   .navbar {
     opacity: 0.95;
+    height: 18vh;
   }
 
   .navbar-container input[type="checkbox"],
@@ -130,7 +142,8 @@
   }
 
   .navbar .menu-items {
-    padding-top: 100px;
+    padding-top: 20vh;
+    left: 0px;
     background: #fff;
     height: 100vh;
     max-width: 300px;
@@ -151,9 +164,10 @@
   }
 
   .logo {
-    position: absolute;
-    top: 10px;
-    right: 15px;
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    width: 100vw;
     font-size: 2.5rem;
   }
 
@@ -172,10 +186,28 @@
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
   }
+
+  .logoOfWebsite {
+    padding-left: 8vw;
+  }
 }
 
 @media (max-width: 500px) {
   .navbar-container input[type="checkbox"]:checked ~ .logo {
     display: none;
+  }
+  .logoIcon {
+    position: fixed;
+    margin-top: 30px;
+    width: 20vw;
+    height: 100px;
+    top: 0px;
+    left: 15px;
+    font-size: 0.5rem;
+  }
+  .logoOfWebsite {
+    padding: 8vw;
+    margin-top: -10vw;
+    font-size: 5vw;
   }
 }

@@ -89,7 +89,7 @@ const Home: React.FC = () => {
                     // color: "#8169ff",
                     color: "#191970",
                     fontWeight: "bolder",
-                    fontSize: "48px",
+                    fontSize: "4vh",
                   }}
                 >
                   Social Security Schemes and Resources for Children and

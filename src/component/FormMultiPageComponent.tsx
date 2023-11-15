@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import FormPage1 from "./FormPage1";
 import FormPage2 from "./FormPage2";
 import FormPage3 from "./FormPage3";
-import { getResources } from "../utils/util";
 import { Card } from "antd";
-import Scheme from "./Scheme";
+
 import { useMediaQuery } from "react-responsive";
 import axios from "axios";
 import SchemeCard from "../Pages/AllResources/SchemeCard";
@@ -88,7 +87,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
         reservation,
         gender,
         maxIncome,
-        residence: residence == "Delhi" ? "NCT of Delhi" : "NA",
+        residence: residence === "Delhi" ? "NCT of Delhi" : "NA",
         disability,
         age,
       })

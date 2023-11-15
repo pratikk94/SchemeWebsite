@@ -98,7 +98,7 @@ export default function NavBar() {
               to="/"
             >
               {/* <HomeOutlined />  */}
-              <p style={{ fontSize: "24px" }}>Home</p>
+              <p style={{ fontSize: "1.4rem" }}>Home</p>
             </NavLink>
           </li>
 
@@ -110,7 +110,7 @@ export default function NavBar() {
               to="/about"
             >
               {/* <InfoCircleOutlined />  */}
-              <p style={{ fontSize: "24px" }}>About</p>
+              <p style={{ fontSize: "1.4rem" }}>About</p>
             </NavLink>
           </li>
 
@@ -122,7 +122,7 @@ export default function NavBar() {
               to="/imp-links"
             >
               {/* <FormOutlined /> */}
-              <p style={{ fontSize: "24px" }}>Resources</p>
+              <p style={{ fontSize: "1.4rem" }}>Resources</p>
             </NavLink>
           </li>
 
@@ -134,7 +134,7 @@ export default function NavBar() {
               to="/compensation"
             >
               {/* <PhoneOutlined />  */}
-              <p style={{ fontSize: "24px" }}>Compensation</p>
+              <p style={{ fontSize: "1.4rem" }}>Compensation</p>
             </NavLink>
           </li>
           <li>
@@ -145,7 +145,7 @@ export default function NavBar() {
               to="/essentialDocs"
             >
               {/* <PhoneOutlined />  */}
-              <p style={{ fontSize: "24px" }}>Essential Docs</p>
+              <p style={{ fontSize: "1.4rem" }}>Essential Docs</p>
             </NavLink>
           </li>
           <li>
@@ -154,7 +154,7 @@ export default function NavBar() {
               onClick={() => setIsModalOpen(true)}
             >
               {/* <MessageOutlined />  */}
-              <p style={{ fontWeight: 500, fontSize: "24px" }}>Feedback</p>
+              <p style={{ fontWeight: 500, fontSize: "1.4rem" }}>Feedback</p>
             </div>
           </li>
           <li>
@@ -165,27 +165,21 @@ export default function NavBar() {
               to="/contact"
             >
               {/* <PhoneOutlined />  */}
-              <p style={{ fontSize: "24px" }}>Contact Us</p>
+              <p style={{ fontSize: "1.4rem" }}>Contact Us</p>
             </NavLink>
           </li>
         </ul>
         <h1 className="logo">
           <NavLink to="/">
             <img
+              className="logoIcon"
               src="../logo.jpeg"
               alt="LOGO"
-              style={{
-                width: "120px",
-                height: "120px",
-                display: "inline",
-                position: "absolute",
-                left: "4vw",
-                top: "10px",
-              }}
+              style={{}}
             />
             <p
+              className="logoOfWebsite"
               style={{
-                fontSize: "1.3vw",
                 display: "inline",
                 alignItems: "start",
                 position: "absolute",
