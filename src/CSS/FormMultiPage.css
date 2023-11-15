@@ -19,3 +19,12 @@ input[type="radio"]:checked + label {
   color: #fff; /* Change text color for better contrast */
   border-color: #007bff; /* Change border color for checked radio buttons */
 }
+.schemes {
+  width: 60vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .schemes {
+    width: 100vw;
+  }
+}

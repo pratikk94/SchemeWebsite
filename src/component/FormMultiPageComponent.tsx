@@ -4,7 +4,7 @@ import FormPage1 from "./FormPage1";
 import FormPage2 from "./FormPage2";
 import FormPage3 from "./FormPage3";
 import { Card } from "antd";
-
+import "../CSS/FormMultiPage.css";
 import { useMediaQuery } from "react-responsive";
 import axios from "axios";
 import SchemeCard from "../Pages/AllResources/SchemeCard";
@@ -204,7 +204,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
       {/* {currentPage === 4 && <Scheme type={props.type} id={ids} />} */}
       {currentPage === 4 && schemes.length > 0 ? (
         schemes.map((scheme: any) => (
-          <div style={{ textAlign: "left", width: "60vw" }}>
+          <div className="schemes" style={{ textAlign: "left" }}>
             <SchemeCard scheme={scheme} />
           </div>
         ))
