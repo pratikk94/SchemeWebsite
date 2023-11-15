@@ -5,6 +5,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row } from "antd";
+import "../CSS/Footer.css";
 
 export default function Footer() {
   return (
@@ -19,7 +20,7 @@ export default function Footer() {
           color: "white",
         }}
       >
-        <Col span={4} style={{ fontSize: "24px" }}>
+        <Col xs={24} sm={12} xl={8} style={{ fontSize: "24px" }}>
           <a
             href="https://www.facebook.com/DCPCR/"
             style={{ color: "#34CCCC", fontSize: "32px" }}
@@ -28,7 +29,7 @@ export default function Footer() {
             &#160; &#160;Facebook
           </a>
         </Col>
-        <Col span={4} style={{ fontSize: "24px" }}>
+        <Col xs={24} sm={12} xl={8} style={{ fontSize: "24px" }}>
           <a
             href="https://www.instagram.com/dcpcr_delhi/"
             style={{ color: "#34CCCC", fontSize: "32px" }}
@@ -37,7 +38,7 @@ export default function Footer() {
             &#160; &#160;Instagram
           </a>
         </Col>
-        <Col span={4} style={{ fontSize: "24px" }}>
+        <Col xs={24} sm={12} xl={8} style={{ fontSize: "24px" }}>
           <a
             href="https://twitter.com/DCPCR"
             style={{ color: "#34CCCC", fontSize: "32px" }}
@@ -47,7 +48,7 @@ export default function Footer() {
           </a>
         </Col>
       </Row>
-      <p style={{ color: "white", fontSize: "20px" }}>
+      <p className="footer" style={{ color: "white", fontSize: "20px" }}>
         Delhi Commission for Protection of Child Rights
         <br />
         &copy; Produced by British Asian Trust
