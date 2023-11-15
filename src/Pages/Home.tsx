@@ -83,23 +83,16 @@ const Home: React.FC = () => {
             <div className="hero" style={{ color: "#ffffff", opacity: 1 }}>
               <div className="bottom-div"></div>
               <div className="top-div">
-                <p
-                  style={{
-                    marginTop: "48px",
-                    // color: "#8169ff",
-                    color: "#191970",
-                    fontWeight: "bolder",
-                    fontSize: "4vh",
-                  }}
-                >
+                <p className="heroLandingText">
                   Social Security Schemes and Resources for Children and
                   Families in Delhi
                 </p>
               </div>
             </div>
             <AutoComplete
+              className="searchSchemeBox"
               dropdownMatchSelectWidth={400}
-              style={{ width: 400, marginRight: 12, marginTop: "48vh" }}
+              style={{ width: 400, marginRight: 12 }}
               options={options}
               onSearch={handleSearch}
               // onSelect={handleSelect}

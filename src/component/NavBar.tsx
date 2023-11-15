@@ -98,7 +98,7 @@ export default function NavBar() {
               to="/"
             >
               {/* <HomeOutlined />  */}
-              <p style={{ fontSize: "1.4rem" }}>Home</p>
+              <p className="navbarItem">Home</p>
             </NavLink>
           </li>
 
@@ -110,7 +110,7 @@ export default function NavBar() {
               to="/about"
             >
               {/* <InfoCircleOutlined />  */}
-              <p style={{ fontSize: "1.4rem" }}>About</p>
+              <p className="navbarItem">About</p>
             </NavLink>
           </li>
 
@@ -122,7 +122,7 @@ export default function NavBar() {
               to="/imp-links"
             >
               {/* <FormOutlined /> */}
-              <p style={{ fontSize: "1.4rem" }}>Resources</p>
+              <p className="navbarItem">Resources</p>
             </NavLink>
           </li>
 
@@ -134,7 +134,7 @@ export default function NavBar() {
               to="/compensation"
             >
               {/* <PhoneOutlined />  */}
-              <p style={{ fontSize: "1.4rem" }}>Compensation</p>
+              <p className="navbarItem">Compensation</p>
             </NavLink>
           </li>
           <li>
@@ -145,7 +145,7 @@ export default function NavBar() {
               to="/essentialDocs"
             >
               {/* <PhoneOutlined />  */}
-              <p style={{ fontSize: "1.4rem" }}>Essential Docs</p>
+              <p className="navbarItem">Essential Docs</p>
             </NavLink>
           </li>
           <li>
@@ -154,7 +154,7 @@ export default function NavBar() {
               onClick={() => setIsModalOpen(true)}
             >
               {/* <MessageOutlined />  */}
-              <p style={{ fontWeight: 500, fontSize: "1.4rem" }}>Feedback</p>
+              <p className="navbarItem">Feedback</p>
             </div>
           </li>
           <li>
@@ -165,7 +165,7 @@ export default function NavBar() {
               to="/contact"
             >
               {/* <PhoneOutlined />  */}
-              <p style={{ fontSize: "1.4rem" }}>Contact Us</p>
+              <p className="navbarItem">Contact Us</p>
             </NavLink>
           </li>
         </ul>
@@ -180,6 +180,7 @@ export default function NavBar() {
             <p
               className="logoOfWebsite"
               style={{
+                // fontSize: "1.5rem",
                 display: "inline",
                 alignItems: "start",
                 position: "absolute",
