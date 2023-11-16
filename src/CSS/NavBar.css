@@ -76,6 +76,7 @@
 
 .logoOfWebsite {
   font-size: 1.5rem;
+  left: 14vw;
 }
 
 @media (max-width: 1400px) {
@@ -191,6 +192,7 @@
   .logoOfWebsite {
     padding-left: 8vw;
     font-size: 3vw;
+    left: 18vw;
   }
 }
 
