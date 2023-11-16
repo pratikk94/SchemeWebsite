@@ -185,7 +185,7 @@ export default function NavBar() {
                 alignItems: "start",
                 position: "absolute",
                 top: "40px",
-                left: "12vw",
+                left: "18vw",
                 color: "#731816",
               }}
             >
