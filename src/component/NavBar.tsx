@@ -154,7 +154,9 @@ export default function NavBar() {
               onClick={() => setIsModalOpen(true)}
             >
               {/* <MessageOutlined />  */}
-              <p className="navbarItem">Feedback</p>
+              <p className="navbarItem" style={{ fontWeight: 500 }}>
+                Feedback
+              </p>
             </div>
           </li>
           <li>
