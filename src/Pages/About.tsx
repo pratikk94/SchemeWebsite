@@ -41,7 +41,7 @@ const AboutUs: React.FC = () => {
             style={{
               marginLeft: "16vw",
               marginRight: "16vw",
-              fontSize: "24px",
+              fontSize: "20px",
               whiteSpace: "pre-line",
               textAlign: "justify",
             }}
@@ -87,7 +87,7 @@ const AboutUs: React.FC = () => {
               textAlign: "justify",
               marginLeft: "16vw",
               marginRight: "16vw",
-              fontSize: "24px",
+              fontSize: "20px",
               whiteSpace: "pre-line",
             }}
           >
@@ -120,7 +120,7 @@ const AboutUs: React.FC = () => {
               textAlign: "justify",
               marginLeft: "16vw",
               marginRight: "16vw",
-              fontSize: "24px",
+              fontSize: "20px",
             }}
           >
             This Website is maintained by Delhi Commission for Protection of
