@@ -115,7 +115,12 @@ const SearchPanel = ({ onSearch, type }: any) => {
   };
 
   return (
-    <Form form={form} layout="vertical" onFinish={handleSubmit}>
+    <Form
+      form={form}
+      layout="vertical"
+      onFinish={handleSubmit}
+      style={{ marginTop: "100px" }}
+    >
       <Row gutter={16}>
         <Col span={4}>
           <Form.Item label="Min Age" name="min_age">
