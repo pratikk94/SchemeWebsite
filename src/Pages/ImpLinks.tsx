@@ -317,7 +317,7 @@ const ImpLinks: React.FC = () => (
           <h1
             style={{ marginBottom: "32px", fontSize: "48px", color: "#1A196F" }}
           >
-            Important Links
+            Resources
           </h1>
 
           <Table
