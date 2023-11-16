@@ -2,8 +2,20 @@ import React from "react";
 import "../CSS/ContactUs.css";
 import Footer from "../component/Footer";
 import { Card } from "antd";
-import { MapContainer, Marker, Popup } from "react-leaflet";
-const position: [number, number] = [51.505, -0.09];
+import GoogleMapReact from "google-map-react";
+
+const AnyReactComponent = () => (
+  <div>
+    <p>DCPCR</p>
+  </div>
+);
+const defaultProps = {
+  center: {
+    lat: 28.6682,
+    lng: 77.2301,
+  },
+  zoom: 20,
+};
 const ContactUs: React.FC = () => (
   <div className="App">
     <header className="Contact-header"></header>
@@ -26,18 +38,16 @@ const ContactUs: React.FC = () => (
             style={{ height: "500px", width: "100%" }}
             bodyStyle={{ padding: 0 }}
           >
-            <MapContainer
-              center={position}
-              zoom={13}
-              scrollWheelZoom={false}
-              style={{ height: "500px", width: "100%" }}
-            >
-              <Marker position={position}>
-                <Popup>
-                  A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-              </Marker>
-            </MapContainer>
+            <div style={{ height: "100vh", width: "100%" }}>
+              <GoogleMapReact
+                bootstrapURLKeys={{ key: "" }}
+                defaultCenter={defaultProps.center}
+                defaultZoom={defaultProps.zoom}
+                style={{ height: "40vh" }}
+              >
+                <AnyReactComponent />
+              </GoogleMapReact>
+            </div>
           </Card>
 
           <p
