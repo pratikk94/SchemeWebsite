@@ -5,6 +5,19 @@ import Footer from "../component/Footer";
 const EssentialDocs: React.FC = () => {
   return (
     <div style={{ marginTop: "20vh" }}>
+      <center>
+        <p
+          style={{
+            margin: "2vw",
+            fontSize: "48px",
+            fontWeight: 900,
+            marginTop: "0vh",
+            color: "#1A196F",
+          }}
+        >
+          Essential Docs
+        </p>
+      </center>
       {data.map((c) => (
         <Card
           style={{ marginLeft: "4vw", marginRight: "4vw", marginTop: "4vw" }}

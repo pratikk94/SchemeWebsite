@@ -22,18 +22,19 @@ const ContactUs: React.FC = () => (
     <div className="home">
       <div className="container-type" style={{ height: "80vh" }}>
         <center>
-          <h1
-            style={{
-              textAlign: "center",
-              marginLeft: "16vw",
-              marginRight: "16vw",
-              marginBottom: "10px",
-              marginTop: "240px",
-              color: "#1A196F",
-            }}
-          >
-            Contact Us
-          </h1>
+          <center>
+            <p
+              style={{
+                margin: "2vw",
+                fontSize: "48px",
+                fontWeight: 900,
+                marginTop: "20vh",
+                color: "#1A196F",
+              }}
+            >
+              Contact us
+            </p>
+          </center>
           <Card
             style={{ height: "500px", width: "100%" }}
             bodyStyle={{ padding: 0 }}
