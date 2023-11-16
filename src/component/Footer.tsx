@@ -20,28 +20,28 @@ export default function Footer() {
           color: "white",
         }}
       >
-        <Col xs={24} sm={12} xl={8} style={{ fontSize: "24px" }}>
+        <Col xs={24} sm={12} xl={8} style={{ fontSize: "20px" }}>
           <a
             href="https://www.facebook.com/DCPCR/"
-            style={{ color: "#34CCCC", fontSize: "32px" }}
+            style={{ color: "#34CCCC", fontSize: "24px" }}
           >
             <FontAwesomeIcon icon={faFacebookF} style={{ color: "#ffffff" }} />
             &#160; &#160;Facebook
           </a>
         </Col>
-        <Col xs={24} sm={12} xl={8} style={{ fontSize: "24px" }}>
+        <Col xs={24} sm={12} xl={8} style={{ fontSize: "20px" }}>
           <a
             href="https://www.instagram.com/dcpcr_delhi/"
-            style={{ color: "#34CCCC", fontSize: "32px" }}
+            style={{ color: "#34CCCC", fontSize: "24px" }}
           >
             <FontAwesomeIcon icon={faInstagram} style={{ color: "#ffffff" }} />
             &#160; &#160;Instagram
           </a>
         </Col>
-        <Col xs={24} sm={12} xl={8} style={{ fontSize: "24px" }}>
+        <Col xs={24} sm={12} xl={8} style={{ fontSize: "20px" }}>
           <a
             href="https://twitter.com/DCPCR"
-            style={{ color: "#34CCCC", fontSize: "32px" }}
+            style={{ color: "#34CCCC", fontSize: "24px" }}
           >
             <FontAwesomeIcon icon={faTwitter} style={{ color: "#ffffff" }} />
             &#160; &#160; Twitter

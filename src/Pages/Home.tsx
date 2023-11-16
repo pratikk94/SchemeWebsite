@@ -159,14 +159,13 @@ const Home: React.FC = () => {
                     >
                       <p
                         style={{
-                          fontSize: "32px",
+                          fontSize: "22px",
                           fontWeight: 700,
                           marginTop: "-20px",
                           color: "#1A196F",
                         }}
                       >
-                        ALL <br />
-                        SCHEMES
+                        ALL SCHEMES
                       </p>
                     </Card>
                   </div>
@@ -189,7 +188,7 @@ const Home: React.FC = () => {
                     >
                       <p
                         style={{
-                          fontSize: "32px",
+                          fontSize: "22px",
                           fontWeight: 700,
                           marginTop: "-20px",
                           color: "#1A196F",
@@ -218,7 +217,7 @@ const Home: React.FC = () => {
                     >
                       <p
                         style={{
-                          fontSize: "32px",
+                          fontSize: "22px",
                           fontWeight: 700,
                           marginTop: "-20px",
                           color: "#1A196F",
