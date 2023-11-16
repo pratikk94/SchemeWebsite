@@ -72,7 +72,7 @@ const SchemeCard = ({ schemeData }: any) => {
     <Card
       key={name}
       title={
-        <Title style={{ marginTop: 24 }} level={2}>
+        <Title style={{ marginTop: 24 }} level={3}>
           {name}
         </Title>
       }
@@ -83,7 +83,7 @@ const SchemeCard = ({ schemeData }: any) => {
         margin: "2vh",
       }}
     >
-      <Title level={4}>
+      <Title level={5}>
         <InfoCircleOutlined /> Award/Entitlement:
       </Title>
       <div dangerouslySetInnerHTML={{ __html: award_entitlement }}></div>
@@ -93,40 +93,40 @@ const SchemeCard = ({ schemeData }: any) => {
         justify={"space-between"}
       >
         <Col>
-          <Title level={4}>Gender:</Title>
+          <Title level={5}>Gender:</Title>
           <Text>
             {gender === "Female" ? <WomanOutlined /> : <ManOutlined />} {gender}
           </Text>
         </Col>
         <Col>
-          <Title level={4}>Max Family Income:</Title>
+          <Title level={5}>Max Family Income:</Title>
           <Text>Rs.{max_income}</Text>
         </Col>
         <Col>
-          <Title level={4}>Disability:</Title>
+          <Title level={5}>Disability:</Title>
           <Text>{disability}</Text>
         </Col>
       </Row>
-      <Title level={4}>
+      <Title level={5}>
         <HomeOutlined /> Residence:
       </Title>
       <Text>{residence}</Text>
 
       <Divider />
 
-      <Title level={4}>Eligibility:</Title>
+      <Title level={5}>Eligibility:</Title>
       <br />
       <div dangerouslySetInnerHTML={{ __html: eligibility }}></div>
 
-      <Title level={4}>Document Required:</Title>
+      <Title level={5}>Document Required:</Title>
       <br />
       <div dangerouslySetInnerHTML={{ __html: document_required }}></div>
 
-      <Title level={4}>Application Link:</Title>
+      <Title level={5}>Application Link:</Title>
       <br />
       <div dangerouslySetInnerHTML={{ __html: application_link }}></div>
 
-      <Title level={4}>Grievance Redressal:</Title>
+      <Title level={5}>Grievance Redressal:</Title>
       <br />
       <div dangerouslySetInnerHTML={{ __html: grievance_redressal }}></div>
     </Card>
