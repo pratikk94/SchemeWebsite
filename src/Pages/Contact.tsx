@@ -38,7 +38,7 @@ const ContactUs: React.FC = () => (
             style={{ height: "500px", width: "100%" }}
             bodyStyle={{ padding: 0 }}
           >
-            <div style={{ height: "100vh", width: "100%" }}>
+            <div style={{ height: "88vh", width: "100%" }}>
               <GoogleMapReact
                 bootstrapURLKeys={{ key: "" }}
                 defaultCenter={defaultProps.center}
@@ -68,7 +68,7 @@ const ContactUs: React.FC = () => (
         </center>
       </div>
     </div>
-    <div style={{ height: "16vh", backgroundColor: "#03051E" }}>
+    <div style={{ height: "20vh", backgroundColor: "#03051E" }}>
       <Footer />
     </div>
   </div>
