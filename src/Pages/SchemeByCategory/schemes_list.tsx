@@ -51,33 +51,33 @@ const SchemeCard = ({ scheme }: any) => {
   return (
     <Card bordered={false} style={{ width: "100%", marginTop: 16 }}>
       <Typography>
-        <Title level={1} style={{ color: "#00008B" }}>
+        <Title level={3} style={{ color: "#00008B" }}>
           {scheme.title}
         </Title>
-        <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
+        <Paragraph style={{ whiteSpace: "pre-line", fontSize: "18px" }}>
           <strong>Type:</strong> <Tag color="blue">{scheme.type}</Tag>
         </Paragraph>
         {scheme.benefits && (
-          <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
+          <Paragraph style={{ whiteSpace: "pre-line", fontSize: "18px" }}>
             <strong>Benefits:</strong>
             {renderBenefitsText(scheme.benefits)}
           </Paragraph>
         )}
         {scheme.eligibility && (
-          <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
+          <Paragraph style={{ whiteSpace: "pre-line", fontSize: "18px" }}>
             <strong>Eligibility:</strong>
             <br />
             {renderEligibilityText(scheme.eligibility)}
           </Paragraph>
         )}
-        <Paragraph style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
+        <Paragraph style={{ whiteSpace: "pre-line", fontSize: "18px" }}>
           <strong>Documents Required:</strong>
           <br />
           <p>{scheme.documents_required}</p>
           {/* <List
             dataSource={scheme.documents_required?.split("\n")}
             renderItem={(item: any) => (
-              <List.Item style={{ whiteSpace: "pre-line", fontSize: "20px" }}>
+              <List.Item style={{ whiteSpace: "pre-line", fontSize: "18px" }}>
                 {item}
               </List.Item>
             )}
