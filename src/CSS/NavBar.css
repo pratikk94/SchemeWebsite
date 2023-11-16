@@ -47,7 +47,7 @@
 .logo {
   order: 1;
   font-size: 2.3rem;
-  height: 100px;
+  height: 80px;
 }
 
 .menu-items li {
@@ -170,7 +170,7 @@
     position: fixed;
     top: 0px;
     left: 15px;
-    width: 100vw;
+    width: 80vw;
     font-size: 2.5rem;
   }
 
