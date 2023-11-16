@@ -281,7 +281,7 @@ let data = [
 ];
 let column = [
   {
-    title: <p style={{ fontSize: "30px", color: "#1A196F" }}>Sr. No.</p>,
+    title: <p style={{ fontSize: "24px", color: "#1A196F" }}>Sr. No.</p>,
     dataIndex: "S. No.",
     key: "S. No.",
     render: (description: string) => (
@@ -289,7 +289,7 @@ let column = [
     ),
   },
   {
-    title: <p style={{ fontSize: "30px", color: "#1A196F" }}>Resources</p>,
+    title: <p style={{ fontSize: "24px", color: "#1A196F" }}>Resources</p>,
     dataIndex: "Resources",
     key: "Resources",
     render: (description: string) => (
@@ -297,7 +297,7 @@ let column = [
     ),
   },
   {
-    title: <p style={{ fontSize: "30px", color: "#1A196F" }}>Links/ Numbers</p>,
+    title: <p style={{ fontSize: "24px", color: "#1A196F" }}>Links/ Numbers</p>,
     dataIndex: "Links/ Numbers",
     key: "Links/ Numbers",
     render: (description: string) => (

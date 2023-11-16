@@ -78,17 +78,7 @@
   font-size: 1.5rem;
 }
 
-@media (min-width: 1024px) {
-  .logoOfWebsite {
-    font-size: 1.1rem;
-    padding-left: 1.5rem;
-  }
-  .navbarItem {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .navbar {
     opacity: 0.95;
     height: 18vh;
@@ -200,11 +190,11 @@
 
   .logoOfWebsite {
     padding-left: 8vw;
-    font-size: 40px;
+    font-size: 3vw;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .navbar-container input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
@@ -221,5 +211,15 @@
     padding: 8vw;
     margin-top: -10vw;
     font-size: 5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logoOfWebsite {
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+  }
+  .navbarItem {
+    font-size: 1.2rem;
   }
 }
