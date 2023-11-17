@@ -76,7 +76,7 @@
 }
 
 .logoOfWebsite {
-  font-size: 1rem;
+  font-size: 0.9rem;
   left: 14vw;
 }
 
@@ -192,7 +192,7 @@
 
   .logoOfWebsite {
     padding-left: 8vw;
-    font-size: 1rem;
+    font-size: 0.9rem;
     left: 20vw;
   }
 }
@@ -213,7 +213,7 @@
   .logoOfWebsite {
     padding: 8vw;
     margin-top: -10vw;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 

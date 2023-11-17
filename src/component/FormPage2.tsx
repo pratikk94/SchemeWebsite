@@ -25,12 +25,12 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
   const options = [
     {
       value: "Delhi",
-      label: "Delhi",
+      label: "Yes",
       imageUrl: "/male.png",
     },
     {
       value: "Out of Delhi",
-      label: "Out of Delhi",
+      label: "No",
       imageUrl: "/female.png",
     },
   ];
