@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
                 margin: "2vw",
                 fontSize: "48px",
                 fontWeight: 900,
-                marginTop: "40vh",
+                marginTop: "60vh",
                 color: "#1A196F",
               }}
             >

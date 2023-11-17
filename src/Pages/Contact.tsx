@@ -28,7 +28,7 @@ const ContactUs: React.FC = () => (
                 margin: "2vw",
                 fontSize: "48px",
                 fontWeight: 900,
-                marginTop: "20vh",
+                marginTop: "40vh",
                 color: "#1A196F",
               }}
             >

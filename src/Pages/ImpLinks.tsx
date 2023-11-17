@@ -315,7 +315,12 @@ const ImpLinks: React.FC = () => (
       >
         <center>
           <h1
-            style={{ marginBottom: "32px", fontSize: "48px", color: "#1A196F" }}
+            style={{
+              marginTop: "40vh",
+              marginBottom: "32px",
+              fontSize: "48px",
+              color: "#1A196F",
+            }}
           >
             Resources
           </h1>
