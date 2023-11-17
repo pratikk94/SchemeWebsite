@@ -56,7 +56,7 @@ export default function NavBar() {
     //   </NavLink>
     // </nav>
     <div>
-      <div style={{ height: "80px" }}>
+      <div style={{ height: "70px" }}>
         <h1 className="logo">
           {/* <NavLink to="/"> */}
           <img
@@ -72,7 +72,7 @@ export default function NavBar() {
               display: "inline",
               alignItems: "start",
               position: "absolute",
-              top: "20px",
+              top: "10px",
               marginTop: "20px",
               color: "#731816",
               zIndex: 101,
