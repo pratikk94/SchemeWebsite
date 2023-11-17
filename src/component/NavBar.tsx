@@ -190,9 +190,9 @@ export default function NavBar() {
                 color: "#731816",
               }}
             >
-              Delhi Commission for Protection of Child Rights (DCPCR)
+              Delhi Commission for Protection of Child Rights
               <br />
-              Government of NCT of Delhi
+              (DCPCR) Government of NCT of Delhi
             </p>
           </NavLink>
         </h1>
