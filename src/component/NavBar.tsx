@@ -78,9 +78,9 @@ export default function NavBar() {
               zIndex: 101,
             }}
           >
-            Delhi Commission for Protection of Child Rights
+            Delhi Commission for Protection of Child Rights (DCPCR)
             <br />
-            (DCPCR) Government of NCT of Delhi
+            Government of NCT of Delhi
           </p>
           {/* </NavLink> */}
         </h1>
