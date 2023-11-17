@@ -56,7 +56,7 @@ export default function NavBar() {
     //   </NavLink>
     // </nav>
     <div>
-      <div style={{ height: "120px" }}>
+      <div style={{ height: "80px" }}>
         <h1 className="logo">
           {/* <NavLink to="/"> */}
           <img
