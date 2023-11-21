@@ -20,7 +20,7 @@ const ContactUs: React.FC = () => (
   <div className="App">
     <header className="Contact-header"></header>
     <div className="home">
-      <div className="container-type" style={{ height: "80vh" }}>
+      <div className="container-type" style={{ height: "100vh" }}>
         <center>
           <center>
             <p
@@ -28,7 +28,7 @@ const ContactUs: React.FC = () => (
                 margin: "2vw",
                 fontSize: "48px",
                 fontWeight: 900,
-                marginTop: "40vh",
+                marginTop: "60vh",
                 color: "#1A196F",
               }}
             >
@@ -69,7 +69,9 @@ const ContactUs: React.FC = () => (
         </center>
       </div>
     </div>
-    <div style={{ height: "20vh", backgroundColor: "#03051E" }}>
+    <div
+      style={{ height: "20vh", backgroundColor: "#03051E", marginTop: "5vh" }}
+    >
       <Footer />
     </div>
   </div>
