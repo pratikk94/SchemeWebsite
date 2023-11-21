@@ -33,7 +33,7 @@ const Landing: React.FC = (): JSX.Element => {
           }}
         >
           <Col xs={24} sm={12} xl={8}>
-            <div style={{ height: "100%", paddingLeft: "12%" }}>
+            <div style={{ height: "100%", paddingLeft: "4%" }}>
               <Card
                 onClick={() => {
                   navigate("/schemes-list", { state: { category: "Skill" } });
@@ -63,7 +63,6 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-2vh",
                     marginLeft: "-24px",
-                    width: "14.5vw",
                   }}
                 >
                   Skills
@@ -72,7 +71,7 @@ const Landing: React.FC = (): JSX.Element => {
             </div>
           </Col>
           <Col xs={24} sm={12} xl={8}>
-            <div style={{ height: "100%", paddingLeft: "12%" }}>
+            <div style={{ height: "100%", paddingLeft: "4%" }}>
               <Card
                 hoverable
                 onClick={() => {
@@ -103,7 +102,6 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-2vh",
                     marginLeft: "-24px",
-                    width: "14.5vw",
                   }}
                 >
                   Livelihood
@@ -112,7 +110,7 @@ const Landing: React.FC = (): JSX.Element => {
             </div>
           </Col>
           <Col xs={24} sm={12} xl={8}>
-            <div style={{ height: "100%", paddingLeft: "12%" }}>
+            <div style={{ height: "100%", paddingLeft: "4%" }}>
               <Card
                 hoverable
                 style={{
@@ -141,7 +139,6 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-2vh",
                     marginLeft: "-24px",
-                    width: "14.5vw",
                   }}
                 >
                   Health and Nutrition
@@ -159,7 +156,7 @@ const Landing: React.FC = (): JSX.Element => {
           }}
         >
           <Col xs={24} sm={12} xl={8}>
-            <div style={{ height: "100%", paddingLeft: "12%" }}>
+            <div style={{ height: "100%", paddingLeft: "4%" }}>
               <Card
                 hoverable
                 onClick={() => {
@@ -190,7 +187,6 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-2vh",
                     marginLeft: "-24px",
-                    width: "14.5vw",
                   }}
                 >
                   Education
@@ -199,7 +195,7 @@ const Landing: React.FC = (): JSX.Element => {
             </div>
           </Col>
           <Col xs={24} sm={12} xl={8}>
-            <div style={{ height: "100%", paddingLeft: "12%" }}>
+            <div style={{ height: "100%", paddingLeft: "4%" }}>
               <Card
                 hoverable
                 onClick={() => {
@@ -230,7 +226,6 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-2vh",
                     marginLeft: "-24px",
-                    width: "14.5vw",
                   }}
                 >
                   Woman and Child
@@ -239,7 +234,7 @@ const Landing: React.FC = (): JSX.Element => {
             </div>
           </Col>
           <Col xs={24} sm={12} xl={8}>
-            <div style={{ height: "100%", paddingLeft: "12%" }}>
+            <div style={{ height: "100%", paddingLeft: "4%" }}>
               <Card
                 hoverable
                 onClick={() => {
@@ -270,7 +265,6 @@ const Landing: React.FC = (): JSX.Element => {
                     fontSize: "24px",
                     marginTop: "-2vh",
                     marginLeft: "-24px",
-                    width: "14.5vw",
                   }}
                 >
                   Miscelleneous

@@ -2,9 +2,15 @@
   background-image: url("../../public/BG.png");
   background-repeat: repeat;
 }
+h2 {
+  width: 14.5vw;
+}
 @media (max-width: 400px) {
   .img_scheme_by_category {
     height: 20vh;
     max-width: 100vw;
+  }
+  h2 {
+    width: 54.5vw;
   }
 }
