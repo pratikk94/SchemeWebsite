@@ -144,8 +144,7 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     }
   };
   let margin = "8vw";
-  if (isDesktopOrLaptop) margin = currentPage === 4 ? "0vw" : "0vw";
-
+  if (isDesktopOrLaptop) margin = currentPage === 4 ? "0vw" : "16vw";
   return (
     <div>
       <div
