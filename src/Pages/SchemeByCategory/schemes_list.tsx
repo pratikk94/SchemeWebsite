@@ -203,7 +203,15 @@ const SchemesListIndex = (props: any) => {
           <h1>No schemes found</h1>
         )}
       </Content>
-      <Footer />
+      <div
+        style={{
+          backgroundColor: "#03051E",
+        }}
+      >
+        <center>
+          <Footer />
+        </center>
+      </div>
     </Layout>
   );
 };
