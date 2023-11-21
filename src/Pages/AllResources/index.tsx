@@ -69,7 +69,7 @@ const SchemeCard = ({ scheme }: any) => {
   };
 
   return (
-    <Card bordered={false} style={{ width: "100%", marginTop: 16 }}>
+    <Card className="cardBody" bordered={false} style={{ marginTop: 16 }}>
       <Typography>
         <Title level={2} style={{ color: "#00008B" }}>
           {scheme.title}

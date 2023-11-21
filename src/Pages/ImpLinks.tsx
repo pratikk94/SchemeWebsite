@@ -313,7 +313,7 @@ const ImpLinks: React.FC = () => (
         <center>
           <h1
             style={{
-              marginTop: "40vh",
+              marginTop: "10vh",
               marginBottom: "32px",
               fontSize: "48px",
               color: "#1A196F",

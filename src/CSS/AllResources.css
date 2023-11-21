@@ -1,17 +1,28 @@
 .content {
   padding: 100px 150px;
 }
-
-.title {
+h2 {
+  width: 100%;
+}
+.titleB {
   margin: 2vh;
   margin-top: 0px;
 }
+
+.cardBody {
+  width: 80vw;
+}
+
 @media only screen and (max-width: 600px) {
   .content {
     padding: 0px;
     padding-top: 160px;
   }
-  .title {
+  .titleB {
     margin-top: 13vh;
+  }
+
+  .cardBody {
+    width: 100vw;
   }
 }
