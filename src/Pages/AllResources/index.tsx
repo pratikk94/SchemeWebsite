@@ -240,12 +240,11 @@ const AllResourcesIndex = (props: any) => {
         <center>
           <p
             style={{
-              margin: "2vw",
               fontSize: "48px",
               fontWeight: 900,
-              marginTop: "0vh",
               color: "#1A196F",
             }}
+            className="title"
           >
             All Schemes
           </p>
