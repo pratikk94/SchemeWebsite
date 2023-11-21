@@ -247,7 +247,7 @@ const AllResourcesIndex = (props: any) => {
               color: "#1A196F",
             }}
           >
-            All schemes
+            All Schemes
           </p>
         </center>
         <SearchPanel onSearch={fetchSchemes} />
@@ -267,7 +267,9 @@ const AllResourcesIndex = (props: any) => {
           <h1>No schemes found</h1>
         )}
       </Content>
-      <Footer />
+      <div style={{ height: "20vh", backgroundColor: "#03051E" }}>
+        <Footer />
+      </div>
     </Layout>
   );
 };
