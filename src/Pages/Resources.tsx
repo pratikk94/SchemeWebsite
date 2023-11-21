@@ -7,6 +7,7 @@ const Resources: React.FC = () => (
     <div className="container-type" style={{ height: "80vh" }}>
       <center></center>
     </div>
+
     <Footer />
   </div>
 );

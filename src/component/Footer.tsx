@@ -54,7 +54,7 @@ export default function Footer() {
         &copy; Produced by British Asian Trust
         <br />
       </p>
-      <div style={{ height: "40px" }}></div>
+      <div style={{ height: "10vh" }}></div>
     </div>
   );
 }
