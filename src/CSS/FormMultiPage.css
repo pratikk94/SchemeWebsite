@@ -27,4 +27,8 @@ input[type="radio"]:checked + label {
   .schemes {
     width: 100vw;
   }
+
+  .container {
+    margin-top: -20vh;
+  }
 }

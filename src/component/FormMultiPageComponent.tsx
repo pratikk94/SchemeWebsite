@@ -144,16 +144,18 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     }
   };
   let margin = "8vw";
-  if (isDesktopOrLaptop) margin = currentPage === 4 ? "24vw" : "32vw";
+  if (isDesktopOrLaptop) margin = currentPage === 4 ? "0vw" : "18vw";
 
   return (
     <div>
-      <div style={{ background: "../public/BG.png", height: "60vh" }}>
+      <div
+        className="container"
+        style={{ background: "../public/BG.png", height: "60vh" }}
+      >
         <Card
           style={{
             marginLeft: margin,
             marginRight: margin,
-            marginTop: "-20vh",
           }}
         >
           {renderStep()}

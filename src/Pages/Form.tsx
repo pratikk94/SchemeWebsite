@@ -19,7 +19,7 @@ const FormPage: React.FC<any> = (props): JSX.Element => {
   return (
     <div className="FormPage">
       <div className="container-type" style={{ height: "80vh" }}>
-        <div className="Spacer" style={{ height: "16vh" }} />
+        <div className="Spacer" style={{ height: "0vh" }} />
         <center>{formType}</center>
       </div>
     </div>
