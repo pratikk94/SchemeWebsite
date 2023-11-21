@@ -20,7 +20,7 @@ const Compensation: React.FC = () => {
       </center>
       {data.map((c) => (
         <Card
-          style={{ marginLeft: "4vw", marginRight: "4vw", marginTop: "4vw" }}
+          style={{ marginLeft: "4vw", marginRight: "4vw", marginTop: "2vw" }}
         >
           <h1 key={c["S. No."]} style={{ color: "#06008B" }}>
             {c["Compensation"]}
