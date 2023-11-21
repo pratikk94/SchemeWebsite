@@ -95,6 +95,7 @@
     display: block;
     position: relative;
     height: 64px;
+    top: -20px;
   }
 
   .navbar-container input[type="checkbox"] {
@@ -102,7 +103,7 @@
     display: block;
     height: 32px;
     width: 30px;
-    top: 60px;
+    top: 40px;
     left: -10px;
     z-index: 5;
     opacity: 0;
@@ -217,7 +218,7 @@
   }
   .navbar {
     position: absolute;
-    margin-top: 6vh;
+    margin-top: 4vh;
     height: 10vh;
   }
 }
