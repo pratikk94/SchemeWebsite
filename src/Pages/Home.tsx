@@ -92,7 +92,7 @@ const Home: React.FC = () => {
             <div className="searchSchemeBox">
               <AutoComplete
                 dropdownMatchSelectWidth={400}
-                style={{ width: 400, marginRight: 12 }}
+                style={{ width: "60vw", marginRight: 12 }}
                 options={options}
                 onSearch={handleSearch}
                 // onSelect={handleSelect}

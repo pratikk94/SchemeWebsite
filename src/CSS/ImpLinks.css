@@ -15,3 +15,29 @@
   white-space: pre-line;
   font-size: 20px;
 }
+.container-type {
+  margin-top: 200px;
+}
+
+@media (max-width: 640px) {
+  .container-type {
+    margin-top: 400px;
+  }
+
+  .pre-line {
+    white-space: pre-line;
+    width: 16vw;
+    font-size: 16px;
+  }
+  .pre-lineS {
+    white-space: pre-line;
+    width: 8vw;
+    font-size: 16px;
+  }
+
+  .pre-lineR {
+    width: 50vw;
+    white-space: pre-line;
+    font-size: 16px;
+  }
+}

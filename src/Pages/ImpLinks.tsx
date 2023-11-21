@@ -281,7 +281,7 @@ let data = [
 ];
 let column = [
   {
-    title: <p style={{ fontSize: "24px", color: "#1A196F" }}>Sr. No.</p>,
+    title: <p style={{ fontSize: "20px", color: "#1A196F" }}>Sr. No.</p>,
     dataIndex: "S. No.",
     key: "S. No.",
     render: (description: string) => (
@@ -289,7 +289,7 @@ let column = [
     ),
   },
   {
-    title: <p style={{ fontSize: "24px", color: "#1A196F" }}>Resources</p>,
+    title: <p style={{ fontSize: "20px", color: "#1A196F" }}>Resources</p>,
     dataIndex: "Resources",
     key: "Resources",
     render: (description: string) => (
@@ -297,7 +297,7 @@ let column = [
     ),
   },
   {
-    title: <p style={{ fontSize: "24px", color: "#1A196F" }}>Links/ Numbers</p>,
+    title: <p style={{ fontSize: "20px", color: "#1A196F" }}>Links/ Numbers</p>,
     dataIndex: "Links/ Numbers",
     key: "Links/ Numbers",
     render: (description: string) => (
@@ -309,10 +309,7 @@ const ImpLinks: React.FC = () => (
   <div className="App" style={{ background: "white" }}>
     <header className="App-header"></header>
     <div className="home">
-      <div
-        className="container-type"
-        style={{ height: "80vh", marginTop: "200px" }}
-      >
+      <div className="container-type" style={{ height: "80vh" }}>
         <center>
           <h1
             style={{
