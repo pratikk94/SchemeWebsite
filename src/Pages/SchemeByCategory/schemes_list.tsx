@@ -185,7 +185,20 @@ const SchemesListIndex = (props: any) => {
 
   return (
     <Layout>
-      <Content style={{ padding: "100px 150px" }}>
+      <center>
+        <p
+          style={{
+            margin: "2vw",
+            fontSize: "48px",
+            fontWeight: 900,
+            marginTop: "10vh",
+            color: "#1A196F",
+          }}
+        >
+          {state.category}
+        </p>
+      </center>
+      <Content style={{ padding: "-20px 150px" }}>
         <SearchPanel onSearch={fetchSchemes} type={state.category} />
         {schemes == null ? (
           <Spin spinning={true} />
