@@ -237,7 +237,19 @@ const AllResourcesIndex = (props: any) => {
   return (
     <Layout>
       <Content className="content">
-        <h1>All Resources</h1>
+        <center>
+          <p
+            style={{
+              margin: "2vw",
+              fontSize: "48px",
+              fontWeight: 900,
+              marginTop: "0vh",
+              color: "#1A196F",
+            }}
+          >
+            All schemes
+          </p>
+        </center>
         <SearchPanel onSearch={fetchSchemes} />
         {schemes == null ? (
           <Spin spinning={true} />

@@ -8,6 +8,7 @@ import "../CSS/FormMultiPage.css";
 import { useMediaQuery } from "react-responsive";
 import axios from "axios";
 import SchemeCard from "../Pages/AllResources/SchemeCard";
+import Footer from "./Footer";
 
 interface FormMultiPageComponentProps {
   type: number;
@@ -146,71 +147,76 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
   if (isDesktopOrLaptop) margin = currentPage === 4 ? "24vw" : "32vw";
 
   return (
-    <div style={{ background: "../public/BG.png" }}>
-      <Card
-        style={{ marginLeft: margin, marginRight: margin, marginTop: "120px" }}
-      >
-        {renderStep()}
+    <div>
+      <div style={{ background: "../public/BG.png", height: "60vh" }}>
+        <Card
+          style={{ marginLeft: margin, marginRight: margin, marginTop: "0px" }}
+        >
+          {renderStep()}
 
-        <div>
-          {currentPage > 1 && (
-            <button
-              type="button"
-              onClick={handlePrevious}
-              style={{
-                backgroundColor: "#1A1970",
-                fontSize: "3vh",
-                color: "#fff",
-                padding: "0.5vh",
-                margin: "0.5vw",
-              }}
-            >
-              {currentPage === 4 ? "Make changes press back" : "Previous"}
-            </button>
-          )}
-          {currentPage < 3 ? (
-            <button
-              type="button"
-              onClick={handleNext}
-              style={{
-                backgroundColor: "#1A1970",
-                fontSize: "3vh",
-                color: "#fff",
-                padding: "0.5vh",
-                margin: "0.5vw",
-              }}
-            >
-              Next
-            </button>
-          ) : currentPage !== 4 ? (
-            <button
-              type="submit"
-              onClick={handleSubmit}
-              style={{
-                backgroundColor: "#1A1970",
-                fontSize: "3vh",
-                color: "#fff",
-                padding: "0.5vh",
-                margin: "0.5vw",
-              }}
-            >
-              Submit
-            </button>
-          ) : (
-            <p></p>
-          )}
-        </div>
-      </Card>
-      {/* {currentPage === 4 && <Scheme type={props.type} id={ids} />} */}
-      {currentPage === 4 && schemes.length > 0 ? (
-        schemes.map((scheme: any) => (
-          <div className="schemes" style={{ textAlign: "left" }}>
-            <SchemeCard scheme={scheme} />
+          <div>
+            {currentPage > 1 && (
+              <button
+                type="button"
+                onClick={handlePrevious}
+                style={{
+                  backgroundColor: "#1A1970",
+                  fontSize: "3vh",
+                  color: "#fff",
+                  padding: "0.5vh",
+                  margin: "0.5vw",
+                }}
+              >
+                {currentPage === 4 ? "Make changes press back" : "Previous"}
+              </button>
+            )}
+            {currentPage < 3 ? (
+              <button
+                type="button"
+                onClick={handleNext}
+                style={{
+                  backgroundColor: "#1A1970",
+                  fontSize: "3vh",
+                  color: "#fff",
+                  padding: "0.5vh",
+                  margin: "0.5vw",
+                }}
+              >
+                Next
+              </button>
+            ) : currentPage !== 4 ? (
+              <button
+                type="submit"
+                onClick={handleSubmit}
+                style={{
+                  backgroundColor: "#1A1970",
+                  fontSize: "3vh",
+                  color: "#fff",
+                  padding: "0.5vh",
+                  margin: "0.5vw",
+                }}
+              >
+                Submit
+              </button>
+            ) : (
+              <p></p>
+            )}
           </div>
-        ))
-      ) : (
-        <p>No Schemes found in our database</p>
-      )}
+        </Card>
+        {/* {currentPage === 4 && <Scheme type={props.type} id={ids} />} */}
+        {currentPage === 4 && schemes.length > 0 ? (
+          schemes.map((scheme: any) => (
+            <div className="schemes" style={{ textAlign: "left" }}>
+              <SchemeCard scheme={scheme} />
+            </div>
+          ))
+        ) : (
+          <p>No Schemes found in our database</p>
+        )}
+      </div>
+      <div style={{ marginTop: "60px", backgroundColor: "#03051E" }}>
+        <Footer />
+      </div>
     </div>
   );
 };
