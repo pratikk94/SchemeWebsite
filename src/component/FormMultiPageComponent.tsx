@@ -149,7 +149,11 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     <div>
       <div
         className="container"
-        style={{ background: "../public/BG.png", height: "100vh" }}
+        style={{
+          background: "../public/BG.png",
+          height: "100vh",
+          marginTop: "-8vh",
+        }}
       >
         <Card
           style={{
