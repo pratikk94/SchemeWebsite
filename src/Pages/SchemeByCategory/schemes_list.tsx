@@ -120,7 +120,7 @@ const SearchPanel = ({ onSearch, type }: any) => {
       form={form}
       layout="vertical"
       onFinish={handleSubmit}
-      style={{ marginTop: "100px" }}
+      style={{ marginTop: "40px" }}
     >
       <Row gutter={16}>
         <Col span={4}>
