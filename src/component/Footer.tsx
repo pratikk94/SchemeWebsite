@@ -44,7 +44,7 @@ export default function Footer() {
             style={{ color: "#34CCCC", fontSize: "24px" }}
           >
             <FontAwesomeIcon icon={faTwitter} style={{ color: "#ffffff" }} />
-            &#160; &#160; Twitter
+            &#160; &#160; Twitter &#160; &#160;
           </a>
         </Col>
       </Row>
