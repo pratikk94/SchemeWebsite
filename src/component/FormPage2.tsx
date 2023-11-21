@@ -63,7 +63,7 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
           <h1
             style={{ textAlign: "left", color: "#1A1970", marginBottom: "2vh" }}
           >
-            What is your annual family income?
+            What is your annual family income?*
           </h1>
         </Row>
         <Row justify="start">
@@ -76,9 +76,8 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
         </Row>
         <br />
         <p style={{ fontSize: "20px" }}>
-          *Above two fields are optional and can be skipped for next options.
+          *The above field is optional and can be skipped
           <br />
-          Although we recommend to fill in all the fields for accurate results
         </p>
       </div>
     </div>

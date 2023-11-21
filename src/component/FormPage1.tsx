@@ -101,7 +101,7 @@ const FormPage1: React.FC<FormPage1Props> = (props): JSX.Element => {
               marginBottom: "2vh",
             }}
           >
-            What is your date of birth?
+            What is your date of birth?*
           </h1>
         </Row>
         <Row justify="start">
@@ -117,9 +117,8 @@ const FormPage1: React.FC<FormPage1Props> = (props): JSX.Element => {
         </Row>
         <br />
         <p style={{ fontSize: "20px" }}>
-          *Above two fields are optional and can be skipped for next options.
+          *The above field is optional and can be skipped
           <br />
-          Although we recommend to fill in all the fields for accurate results
         </p>
       </div>
     </div>

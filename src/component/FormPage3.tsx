@@ -112,11 +112,6 @@ const FormPage3: React.FC<FormPage3Props> = (props): JSX.Element => {
           />
         </Row>
         <br />
-        <p style={{ fontSize: "20px" }}>
-          *Above two fields are optional and can be skipped for next options.
-          <br />
-          Although we recommend to fill in all the fields for accurate results
-        </p>
       </div>
     </div>
   );
