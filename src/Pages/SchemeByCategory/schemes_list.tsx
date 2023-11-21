@@ -124,19 +124,21 @@ const SearchPanel = ({ onSearch, type }: any) => {
     >
       <Row gutter={16}>
         <Col span={4}>
-          <Form.Item label="Min Age" name="min_age">
-            <Input
-              placeholder="Min Age"
-              style={{ width: "100%", fontSize: "20px" }}
-            />
+          <Form.Item
+            label="Min Age"
+            name="min_age"
+            style={{ fontSize: "20px" }}
+          >
+            <Input placeholder="Min Age" style={{ width: "100%" }} />
           </Form.Item>
         </Col>
         <Col span={4}>
-          <Form.Item label="Max Age" name="max_age">
-            <Input
-              placeholder="Max Age"
-              style={{ width: "100%", fontSize: "20px" }}
-            />
+          <Form.Item
+            label="Max Age"
+            name="max_age"
+            style={{ fontSize: "20px" }}
+          >
+            <Input placeholder="Max Age" style={{ width: "100%" }} />
           </Form.Item>
         </Col>
         <Col span={4}>
