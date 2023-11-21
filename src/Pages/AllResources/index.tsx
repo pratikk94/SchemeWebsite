@@ -267,8 +267,14 @@ const AllResourcesIndex = (props: any) => {
           <h1>No schemes found</h1>
         )}
       </Content>
-      <div style={{ height: "20vh", backgroundColor: "#03051E" }}>
-        <Footer />
+      <div
+        style={{
+          backgroundColor: "#03051E",
+        }}
+      >
+        <center>
+          <Footer />
+        </center>
       </div>
     </Layout>
   );

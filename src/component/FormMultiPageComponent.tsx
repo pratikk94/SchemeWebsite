@@ -220,8 +220,14 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
           <p>No Schemes found in our database</p>
         )}
       </div>
-      <div style={{ marginTop: "60px", backgroundColor: "#03051E" }}>
-        <Footer />
+      <div
+        style={{
+          backgroundColor: "#03051E",
+        }}
+      >
+        <center>
+          <Footer />
+        </center>
       </div>
     </div>
   );
