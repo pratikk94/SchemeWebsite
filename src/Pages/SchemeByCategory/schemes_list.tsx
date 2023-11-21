@@ -153,10 +153,10 @@ const SearchPanel = ({ onSearch, type }: any) => {
             </Select>
           </Form.Item>
         </Col>
-        <Col span={4}>
+        <Col span={4} style={{ marginTop: "24px", marginLeft: "25px" }}>
           <Form.Item>
-            <Button type="primary" htmlType="submit">
-              Search
+            <Button type="primary" htmlType="submit" style={{ height: "40px" }}>
+              <p style={{ fontSize: "20px" }}>Search</p>
             </Button>
           </Form.Item>
         </Col>
