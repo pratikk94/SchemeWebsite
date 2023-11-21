@@ -135,9 +135,9 @@ const SearchPanel = ({ onSearch, type }: any) => {
         <Col span={4}>
           <Form.Item label="Gender" name="gender">
             <Select placeholder="Select Gender">
-              {/* <Option value="male">Male</Option> */}
-              <Option value="Female">Female</Option>
-              <Option value={null}>Other</Option>
+              <Option value={null}>All</Option>
+              <Option value="Female">Female only</Option>
+              <Option value="Others">Other only</Option>
             </Select>
           </Form.Item>
         </Col>
