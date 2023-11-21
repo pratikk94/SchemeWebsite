@@ -216,8 +216,9 @@
     font-size: 0.9rem;
   }
   .navbar {
+    position: absolute;
     margin-top: 6vh;
-    height: 15vh;
+    height: 10vh;
   }
 }
 
