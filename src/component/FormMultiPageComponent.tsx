@@ -150,7 +150,11 @@ const FormMultiPageComponent: React.FC<FormMultiPageComponentProps> = (
     <div>
       <div style={{ background: "../public/BG.png", height: "60vh" }}>
         <Card
-          style={{ marginLeft: margin, marginRight: margin, marginTop: "0px" }}
+          style={{
+            marginLeft: margin,
+            marginRight: margin,
+            marginTop: "-20vh",
+          }}
         >
           {renderStep()}
 
