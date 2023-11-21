@@ -76,7 +76,7 @@ const FormPage2: React.FC<FormPage2Props> = (props): JSX.Element => {
         </Row>
         <br />
         <p style={{ fontSize: "20px" }}>
-          *The above field is optional and can be skipped
+          *This field is optional and can be skipped.
           <br />
         </p>
       </div>
