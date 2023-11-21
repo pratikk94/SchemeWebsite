@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Card, Typography, Tag, Button, Space, Layout } from "antd";
 import Footer from "../../component/Footer";
+import "../../CSS/SchemeList.css";
 const { Content } = Layout;
 const { Option } = Select;
 const { Title, Paragraph } = Typography;
@@ -191,14 +192,17 @@ const SchemesListIndex = (props: any) => {
             margin: "2vw",
             fontSize: "48px",
             fontWeight: 900,
-            marginTop: "10vh",
             color: "#1A196F",
           }}
+          className="title"
         >
           {state.category}
         </p>
       </center>
-      <Content style={{ padding: "-20px 150px" }}>
+      <Content
+        className="content"
+        style={{ padding: "-20px 150px", width: "96vw" }}
+      >
         <SearchPanel onSearch={fetchSchemes} type={state.category} />
         {schemes == null ? (
           <Spin spinning={true} />
