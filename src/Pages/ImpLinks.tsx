@@ -308,7 +308,7 @@ let column = [
 const ImpLinks: React.FC = () => (
   <div className="App" style={{ background: "white" }}>
     <header className="App-header"></header>
-    <div className="home">
+    <div className="home" style={{ backgroundColor: "#fff" }}>
       <div className="container-type" style={{ height: "80vh" }}>
         <center>
           <h1
