@@ -189,7 +189,6 @@ const SchemesListIndex = (props: any) => {
       <center>
         <p
           style={{
-            margin: "2vw",
             fontSize: "48px",
             fontWeight: 900,
             color: "#1A196F",

@@ -218,7 +218,7 @@
   }
   .navbar {
     position: absolute;
-    margin-top: 4vh;
+    margin-top: 0vh;
     height: 10vh;
   }
 }
