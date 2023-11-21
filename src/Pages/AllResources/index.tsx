@@ -193,7 +193,7 @@ const SearchPanel = ({ onSearch }: any) => {
             <Select placeholder="Select Gender">
               <Option value={null}>All</Option>
               <Option value="Female">Female only</Option>
-              <Option value="Others">Other only</Option>
+              <Option value="Others">Others only</Option>
             </Select>
           </Form.Item>
         </Col>
