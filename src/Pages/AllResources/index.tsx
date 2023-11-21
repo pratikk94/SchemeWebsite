@@ -155,7 +155,7 @@ const SearchPanel = ({ onSearch }: any) => {
       <Row gutter={24} align={"bottom"}>
         <Col xs={24} sm={12} xl={6}>
           <Form.Item
-            label={<p style={{ fontSize: "20px" }}>Resource</p>}
+            label={<p style={{ fontSize: "20px" }}>Sector</p>}
             name="type"
           >
             <Select placeholder="Please select a resource">
