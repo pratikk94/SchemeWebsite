@@ -4,7 +4,7 @@ import { Card } from "antd";
 import Footer from "../component/Footer";
 const Compensation: React.FC = () => {
   return (
-    <div style={{ marginTop: "20vh" }}>
+    <div style={{ marginTop: "20vh", backgroundColor: "#fcfcff" }}>
       <center>
         <p
           style={{
