@@ -68,7 +68,7 @@
 }
 
 .logoIcon {
-  position: fixed;
+  position: absolute;
   left: 100px;
   top: 0px;
   height: 100px;
