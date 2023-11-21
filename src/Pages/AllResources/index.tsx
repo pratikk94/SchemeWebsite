@@ -158,7 +158,7 @@ const SearchPanel = ({ onSearch }: any) => {
             label={<p style={{ fontSize: "20px" }}>Sector</p>}
             name="type"
           >
-            <Select placeholder="Please select a resource">
+            <Select placeholder="Please select a sector">
               <Option value="Livelihood">Livelihood</Option>
               <Option value="Skill">Skill</Option>
               <Option value="Scholarship">Scholarship</Option>
@@ -243,6 +243,8 @@ const AllResourcesIndex = (props: any) => {
               fontSize: "48px",
               fontWeight: 900,
               color: "#1A196F",
+              width: "80vw",
+              marginBottom: "2vw",
             }}
             className="title"
           >
